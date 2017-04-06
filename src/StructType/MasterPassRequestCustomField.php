@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class MasterPassRequestCustomField extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - nillable: true
-     * @var \StructType\CustomField
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public $custom_field_1;
     /**
@@ -25,7 +25,7 @@ class MasterPassRequestCustomField extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - nillable: true
-     * @var \StructType\CustomField
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public $custom_field_2;
     /**
@@ -34,7 +34,7 @@ class MasterPassRequestCustomField extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - nillable: true
-     * @var \StructType\CustomField
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public $custom_field_3;
     /**
@@ -43,7 +43,7 @@ class MasterPassRequestCustomField extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - nillable: true
-     * @var \StructType\CustomField
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public $custom_field_4;
     /**
@@ -52,7 +52,7 @@ class MasterPassRequestCustomField extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - nillable: true
-     * @var \StructType\CustomField
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public $custom_field_5;
     /**
@@ -61,7 +61,7 @@ class MasterPassRequestCustomField extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - nillable: true
-     * @var \StructType\CustomField
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public $custom_field_6;
     /**
@@ -70,7 +70,7 @@ class MasterPassRequestCustomField extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - nillable: true
-     * @var \StructType\CustomField
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public $custom_field_7;
     /**
@@ -79,7 +79,7 @@ class MasterPassRequestCustomField extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - nillable: true
-     * @var \StructType\CustomField
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public $custom_field_8;
     /**
@@ -88,7 +88,7 @@ class MasterPassRequestCustomField extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - nillable: true
-     * @var \StructType\CustomField
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public $custom_field_9;
     /**
@@ -97,7 +97,7 @@ class MasterPassRequestCustomField extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - nillable: true
-     * @var \StructType\CustomField
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public $custom_field_10;
     /**
@@ -106,7 +106,7 @@ class MasterPassRequestCustomField extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - nillable: true
-     * @var \StructType\CustomField
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public $custom_field_11;
     /**
@@ -115,7 +115,7 @@ class MasterPassRequestCustomField extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - nillable: true
-     * @var \StructType\CustomField
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public $custom_field_12;
     /**
@@ -124,7 +124,7 @@ class MasterPassRequestCustomField extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - nillable: true
-     * @var \StructType\CustomField
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public $custom_field_13;
     /**
@@ -133,7 +133,7 @@ class MasterPassRequestCustomField extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - nillable: true
-     * @var \StructType\CustomField
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public $custom_field_14;
     /**
@@ -142,7 +142,7 @@ class MasterPassRequestCustomField extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - nillable: true
-     * @var \StructType\CustomField
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public $custom_field_15;
     /**
@@ -162,23 +162,23 @@ class MasterPassRequestCustomField extends AbstractStructBase
      * @uses MasterPassRequestCustomField::setCustom_field_13()
      * @uses MasterPassRequestCustomField::setCustom_field_14()
      * @uses MasterPassRequestCustomField::setCustom_field_15()
-     * @param \StructType\CustomField $custom_field_1
-     * @param \StructType\CustomField $custom_field_2
-     * @param \StructType\CustomField $custom_field_3
-     * @param \StructType\CustomField $custom_field_4
-     * @param \StructType\CustomField $custom_field_5
-     * @param \StructType\CustomField $custom_field_6
-     * @param \StructType\CustomField $custom_field_7
-     * @param \StructType\CustomField $custom_field_8
-     * @param \StructType\CustomField $custom_field_9
-     * @param \StructType\CustomField $custom_field_10
-     * @param \StructType\CustomField $custom_field_11
-     * @param \StructType\CustomField $custom_field_12
-     * @param \StructType\CustomField $custom_field_13
-     * @param \StructType\CustomField $custom_field_14
-     * @param \StructType\CustomField $custom_field_15
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_1
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_2
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_3
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_4
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_5
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_6
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_7
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_8
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_9
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_10
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_11
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_12
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_13
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_14
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_15
      */
-    public function __construct(\StructType\CustomField $custom_field_1 = null, \StructType\CustomField $custom_field_2 = null, \StructType\CustomField $custom_field_3 = null, \StructType\CustomField $custom_field_4 = null, \StructType\CustomField $custom_field_5 = null, \StructType\CustomField $custom_field_6 = null, \StructType\CustomField $custom_field_7 = null, \StructType\CustomField $custom_field_8 = null, \StructType\CustomField $custom_field_9 = null, \StructType\CustomField $custom_field_10 = null, \StructType\CustomField $custom_field_11 = null, \StructType\CustomField $custom_field_12 = null, \StructType\CustomField $custom_field_13 = null, \StructType\CustomField $custom_field_14 = null, \StructType\CustomField $custom_field_15 = null)
+    public function __construct(\Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_1 = null, \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_2 = null, \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_3 = null, \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_4 = null, \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_5 = null, \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_6 = null, \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_7 = null, \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_8 = null, \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_9 = null, \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_10 = null, \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_11 = null, \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_12 = null, \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_13 = null, \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_14 = null, \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_15 = null)
     {
         $this
             ->setCustom_field_1($custom_field_1)
@@ -199,7 +199,7 @@ class MasterPassRequestCustomField extends AbstractStructBase
     }
     /**
      * Get custom_field_1 value
-     * @return \StructType\CustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public function getCustom_field_1()
     {
@@ -207,17 +207,17 @@ class MasterPassRequestCustomField extends AbstractStructBase
     }
     /**
      * Set custom_field_1 value
-     * @param \StructType\CustomField $custom_field_1
-     * @return \StructType\MasterPassRequestCustomField
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_1
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassRequestCustomField
      */
-    public function setCustom_field_1(\StructType\CustomField $custom_field_1 = null)
+    public function setCustom_field_1(\Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_1 = null)
     {
         $this->custom_field_1 = $custom_field_1;
         return $this;
     }
     /**
      * Get custom_field_2 value
-     * @return \StructType\CustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public function getCustom_field_2()
     {
@@ -225,17 +225,17 @@ class MasterPassRequestCustomField extends AbstractStructBase
     }
     /**
      * Set custom_field_2 value
-     * @param \StructType\CustomField $custom_field_2
-     * @return \StructType\MasterPassRequestCustomField
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_2
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassRequestCustomField
      */
-    public function setCustom_field_2(\StructType\CustomField $custom_field_2 = null)
+    public function setCustom_field_2(\Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_2 = null)
     {
         $this->custom_field_2 = $custom_field_2;
         return $this;
     }
     /**
      * Get custom_field_3 value
-     * @return \StructType\CustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public function getCustom_field_3()
     {
@@ -243,17 +243,17 @@ class MasterPassRequestCustomField extends AbstractStructBase
     }
     /**
      * Set custom_field_3 value
-     * @param \StructType\CustomField $custom_field_3
-     * @return \StructType\MasterPassRequestCustomField
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_3
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassRequestCustomField
      */
-    public function setCustom_field_3(\StructType\CustomField $custom_field_3 = null)
+    public function setCustom_field_3(\Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_3 = null)
     {
         $this->custom_field_3 = $custom_field_3;
         return $this;
     }
     /**
      * Get custom_field_4 value
-     * @return \StructType\CustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public function getCustom_field_4()
     {
@@ -261,17 +261,17 @@ class MasterPassRequestCustomField extends AbstractStructBase
     }
     /**
      * Set custom_field_4 value
-     * @param \StructType\CustomField $custom_field_4
-     * @return \StructType\MasterPassRequestCustomField
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_4
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassRequestCustomField
      */
-    public function setCustom_field_4(\StructType\CustomField $custom_field_4 = null)
+    public function setCustom_field_4(\Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_4 = null)
     {
         $this->custom_field_4 = $custom_field_4;
         return $this;
     }
     /**
      * Get custom_field_5 value
-     * @return \StructType\CustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public function getCustom_field_5()
     {
@@ -279,17 +279,17 @@ class MasterPassRequestCustomField extends AbstractStructBase
     }
     /**
      * Set custom_field_5 value
-     * @param \StructType\CustomField $custom_field_5
-     * @return \StructType\MasterPassRequestCustomField
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_5
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassRequestCustomField
      */
-    public function setCustom_field_5(\StructType\CustomField $custom_field_5 = null)
+    public function setCustom_field_5(\Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_5 = null)
     {
         $this->custom_field_5 = $custom_field_5;
         return $this;
     }
     /**
      * Get custom_field_6 value
-     * @return \StructType\CustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public function getCustom_field_6()
     {
@@ -297,17 +297,17 @@ class MasterPassRequestCustomField extends AbstractStructBase
     }
     /**
      * Set custom_field_6 value
-     * @param \StructType\CustomField $custom_field_6
-     * @return \StructType\MasterPassRequestCustomField
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_6
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassRequestCustomField
      */
-    public function setCustom_field_6(\StructType\CustomField $custom_field_6 = null)
+    public function setCustom_field_6(\Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_6 = null)
     {
         $this->custom_field_6 = $custom_field_6;
         return $this;
     }
     /**
      * Get custom_field_7 value
-     * @return \StructType\CustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public function getCustom_field_7()
     {
@@ -315,17 +315,17 @@ class MasterPassRequestCustomField extends AbstractStructBase
     }
     /**
      * Set custom_field_7 value
-     * @param \StructType\CustomField $custom_field_7
-     * @return \StructType\MasterPassRequestCustomField
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_7
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassRequestCustomField
      */
-    public function setCustom_field_7(\StructType\CustomField $custom_field_7 = null)
+    public function setCustom_field_7(\Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_7 = null)
     {
         $this->custom_field_7 = $custom_field_7;
         return $this;
     }
     /**
      * Get custom_field_8 value
-     * @return \StructType\CustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public function getCustom_field_8()
     {
@@ -333,17 +333,17 @@ class MasterPassRequestCustomField extends AbstractStructBase
     }
     /**
      * Set custom_field_8 value
-     * @param \StructType\CustomField $custom_field_8
-     * @return \StructType\MasterPassRequestCustomField
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_8
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassRequestCustomField
      */
-    public function setCustom_field_8(\StructType\CustomField $custom_field_8 = null)
+    public function setCustom_field_8(\Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_8 = null)
     {
         $this->custom_field_8 = $custom_field_8;
         return $this;
     }
     /**
      * Get custom_field_9 value
-     * @return \StructType\CustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public function getCustom_field_9()
     {
@@ -351,17 +351,17 @@ class MasterPassRequestCustomField extends AbstractStructBase
     }
     /**
      * Set custom_field_9 value
-     * @param \StructType\CustomField $custom_field_9
-     * @return \StructType\MasterPassRequestCustomField
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_9
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassRequestCustomField
      */
-    public function setCustom_field_9(\StructType\CustomField $custom_field_9 = null)
+    public function setCustom_field_9(\Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_9 = null)
     {
         $this->custom_field_9 = $custom_field_9;
         return $this;
     }
     /**
      * Get custom_field_10 value
-     * @return \StructType\CustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public function getCustom_field_10()
     {
@@ -369,17 +369,17 @@ class MasterPassRequestCustomField extends AbstractStructBase
     }
     /**
      * Set custom_field_10 value
-     * @param \StructType\CustomField $custom_field_10
-     * @return \StructType\MasterPassRequestCustomField
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_10
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassRequestCustomField
      */
-    public function setCustom_field_10(\StructType\CustomField $custom_field_10 = null)
+    public function setCustom_field_10(\Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_10 = null)
     {
         $this->custom_field_10 = $custom_field_10;
         return $this;
     }
     /**
      * Get custom_field_11 value
-     * @return \StructType\CustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public function getCustom_field_11()
     {
@@ -387,17 +387,17 @@ class MasterPassRequestCustomField extends AbstractStructBase
     }
     /**
      * Set custom_field_11 value
-     * @param \StructType\CustomField $custom_field_11
-     * @return \StructType\MasterPassRequestCustomField
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_11
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassRequestCustomField
      */
-    public function setCustom_field_11(\StructType\CustomField $custom_field_11 = null)
+    public function setCustom_field_11(\Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_11 = null)
     {
         $this->custom_field_11 = $custom_field_11;
         return $this;
     }
     /**
      * Get custom_field_12 value
-     * @return \StructType\CustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public function getCustom_field_12()
     {
@@ -405,17 +405,17 @@ class MasterPassRequestCustomField extends AbstractStructBase
     }
     /**
      * Set custom_field_12 value
-     * @param \StructType\CustomField $custom_field_12
-     * @return \StructType\MasterPassRequestCustomField
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_12
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassRequestCustomField
      */
-    public function setCustom_field_12(\StructType\CustomField $custom_field_12 = null)
+    public function setCustom_field_12(\Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_12 = null)
     {
         $this->custom_field_12 = $custom_field_12;
         return $this;
     }
     /**
      * Get custom_field_13 value
-     * @return \StructType\CustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public function getCustom_field_13()
     {
@@ -423,17 +423,17 @@ class MasterPassRequestCustomField extends AbstractStructBase
     }
     /**
      * Set custom_field_13 value
-     * @param \StructType\CustomField $custom_field_13
-     * @return \StructType\MasterPassRequestCustomField
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_13
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassRequestCustomField
      */
-    public function setCustom_field_13(\StructType\CustomField $custom_field_13 = null)
+    public function setCustom_field_13(\Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_13 = null)
     {
         $this->custom_field_13 = $custom_field_13;
         return $this;
     }
     /**
      * Get custom_field_14 value
-     * @return \StructType\CustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public function getCustom_field_14()
     {
@@ -441,17 +441,17 @@ class MasterPassRequestCustomField extends AbstractStructBase
     }
     /**
      * Set custom_field_14 value
-     * @param \StructType\CustomField $custom_field_14
-     * @return \StructType\MasterPassRequestCustomField
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_14
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassRequestCustomField
      */
-    public function setCustom_field_14(\StructType\CustomField $custom_field_14 = null)
+    public function setCustom_field_14(\Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_14 = null)
     {
         $this->custom_field_14 = $custom_field_14;
         return $this;
     }
     /**
      * Get custom_field_15 value
-     * @return \StructType\CustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public function getCustom_field_15()
     {
@@ -459,10 +459,10 @@ class MasterPassRequestCustomField extends AbstractStructBase
     }
     /**
      * Set custom_field_15 value
-     * @param \StructType\CustomField $custom_field_15
-     * @return \StructType\MasterPassRequestCustomField
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_15
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassRequestCustomField
      */
-    public function setCustom_field_15(\StructType\CustomField $custom_field_15 = null)
+    public function setCustom_field_15(\Enesdayanc\MasterpassCommitPurchase\StructType\CustomField $custom_field_15 = null)
     {
         $this->custom_field_15 = $custom_field_15;
         return $this;
@@ -473,7 +473,7 @@ class MasterPassRequestCustomField extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\MasterPassRequestCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassRequestCustomField
      */
     public static function __set_state(array $array)
     {

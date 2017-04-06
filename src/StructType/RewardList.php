@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -52,7 +52,7 @@ class RewardList extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \StructType\RewardList
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RewardList
      */
     public function setName($name = null)
     {
@@ -74,7 +74,7 @@ class RewardList extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \StructType\RewardList
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RewardList
      */
     public function setValue($value = null)
     {
@@ -91,7 +91,7 @@ class RewardList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RewardList
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RewardList
      */
     public static function __set_state(array $array)
     {

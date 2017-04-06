@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -62,7 +62,7 @@ class MerchantFinancialResponseBody extends ResponseBody
     /**
      * Set approval_code value
      * @param string $approval_code
-     * @return \StructType\MerchantFinancialResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MerchantFinancialResponseBody
      */
     public function setApproval_code($approval_code = null)
     {
@@ -84,7 +84,7 @@ class MerchantFinancialResponseBody extends ResponseBody
     /**
      * Set masked_account_no value
      * @param string $masked_account_no
-     * @return \StructType\MerchantFinancialResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MerchantFinancialResponseBody
      */
     public function setMasked_account_no($masked_account_no = null)
     {
@@ -106,7 +106,7 @@ class MerchantFinancialResponseBody extends ResponseBody
     /**
      * Set currency_code value
      * @param string $currency_code
-     * @return \StructType\MerchantFinancialResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MerchantFinancialResponseBody
      */
     public function setCurrency_code($currency_code = null)
     {
@@ -123,7 +123,7 @@ class MerchantFinancialResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\MerchantFinancialResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MerchantFinancialResponseBody
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class MPGAccountResponse extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - nillable: true
-     * @var \StructType\MPGAccountCustomField
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountCustomField
      */
     public $custom_fields;
     /**
      * Constructor method for MPGAccountResponse
      * @uses MPGAccountResponse::setCustom_fields()
-     * @param \StructType\MPGAccountCustomField $custom_fields
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountCustomField $custom_fields
      */
-    public function __construct(\StructType\MPGAccountCustomField $custom_fields = null)
+    public function __construct(\Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountCustomField $custom_fields = null)
     {
         $this
             ->setCustom_fields($custom_fields);
     }
     /**
      * Get custom_fields value
-     * @return \StructType\MPGAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountCustomField
      */
     public function getCustom_fields()
     {
@@ -39,10 +39,10 @@ class MPGAccountResponse extends AbstractStructBase
     }
     /**
      * Set custom_fields value
-     * @param \StructType\MPGAccountCustomField $custom_fields
-     * @return \StructType\MPGAccountResponse
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountCustomField $custom_fields
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountResponse
      */
-    public function setCustom_fields(\StructType\MPGAccountCustomField $custom_fields = null)
+    public function setCustom_fields(\Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountCustomField $custom_fields = null)
     {
         $this->custom_fields = $custom_fields;
         return $this;
@@ -53,7 +53,7 @@ class MPGAccountResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\MPGAccountResponse
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountResponse
      */
     public static function __set_state(array $array)
     {

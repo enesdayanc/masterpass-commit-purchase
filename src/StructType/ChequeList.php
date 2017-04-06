@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -132,7 +132,7 @@ class ChequeList extends AbstractStructBase
     /**
      * Set Type value
      * @param string $type
-     * @return \StructType\ChequeList
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ChequeList
      */
     public function setType($type = null)
     {
@@ -154,7 +154,7 @@ class ChequeList extends AbstractStructBase
     /**
      * Set Amount value
      * @param string $amount
-     * @return \StructType\ChequeList
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ChequeList
      */
     public function setAmount($amount = null)
     {
@@ -176,7 +176,7 @@ class ChequeList extends AbstractStructBase
     /**
      * Set Count value
      * @param string $count
-     * @return \StructType\ChequeList
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ChequeList
      */
     public function setCount($count = null)
     {
@@ -198,7 +198,7 @@ class ChequeList extends AbstractStructBase
     /**
      * Set ID value
      * @param string $iD
-     * @return \StructType\ChequeList
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ChequeList
      */
     public function setID($iD = null)
     {
@@ -220,7 +220,7 @@ class ChequeList extends AbstractStructBase
     /**
      * Set Bitmap value
      * @param string $bitmap
-     * @return \StructType\ChequeList
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ChequeList
      */
     public function setBitmap($bitmap = null)
     {
@@ -242,7 +242,7 @@ class ChequeList extends AbstractStructBase
     /**
      * Set CampaignID value
      * @param string $campaignID
-     * @return \StructType\ChequeList
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ChequeList
      */
     public function setCampaignID($campaignID = null)
     {
@@ -264,7 +264,7 @@ class ChequeList extends AbstractStructBase
     /**
      * Set ExpireDate value
      * @param string $expireDate
-     * @return \StructType\ChequeList
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ChequeList
      */
     public function setExpireDate($expireDate = null)
     {
@@ -286,7 +286,7 @@ class ChequeList extends AbstractStructBase
     /**
      * Set UsageRate value
      * @param string $usageRate
-     * @return \StructType\ChequeList
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ChequeList
      */
     public function setUsageRate($usageRate = null)
     {
@@ -308,7 +308,7 @@ class ChequeList extends AbstractStructBase
     /**
      * Set MinTxnAmount value
      * @param string $minTxnAmount
-     * @return \StructType\ChequeList
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ChequeList
      */
     public function setMinTxnAmount($minTxnAmount = null)
     {
@@ -325,7 +325,7 @@ class ChequeList extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ChequeList
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ChequeList
      */
     public static function __set_state(array $array)
     {

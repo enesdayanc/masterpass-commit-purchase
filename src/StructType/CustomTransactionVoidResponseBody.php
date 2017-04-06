@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -79,7 +79,7 @@ class CustomTransactionVoidResponseBody extends ResponseBody
      * - maxOccurs: 1
      * - minOccurs: 1
      * - nillable: true
-     * @var \StructType\AdditionalFields
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\AdditionalFields
      */
     public $additional_fields;
     /**
@@ -144,14 +144,14 @@ class CustomTransactionVoidResponseBody extends ResponseBody
      * @param string $masked_mobile_account_no
      * @param string $funding_approval_code
      * @param string $payment_approval_code
-     * @param \StructType\AdditionalFields $additional_fields
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\AdditionalFields $additional_fields
      * @param string $trans_date
      * @param string $order_no
      * @param string $currency_code
      * @param int $amount
      * @param string $reconciliation_date
      */
-    public function __construct($approval_code = null, $trans_ref_no = null, $consumer_msisdn = null, $masked_account_no = null, $masked_mobile_account_no = null, $funding_approval_code = null, $payment_approval_code = null, \StructType\AdditionalFields $additional_fields = null, $trans_date = null, $order_no = null, $currency_code = null, $amount = null, $reconciliation_date = null)
+    public function __construct($approval_code = null, $trans_ref_no = null, $consumer_msisdn = null, $masked_account_no = null, $masked_mobile_account_no = null, $funding_approval_code = null, $payment_approval_code = null, \Enesdayanc\MasterpassCommitPurchase\StructType\AdditionalFields $additional_fields = null, $trans_date = null, $order_no = null, $currency_code = null, $amount = null, $reconciliation_date = null)
     {
         $this
             ->setApproval_code($approval_code)
@@ -179,7 +179,7 @@ class CustomTransactionVoidResponseBody extends ResponseBody
     /**
      * Set approval_code value
      * @param string $approval_code
-     * @return \StructType\CustomTransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomTransactionVoidResponseBody
      */
     public function setApproval_code($approval_code = null)
     {
@@ -201,7 +201,7 @@ class CustomTransactionVoidResponseBody extends ResponseBody
     /**
      * Set trans_ref_no value
      * @param string $trans_ref_no
-     * @return \StructType\CustomTransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomTransactionVoidResponseBody
      */
     public function setTrans_ref_no($trans_ref_no = null)
     {
@@ -223,7 +223,7 @@ class CustomTransactionVoidResponseBody extends ResponseBody
     /**
      * Set consumer_msisdn value
      * @param string $consumer_msisdn
-     * @return \StructType\CustomTransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomTransactionVoidResponseBody
      */
     public function setConsumer_msisdn($consumer_msisdn = null)
     {
@@ -245,7 +245,7 @@ class CustomTransactionVoidResponseBody extends ResponseBody
     /**
      * Set masked_account_no value
      * @param string $masked_account_no
-     * @return \StructType\CustomTransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomTransactionVoidResponseBody
      */
     public function setMasked_account_no($masked_account_no = null)
     {
@@ -267,7 +267,7 @@ class CustomTransactionVoidResponseBody extends ResponseBody
     /**
      * Set masked_mobile_account_no value
      * @param string $masked_mobile_account_no
-     * @return \StructType\CustomTransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomTransactionVoidResponseBody
      */
     public function setMasked_mobile_account_no($masked_mobile_account_no = null)
     {
@@ -289,7 +289,7 @@ class CustomTransactionVoidResponseBody extends ResponseBody
     /**
      * Set funding_approval_code value
      * @param string $funding_approval_code
-     * @return \StructType\CustomTransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomTransactionVoidResponseBody
      */
     public function setFunding_approval_code($funding_approval_code = null)
     {
@@ -311,7 +311,7 @@ class CustomTransactionVoidResponseBody extends ResponseBody
     /**
      * Set payment_approval_code value
      * @param string $payment_approval_code
-     * @return \StructType\CustomTransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomTransactionVoidResponseBody
      */
     public function setPayment_approval_code($payment_approval_code = null)
     {
@@ -324,7 +324,7 @@ class CustomTransactionVoidResponseBody extends ResponseBody
     }
     /**
      * Get additional_fields value
-     * @return \StructType\AdditionalFields
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\AdditionalFields
      */
     public function getAdditional_fields()
     {
@@ -332,10 +332,10 @@ class CustomTransactionVoidResponseBody extends ResponseBody
     }
     /**
      * Set additional_fields value
-     * @param \StructType\AdditionalFields $additional_fields
-     * @return \StructType\CustomTransactionVoidResponseBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\AdditionalFields $additional_fields
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomTransactionVoidResponseBody
      */
-    public function setAdditional_fields(\StructType\AdditionalFields $additional_fields = null)
+    public function setAdditional_fields(\Enesdayanc\MasterpassCommitPurchase\StructType\AdditionalFields $additional_fields = null)
     {
         $this->additional_fields = $additional_fields;
         return $this;
@@ -351,7 +351,7 @@ class CustomTransactionVoidResponseBody extends ResponseBody
     /**
      * Set trans_date value
      * @param string $trans_date
-     * @return \StructType\CustomTransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomTransactionVoidResponseBody
      */
     public function setTrans_date($trans_date = null)
     {
@@ -373,7 +373,7 @@ class CustomTransactionVoidResponseBody extends ResponseBody
     /**
      * Set order_no value
      * @param string $order_no
-     * @return \StructType\CustomTransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomTransactionVoidResponseBody
      */
     public function setOrder_no($order_no = null)
     {
@@ -395,7 +395,7 @@ class CustomTransactionVoidResponseBody extends ResponseBody
     /**
      * Set currency_code value
      * @param string $currency_code
-     * @return \StructType\CustomTransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomTransactionVoidResponseBody
      */
     public function setCurrency_code($currency_code = null)
     {
@@ -417,7 +417,7 @@ class CustomTransactionVoidResponseBody extends ResponseBody
     /**
      * Set amount value
      * @param int $amount
-     * @return \StructType\CustomTransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomTransactionVoidResponseBody
      */
     public function setAmount($amount = null)
     {
@@ -439,7 +439,7 @@ class CustomTransactionVoidResponseBody extends ResponseBody
     /**
      * Set reconciliation_date value
      * @param string $reconciliation_date
-     * @return \StructType\CustomTransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomTransactionVoidResponseBody
      */
     public function setReconciliation_date($reconciliation_date = null)
     {
@@ -456,7 +456,7 @@ class CustomTransactionVoidResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CustomTransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomTransactionVoidResponseBody
      */
     public static function __set_state(array $array)
     {

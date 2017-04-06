@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -34,7 +34,7 @@ class DirectPurchaseRequestBody extends BasePurchaseRequestBody
      * - maxOccurs: 1
      * - minOccurs: 1
      * - nillable: true
-     * @var \StructType\AdditionalFields
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\AdditionalFields
      */
     public $additional_fields;
     /**
@@ -62,11 +62,11 @@ class DirectPurchaseRequestBody extends BasePurchaseRequestBody
      * @uses DirectPurchaseRequestBody::setExpiry_date()
      * @param string $rta_cvc2
      * @param string $card_holder_name
-     * @param \StructType\AdditionalFields $additional_fields
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\AdditionalFields $additional_fields
      * @param string $rta_pan
      * @param string $expiry_date
      */
-    public function __construct($rta_cvc2 = null, $card_holder_name = null, \StructType\AdditionalFields $additional_fields = null, $rta_pan = null, $expiry_date = null)
+    public function __construct($rta_cvc2 = null, $card_holder_name = null, \Enesdayanc\MasterpassCommitPurchase\StructType\AdditionalFields $additional_fields = null, $rta_pan = null, $expiry_date = null)
     {
         $this
             ->setRta_cvc2($rta_cvc2)
@@ -86,7 +86,7 @@ class DirectPurchaseRequestBody extends BasePurchaseRequestBody
     /**
      * Set rta_cvc2 value
      * @param string $rta_cvc2
-     * @return \StructType\DirectPurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\DirectPurchaseRequestBody
      */
     public function setRta_cvc2($rta_cvc2 = null)
     {
@@ -108,7 +108,7 @@ class DirectPurchaseRequestBody extends BasePurchaseRequestBody
     /**
      * Set card_holder_name value
      * @param string $card_holder_name
-     * @return \StructType\DirectPurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\DirectPurchaseRequestBody
      */
     public function setCard_holder_name($card_holder_name = null)
     {
@@ -121,7 +121,7 @@ class DirectPurchaseRequestBody extends BasePurchaseRequestBody
     }
     /**
      * Get additional_fields value
-     * @return \StructType\AdditionalFields
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\AdditionalFields
      */
     public function getAdditional_fields()
     {
@@ -129,10 +129,10 @@ class DirectPurchaseRequestBody extends BasePurchaseRequestBody
     }
     /**
      * Set additional_fields value
-     * @param \StructType\AdditionalFields $additional_fields
-     * @return \StructType\DirectPurchaseRequestBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\AdditionalFields $additional_fields
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\DirectPurchaseRequestBody
      */
-    public function setAdditional_fields(\StructType\AdditionalFields $additional_fields = null)
+    public function setAdditional_fields(\Enesdayanc\MasterpassCommitPurchase\StructType\AdditionalFields $additional_fields = null)
     {
         $this->additional_fields = $additional_fields;
         return $this;
@@ -148,7 +148,7 @@ class DirectPurchaseRequestBody extends BasePurchaseRequestBody
     /**
      * Set rta_pan value
      * @param string $rta_pan
-     * @return \StructType\DirectPurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\DirectPurchaseRequestBody
      */
     public function setRta_pan($rta_pan = null)
     {
@@ -170,7 +170,7 @@ class DirectPurchaseRequestBody extends BasePurchaseRequestBody
     /**
      * Set expiry_date value
      * @param string $expiry_date
-     * @return \StructType\DirectPurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\DirectPurchaseRequestBody
      */
     public function setExpiry_date($expiry_date = null)
     {
@@ -187,7 +187,7 @@ class DirectPurchaseRequestBody extends BasePurchaseRequestBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\DirectPurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\DirectPurchaseRequestBody
      */
     public static function __set_state(array $array)
     {

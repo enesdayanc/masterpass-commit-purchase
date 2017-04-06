@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -121,17 +121,17 @@ class RegisterData extends AbstractStructBase
     }
     /**
      * Set action_type value
-     * @uses \EnumType\ActionType::valueIsValid()
-     * @uses \EnumType\ActionType::getValidValues()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\ActionType::valueIsValid()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\ActionType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $action_type
-     * @return \StructType\RegisterData
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RegisterData
      */
     public function setAction_type($action_type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\ActionType::valueIsValid($action_type)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $action_type, implode(', ', \EnumType\ActionType::getValidValues())), __LINE__);
+        if (!\Enesdayanc\MasterpassCommitPurchase\EnumType\ActionType::valueIsValid($action_type)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $action_type, implode(', ', \Enesdayanc\MasterpassCommitPurchase\EnumType\ActionType::getValidValues())), __LINE__);
         }
         $this->action_type = $action_type;
         return $this;
@@ -147,7 +147,7 @@ class RegisterData extends AbstractStructBase
     /**
      * Set account_number value
      * @param string $account_number
-     * @return \StructType\RegisterData
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RegisterData
      */
     public function setAccount_number($account_number = null)
     {
@@ -169,7 +169,7 @@ class RegisterData extends AbstractStructBase
     /**
      * Set first_name value
      * @param string $first_name
-     * @return \StructType\RegisterData
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RegisterData
      */
     public function setFirst_name($first_name = null)
     {
@@ -191,7 +191,7 @@ class RegisterData extends AbstractStructBase
     /**
      * Set middle_initial value
      * @param string $middle_initial
-     * @return \StructType\RegisterData
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RegisterData
      */
     public function setMiddle_initial($middle_initial = null)
     {
@@ -213,7 +213,7 @@ class RegisterData extends AbstractStructBase
     /**
      * Set last_name value
      * @param string $last_name
-     * @return \StructType\RegisterData
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RegisterData
      */
     public function setLast_name($last_name = null)
     {
@@ -235,7 +235,7 @@ class RegisterData extends AbstractStructBase
     /**
      * Set account_alias_name value
      * @param string $account_alias_name
-     * @return \StructType\RegisterData
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RegisterData
      */
     public function setAccount_alias_name($account_alias_name = null)
     {
@@ -257,7 +257,7 @@ class RegisterData extends AbstractStructBase
     /**
      * Set card_holder_name value
      * @param string $card_holder_name
-     * @return \StructType\RegisterData
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RegisterData
      */
     public function setCard_holder_name($card_holder_name = null)
     {
@@ -279,7 +279,7 @@ class RegisterData extends AbstractStructBase
     /**
      * Set msisdn value
      * @param string $msisdn
-     * @return \StructType\RegisterData
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RegisterData
      */
     public function setMsisdn($msisdn = null)
     {
@@ -296,7 +296,7 @@ class RegisterData extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RegisterData
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RegisterData
      */
     public static function __set_state(array $array)
     {

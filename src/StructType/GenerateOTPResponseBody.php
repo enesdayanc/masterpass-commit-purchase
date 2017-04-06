@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class GenerateOTPResponseBody extends ResponseBody
     /**
      * Set OTPMessage value
      * @param string $oTPMessage
-     * @return \StructType\GenerateOTPResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\GenerateOTPResponseBody
      */
     public function setOTPMessage($oTPMessage = null)
     {
@@ -56,7 +56,7 @@ class GenerateOTPResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GenerateOTPResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\GenerateOTPResponseBody
      */
     public static function __set_state(array $array)
     {

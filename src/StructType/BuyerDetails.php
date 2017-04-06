@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -76,7 +76,7 @@ class BuyerDetails extends AbstractStructBase
     /**
      * Set buyer_id value
      * @param string $buyer_id
-     * @return \StructType\BuyerDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BuyerDetails
      */
     public function setBuyer_id($buyer_id = null)
     {
@@ -98,7 +98,7 @@ class BuyerDetails extends AbstractStructBase
     /**
      * Set identity_number value
      * @param string $identity_number
-     * @return \StructType\BuyerDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BuyerDetails
      */
     public function setIdentity_number($identity_number = null)
     {
@@ -120,7 +120,7 @@ class BuyerDetails extends AbstractStructBase
     /**
      * Set last_login_date value
      * @param string $last_login_date
-     * @return \StructType\BuyerDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BuyerDetails
      */
     public function setLast_login_date($last_login_date = null)
     {
@@ -142,7 +142,7 @@ class BuyerDetails extends AbstractStructBase
     /**
      * Set registration_date value
      * @param string $registration_date
-     * @return \StructType\BuyerDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BuyerDetails
      */
     public function setRegistration_date($registration_date = null)
     {
@@ -159,7 +159,7 @@ class BuyerDetails extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BuyerDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BuyerDetails
      */
     public static function __set_state(array $array)
     {

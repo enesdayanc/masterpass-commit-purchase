@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -83,7 +83,7 @@ class DirectPurchaseResponseBody3DAuth extends ConsumerFinancialResponseBody
     /**
      * Set post_data value
      * @param string $post_data
-     * @return \StructType\DirectPurchaseResponseBody3DAuth
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\DirectPurchaseResponseBody3DAuth
      */
     public function setPost_data($post_data = null)
     {
@@ -105,7 +105,7 @@ class DirectPurchaseResponseBody3DAuth extends ConsumerFinancialResponseBody
     /**
      * Set merchant_name value
      * @param string $merchant_name
-     * @return \StructType\DirectPurchaseResponseBody3DAuth
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\DirectPurchaseResponseBody3DAuth
      */
     public function setMerchant_name($merchant_name = null)
     {
@@ -127,7 +127,7 @@ class DirectPurchaseResponseBody3DAuth extends ConsumerFinancialResponseBody
     /**
      * Set reconciliation_date value
      * @param string $reconciliation_date
-     * @return \StructType\DirectPurchaseResponseBody3DAuth
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\DirectPurchaseResponseBody3DAuth
      */
     public function setReconciliation_date($reconciliation_date = null)
     {
@@ -149,7 +149,7 @@ class DirectPurchaseResponseBody3DAuth extends ConsumerFinancialResponseBody
     /**
      * Set masked_sender_rta value
      * @param string $masked_sender_rta
-     * @return \StructType\DirectPurchaseResponseBody3DAuth
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\DirectPurchaseResponseBody3DAuth
      */
     public function setMasked_sender_rta($masked_sender_rta = null)
     {
@@ -171,7 +171,7 @@ class DirectPurchaseResponseBody3DAuth extends ConsumerFinancialResponseBody
     /**
      * Set requestOrderId value
      * @param string $requestOrderId
-     * @return \StructType\DirectPurchaseResponseBody3DAuth
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\DirectPurchaseResponseBody3DAuth
      */
     public function setRequestOrderId($requestOrderId = null)
     {
@@ -188,7 +188,7 @@ class DirectPurchaseResponseBody3DAuth extends ConsumerFinancialResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\DirectPurchaseResponseBody3DAuth
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\DirectPurchaseResponseBody3DAuth
      */
     public static function __set_state(array $array)
     {

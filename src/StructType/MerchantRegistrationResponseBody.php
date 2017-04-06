@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -63,7 +63,7 @@ class MerchantRegistrationResponseBody extends ResponseBody
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\CustomFields
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\CustomFields
      */
     public $custom_fields;
     /**
@@ -81,9 +81,9 @@ class MerchantRegistrationResponseBody extends ResponseBody
      * @param string $macro_merchant_id
      * @param string $merchant_id_alias
      * @param string $acquirer_ica
-     * @param \StructType\CustomFields $custom_fields
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomFields $custom_fields
      */
-    public function __construct($registration_response_desc = null, $merchant_id = null, $biller_code = null, $macro_merchant_id = null, $merchant_id_alias = null, $acquirer_ica = null, \StructType\CustomFields $custom_fields = null)
+    public function __construct($registration_response_desc = null, $merchant_id = null, $biller_code = null, $macro_merchant_id = null, $merchant_id_alias = null, $acquirer_ica = null, \Enesdayanc\MasterpassCommitPurchase\StructType\CustomFields $custom_fields = null)
     {
         $this
             ->setRegistration_response_desc($registration_response_desc)
@@ -105,7 +105,7 @@ class MerchantRegistrationResponseBody extends ResponseBody
     /**
      * Set registration_response_desc value
      * @param string $registration_response_desc
-     * @return \StructType\MerchantRegistrationResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MerchantRegistrationResponseBody
      */
     public function setRegistration_response_desc($registration_response_desc = null)
     {
@@ -127,7 +127,7 @@ class MerchantRegistrationResponseBody extends ResponseBody
     /**
      * Set merchant_id value
      * @param string $merchant_id
-     * @return \StructType\MerchantRegistrationResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MerchantRegistrationResponseBody
      */
     public function setMerchant_id($merchant_id = null)
     {
@@ -149,7 +149,7 @@ class MerchantRegistrationResponseBody extends ResponseBody
     /**
      * Set biller_code value
      * @param string $biller_code
-     * @return \StructType\MerchantRegistrationResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MerchantRegistrationResponseBody
      */
     public function setBiller_code($biller_code = null)
     {
@@ -171,7 +171,7 @@ class MerchantRegistrationResponseBody extends ResponseBody
     /**
      * Set macro_merchant_id value
      * @param string $macro_merchant_id
-     * @return \StructType\MerchantRegistrationResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MerchantRegistrationResponseBody
      */
     public function setMacro_merchant_id($macro_merchant_id = null)
     {
@@ -193,7 +193,7 @@ class MerchantRegistrationResponseBody extends ResponseBody
     /**
      * Set merchant_id_alias value
      * @param string $merchant_id_alias
-     * @return \StructType\MerchantRegistrationResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MerchantRegistrationResponseBody
      */
     public function setMerchant_id_alias($merchant_id_alias = null)
     {
@@ -215,7 +215,7 @@ class MerchantRegistrationResponseBody extends ResponseBody
     /**
      * Set acquirer_ica value
      * @param string $acquirer_ica
-     * @return \StructType\MerchantRegistrationResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MerchantRegistrationResponseBody
      */
     public function setAcquirer_ica($acquirer_ica = null)
     {
@@ -228,7 +228,7 @@ class MerchantRegistrationResponseBody extends ResponseBody
     }
     /**
      * Get custom_fields value
-     * @return \StructType\CustomFields|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomFields|null
      */
     public function getCustom_fields()
     {
@@ -236,10 +236,10 @@ class MerchantRegistrationResponseBody extends ResponseBody
     }
     /**
      * Set custom_fields value
-     * @param \StructType\CustomFields $custom_fields
-     * @return \StructType\MerchantRegistrationResponseBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomFields $custom_fields
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MerchantRegistrationResponseBody
      */
-    public function setCustom_fields(\StructType\CustomFields $custom_fields = null)
+    public function setCustom_fields(\Enesdayanc\MasterpassCommitPurchase\StructType\CustomFields $custom_fields = null)
     {
         $this->custom_fields = $custom_fields;
         return $this;
@@ -250,7 +250,7 @@ class MerchantRegistrationResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\MerchantRegistrationResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MerchantRegistrationResponseBody
      */
     public static function __set_state(array $array)
     {

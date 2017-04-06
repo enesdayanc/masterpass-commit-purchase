@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -17,7 +17,7 @@ class CustomCommitPurchaseRequest extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\RequestHeader
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\RequestHeader
      */
     public $transaction_header;
     /**
@@ -25,17 +25,17 @@ class CustomCommitPurchaseRequest extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\CustomCommitPurchaseRequestBody
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\CustomCommitPurchaseRequestBody
      */
     public $transaction_body;
     /**
      * Constructor method for CustomCommitPurchaseRequest
      * @uses CustomCommitPurchaseRequest::setTransaction_header()
      * @uses CustomCommitPurchaseRequest::setTransaction_body()
-     * @param \StructType\RequestHeader $transaction_header
-     * @param \StructType\CustomCommitPurchaseRequestBody $transaction_body
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\RequestHeader $transaction_header
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomCommitPurchaseRequestBody $transaction_body
      */
-    public function __construct(\StructType\RequestHeader $transaction_header = null, \StructType\CustomCommitPurchaseRequestBody $transaction_body = null)
+    public function __construct(\Enesdayanc\MasterpassCommitPurchase\StructType\RequestHeader $transaction_header = null, \Enesdayanc\MasterpassCommitPurchase\StructType\CustomCommitPurchaseRequestBody $transaction_body = null)
     {
         $this
             ->setTransaction_header($transaction_header)
@@ -43,7 +43,7 @@ class CustomCommitPurchaseRequest extends AbstractStructBase
     }
     /**
      * Get transaction_header value
-     * @return \StructType\RequestHeader|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RequestHeader|null
      */
     public function getTransaction_header()
     {
@@ -51,17 +51,17 @@ class CustomCommitPurchaseRequest extends AbstractStructBase
     }
     /**
      * Set transaction_header value
-     * @param \StructType\RequestHeader $transaction_header
-     * @return \StructType\CustomCommitPurchaseRequest
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\RequestHeader $transaction_header
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomCommitPurchaseRequest
      */
-    public function setTransaction_header(\StructType\RequestHeader $transaction_header = null)
+    public function setTransaction_header(\Enesdayanc\MasterpassCommitPurchase\StructType\RequestHeader $transaction_header = null)
     {
         $this->transaction_header = $transaction_header;
         return $this;
     }
     /**
      * Get transaction_body value
-     * @return \StructType\CustomCommitPurchaseRequestBody|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomCommitPurchaseRequestBody|null
      */
     public function getTransaction_body()
     {
@@ -69,10 +69,10 @@ class CustomCommitPurchaseRequest extends AbstractStructBase
     }
     /**
      * Set transaction_body value
-     * @param \StructType\CustomCommitPurchaseRequestBody $transaction_body
-     * @return \StructType\CustomCommitPurchaseRequest
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomCommitPurchaseRequestBody $transaction_body
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomCommitPurchaseRequest
      */
-    public function setTransaction_body(\StructType\CustomCommitPurchaseRequestBody $transaction_body = null)
+    public function setTransaction_body(\Enesdayanc\MasterpassCommitPurchase\StructType\CustomCommitPurchaseRequestBody $transaction_body = null)
     {
         $this->transaction_body = $transaction_body;
         return $this;
@@ -83,7 +83,7 @@ class CustomCommitPurchaseRequest extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CustomCommitPurchaseRequest
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomCommitPurchaseRequest
      */
     public static function __set_state(array $array)
     {

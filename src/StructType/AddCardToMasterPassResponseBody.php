@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class AddCardToMasterPassResponseBody extends ResponseBody
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\MasterPassResponseCustomField
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassResponseCustomField
      */
     public $masterpass_card;
     /**
      * Constructor method for AddCardToMasterPassResponseBody
      * @uses AddCardToMasterPassResponseBody::setMasterpass_card()
-     * @param \StructType\MasterPassResponseCustomField $masterpass_card
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassResponseCustomField $masterpass_card
      */
-    public function __construct(\StructType\MasterPassResponseCustomField $masterpass_card = null)
+    public function __construct(\Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassResponseCustomField $masterpass_card = null)
     {
         $this
             ->setMasterpass_card($masterpass_card);
     }
     /**
      * Get masterpass_card value
-     * @return \StructType\MasterPassResponseCustomField|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassResponseCustomField|null
      */
     public function getMasterpass_card()
     {
@@ -38,10 +38,10 @@ class AddCardToMasterPassResponseBody extends ResponseBody
     }
     /**
      * Set masterpass_card value
-     * @param \StructType\MasterPassResponseCustomField $masterpass_card
-     * @return \StructType\AddCardToMasterPassResponseBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassResponseCustomField $masterpass_card
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\AddCardToMasterPassResponseBody
      */
-    public function setMasterpass_card(\StructType\MasterPassResponseCustomField $masterpass_card = null)
+    public function setMasterpass_card(\Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassResponseCustomField $masterpass_card = null)
     {
         $this->masterpass_card = $masterpass_card;
         return $this;
@@ -52,7 +52,7 @@ class AddCardToMasterPassResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AddCardToMasterPassResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\AddCardToMasterPassResponseBody
      */
     public static function __set_state(array $array)
     {

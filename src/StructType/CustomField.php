@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -44,7 +44,7 @@ class CustomField extends AbstractStructBase
     /**
      * Set name value
      * @param string $name
-     * @return \StructType\CustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public function setName($name = null)
     {
@@ -66,7 +66,7 @@ class CustomField extends AbstractStructBase
     /**
      * Set value value
      * @param string $value
-     * @return \StructType\CustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public function setValue($value = null)
     {
@@ -83,7 +83,7 @@ class CustomField extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomField
      */
     public static function __set_state(array $array)
     {

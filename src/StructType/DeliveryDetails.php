@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -160,7 +160,7 @@ class DeliveryDetails extends AbstractStructBase
     /**
      * Set delivery_last_name value
      * @param string $delivery_last_name
-     * @return \StructType\DeliveryDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\DeliveryDetails
      */
     public function setDelivery_last_name($delivery_last_name = null)
     {
@@ -182,7 +182,7 @@ class DeliveryDetails extends AbstractStructBase
     /**
      * Set delivery_first_name value
      * @param string $delivery_first_name
-     * @return \StructType\DeliveryDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\DeliveryDetails
      */
     public function setDelivery_first_name($delivery_first_name = null)
     {
@@ -204,7 +204,7 @@ class DeliveryDetails extends AbstractStructBase
     /**
      * Set delivery_email value
      * @param string $delivery_email
-     * @return \StructType\DeliveryDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\DeliveryDetails
      */
     public function setDelivery_email($delivery_email = null)
     {
@@ -226,7 +226,7 @@ class DeliveryDetails extends AbstractStructBase
     /**
      * Set delivery_phone value
      * @param string $delivery_phone
-     * @return \StructType\DeliveryDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\DeliveryDetails
      */
     public function setDelivery_phone($delivery_phone = null)
     {
@@ -248,7 +248,7 @@ class DeliveryDetails extends AbstractStructBase
     /**
      * Set delivery_company value
      * @param string $delivery_company
-     * @return \StructType\DeliveryDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\DeliveryDetails
      */
     public function setDelivery_company($delivery_company = null)
     {
@@ -270,7 +270,7 @@ class DeliveryDetails extends AbstractStructBase
     /**
      * Set delivery_address value
      * @param string $delivery_address
-     * @return \StructType\DeliveryDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\DeliveryDetails
      */
     public function setDelivery_address($delivery_address = null)
     {
@@ -292,7 +292,7 @@ class DeliveryDetails extends AbstractStructBase
     /**
      * Set delivery_address2 value
      * @param string $delivery_address2
-     * @return \StructType\DeliveryDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\DeliveryDetails
      */
     public function setDelivery_address2($delivery_address2 = null)
     {
@@ -314,7 +314,7 @@ class DeliveryDetails extends AbstractStructBase
     /**
      * Set delivery_zip_code value
      * @param string $delivery_zip_code
-     * @return \StructType\DeliveryDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\DeliveryDetails
      */
     public function setDelivery_zip_code($delivery_zip_code = null)
     {
@@ -336,7 +336,7 @@ class DeliveryDetails extends AbstractStructBase
     /**
      * Set delivery_city value
      * @param string $delivery_city
-     * @return \StructType\DeliveryDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\DeliveryDetails
      */
     public function setDelivery_city($delivery_city = null)
     {
@@ -358,7 +358,7 @@ class DeliveryDetails extends AbstractStructBase
     /**
      * Set delivery_state value
      * @param string $delivery_state
-     * @return \StructType\DeliveryDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\DeliveryDetails
      */
     public function setDelivery_state($delivery_state = null)
     {
@@ -379,17 +379,17 @@ class DeliveryDetails extends AbstractStructBase
     }
     /**
      * Set delivery_country_code value
-     * @uses \EnumType\ISOCountryCodeType::valueIsValid()
-     * @uses \EnumType\ISOCountryCodeType::getValidValues()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\ISOCountryCodeType::valueIsValid()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\ISOCountryCodeType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $delivery_country_code
-     * @return \StructType\DeliveryDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\DeliveryDetails
      */
     public function setDelivery_country_code($delivery_country_code = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\ISOCountryCodeType::valueIsValid($delivery_country_code)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $delivery_country_code, implode(', ', \EnumType\ISOCountryCodeType::getValidValues())), __LINE__);
+        if (!\Enesdayanc\MasterpassCommitPurchase\EnumType\ISOCountryCodeType::valueIsValid($delivery_country_code)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $delivery_country_code, implode(', ', \Enesdayanc\MasterpassCommitPurchase\EnumType\ISOCountryCodeType::getValidValues())), __LINE__);
         }
         $this->delivery_country_code = $delivery_country_code;
         return $this;
@@ -400,7 +400,7 @@ class DeliveryDetails extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\DeliveryDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\DeliveryDetails
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -24,7 +24,7 @@ class ConsumerAccountSearchResponseBody extends ResponseBody
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\ConsumerAccount[]
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerAccount[]
      */
     public $consumer_accounts;
     /**
@@ -32,7 +32,7 @@ class ConsumerAccountSearchResponseBody extends ResponseBody
      * @uses ConsumerAccountSearchResponseBody::setResponse_code()
      * @uses ConsumerAccountSearchResponseBody::setConsumer_accounts()
      * @param string $response_code
-     * @param \StructType\ConsumerAccount[] $consumer_accounts
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerAccount[] $consumer_accounts
      */
     public function __construct($response_code = null, array $consumer_accounts = array())
     {
@@ -51,7 +51,7 @@ class ConsumerAccountSearchResponseBody extends ResponseBody
     /**
      * Set response_code value
      * @param string $response_code
-     * @return \StructType\ConsumerAccountSearchResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerAccountSearchResponseBody
      */
     public function setResponse_code($response_code = null)
     {
@@ -67,7 +67,7 @@ class ConsumerAccountSearchResponseBody extends ResponseBody
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\ConsumerAccount[]|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerAccount[]|null
      */
     public function getConsumer_accounts()
     {
@@ -78,15 +78,15 @@ class ConsumerAccountSearchResponseBody extends ResponseBody
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\ConsumerAccount[] $consumer_accounts
-     * @return \StructType\ConsumerAccountSearchResponseBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerAccount[] $consumer_accounts
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerAccountSearchResponseBody
      */
     public function setConsumer_accounts(array $consumer_accounts = array())
     {
         foreach ($consumer_accounts as $consumerAccountSearchResponseBodyConsumer_accountsItem) {
             // validation for constraint: itemType
-            if (!$consumerAccountSearchResponseBodyConsumer_accountsItem instanceof \StructType\ConsumerAccount) {
-                throw new \InvalidArgumentException(sprintf('The consumer_accounts property can only contain items of \StructType\ConsumerAccount, "%s" given', is_object($consumerAccountSearchResponseBodyConsumer_accountsItem) ? get_class($consumerAccountSearchResponseBodyConsumer_accountsItem) : gettype($consumerAccountSearchResponseBodyConsumer_accountsItem)), __LINE__);
+            if (!$consumerAccountSearchResponseBodyConsumer_accountsItem instanceof \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerAccount) {
+                throw new \InvalidArgumentException(sprintf('The consumer_accounts property can only contain items of \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerAccount, "%s" given', is_object($consumerAccountSearchResponseBodyConsumer_accountsItem) ? get_class($consumerAccountSearchResponseBodyConsumer_accountsItem) : gettype($consumerAccountSearchResponseBodyConsumer_accountsItem)), __LINE__);
             }
         }
         if (is_null($consumer_accounts) || (is_array($consumer_accounts) && empty($consumer_accounts))) {
@@ -99,14 +99,14 @@ class ConsumerAccountSearchResponseBody extends ResponseBody
     /**
      * Add item to consumer_accounts value
      * @throws \InvalidArgumentException
-     * @param \StructType\ConsumerAccount $item
-     * @return \StructType\ConsumerAccountSearchResponseBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerAccount $item
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerAccountSearchResponseBody
      */
-    public function addToConsumer_accounts(\StructType\ConsumerAccount $item)
+    public function addToConsumer_accounts(\Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerAccount $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ConsumerAccount) {
-            throw new \InvalidArgumentException(sprintf('The consumer_accounts property can only contain items of \StructType\ConsumerAccount, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerAccount) {
+            throw new \InvalidArgumentException(sprintf('The consumer_accounts property can only contain items of \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerAccount, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->consumer_accounts[] = $item;
         return $this;
@@ -117,7 +117,7 @@ class ConsumerAccountSearchResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ConsumerAccountSearchResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerAccountSearchResponseBody
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class CustomCommitPurchaseResponse extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\CustomCommitPurchaseResult
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\CustomCommitPurchaseResult
      */
     public $CustomCommitPurchaseResult;
     /**
      * Constructor method for CustomCommitPurchaseResponse
      * @uses CustomCommitPurchaseResponse::setCustomCommitPurchaseResult()
-     * @param \StructType\CustomCommitPurchaseResult $customCommitPurchaseResult
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomCommitPurchaseResult $customCommitPurchaseResult
      */
-    public function __construct(\StructType\CustomCommitPurchaseResult $customCommitPurchaseResult = null)
+    public function __construct(\Enesdayanc\MasterpassCommitPurchase\StructType\CustomCommitPurchaseResult $customCommitPurchaseResult = null)
     {
         $this
             ->setCustomCommitPurchaseResult($customCommitPurchaseResult);
     }
     /**
      * Get CustomCommitPurchaseResult value
-     * @return \StructType\CustomCommitPurchaseResult|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomCommitPurchaseResult|null
      */
     public function getCustomCommitPurchaseResult()
     {
@@ -38,10 +38,10 @@ class CustomCommitPurchaseResponse extends AbstractStructBase
     }
     /**
      * Set CustomCommitPurchaseResult value
-     * @param \StructType\CustomCommitPurchaseResult $customCommitPurchaseResult
-     * @return \StructType\CustomCommitPurchaseResponse
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CustomCommitPurchaseResult $customCommitPurchaseResult
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomCommitPurchaseResponse
      */
-    public function setCustomCommitPurchaseResult(\StructType\CustomCommitPurchaseResult $customCommitPurchaseResult = null)
+    public function setCustomCommitPurchaseResult(\Enesdayanc\MasterpassCommitPurchase\StructType\CustomCommitPurchaseResult $customCommitPurchaseResult = null)
     {
         $this->CustomCommitPurchaseResult = $customCommitPurchaseResult;
         return $this;
@@ -52,7 +52,7 @@ class CustomCommitPurchaseResponse extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CustomCommitPurchaseResponse
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomCommitPurchaseResponse
      */
     public static function __set_state(array $array)
     {

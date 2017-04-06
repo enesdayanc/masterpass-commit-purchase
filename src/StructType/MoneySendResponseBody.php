@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -189,7 +189,7 @@ class MoneySendResponseBody extends ResponseBody
     /**
      * Set funding_approval_code value
      * @param string $funding_approval_code
-     * @return \StructType\MoneySendResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MoneySendResponseBody
      */
     public function setFunding_approval_code($funding_approval_code = null)
     {
@@ -211,7 +211,7 @@ class MoneySendResponseBody extends ResponseBody
     /**
      * Set payment_approval_code value
      * @param string $payment_approval_code
-     * @return \StructType\MoneySendResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MoneySendResponseBody
      */
     public function setPayment_approval_code($payment_approval_code = null)
     {
@@ -233,7 +233,7 @@ class MoneySendResponseBody extends ResponseBody
     /**
      * Set reserved_field_1 value
      * @param string $reserved_field_1
-     * @return \StructType\MoneySendResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MoneySendResponseBody
      */
     public function setReserved_field_1($reserved_field_1 = null)
     {
@@ -255,7 +255,7 @@ class MoneySendResponseBody extends ResponseBody
     /**
      * Set reserved_field_2 value
      * @param string $reserved_field_2
-     * @return \StructType\MoneySendResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MoneySendResponseBody
      */
     public function setReserved_field_2($reserved_field_2 = null)
     {
@@ -277,7 +277,7 @@ class MoneySendResponseBody extends ResponseBody
     /**
      * Set reserved_field_3 value
      * @param string $reserved_field_3
-     * @return \StructType\MoneySendResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MoneySendResponseBody
      */
     public function setReserved_field_3($reserved_field_3 = null)
     {
@@ -299,7 +299,7 @@ class MoneySendResponseBody extends ResponseBody
     /**
      * Set reserved_field_4 value
      * @param string $reserved_field_4
-     * @return \StructType\MoneySendResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MoneySendResponseBody
      */
     public function setReserved_field_4($reserved_field_4 = null)
     {
@@ -321,7 +321,7 @@ class MoneySendResponseBody extends ResponseBody
     /**
      * Set masked_sender_account_no value
      * @param string $masked_sender_account_no
-     * @return \StructType\MoneySendResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MoneySendResponseBody
      */
     public function setMasked_sender_account_no($masked_sender_account_no = null)
     {
@@ -343,7 +343,7 @@ class MoneySendResponseBody extends ResponseBody
     /**
      * Set masked_rcpnt_account_no value
      * @param string $masked_rcpnt_account_no
-     * @return \StructType\MoneySendResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MoneySendResponseBody
      */
     public function setMasked_rcpnt_account_no($masked_rcpnt_account_no = null)
     {
@@ -365,7 +365,7 @@ class MoneySendResponseBody extends ResponseBody
     /**
      * Set currency_code value
      * @param string $currency_code
-     * @return \StructType\MoneySendResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MoneySendResponseBody
      */
     public function setCurrency_code($currency_code = null)
     {
@@ -392,7 +392,7 @@ class MoneySendResponseBody extends ResponseBody
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $avail_bal_amount
-     * @return \StructType\MoneySendResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MoneySendResponseBody
      */
     public function setAvail_bal_amount($avail_bal_amount = null)
     {
@@ -414,7 +414,7 @@ class MoneySendResponseBody extends ResponseBody
     /**
      * Set reconciliation_date value
      * @param string $reconciliation_date
-     * @return \StructType\MoneySendResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MoneySendResponseBody
      */
     public function setReconciliation_date($reconciliation_date = null)
     {
@@ -436,7 +436,7 @@ class MoneySendResponseBody extends ResponseBody
     /**
      * Set transaction_fee_1 value
      * @param float $transaction_fee_1
-     * @return \StructType\MoneySendResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MoneySendResponseBody
      */
     public function setTransaction_fee_1($transaction_fee_1 = null)
     {
@@ -454,7 +454,7 @@ class MoneySendResponseBody extends ResponseBody
     /**
      * Set transaction_fee_2 value
      * @param float $transaction_fee_2
-     * @return \StructType\MoneySendResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MoneySendResponseBody
      */
     public function setTransaction_fee_2($transaction_fee_2 = null)
     {
@@ -472,7 +472,7 @@ class MoneySendResponseBody extends ResponseBody
     /**
      * Set transaction_fee_3 value
      * @param float $transaction_fee_3
-     * @return \StructType\MoneySendResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MoneySendResponseBody
      */
     public function setTransaction_fee_3($transaction_fee_3 = null)
     {
@@ -485,7 +485,7 @@ class MoneySendResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\MoneySendResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MoneySendResponseBody
      */
     public static function __set_state(array $array)
     {

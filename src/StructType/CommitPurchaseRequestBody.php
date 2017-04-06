@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class CommitPurchaseRequestBody extends BasePurchaseRequestBody
      * - maxOccurs: 1
      * - minOccurs: 1
      * - nillable: true
-     * @var \StructType\MasterPassRequestCustomField
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassRequestCustomField
      */
     public $custom_fields;
     /**
@@ -40,7 +40,7 @@ class CommitPurchaseRequestBody extends BasePurchaseRequestBody
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\OrderDetails
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\OrderDetails
      */
     public $order_details;
     /**
@@ -48,7 +48,7 @@ class CommitPurchaseRequestBody extends BasePurchaseRequestBody
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\BillDetails
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\BillDetails
      */
     public $bill_details;
     /**
@@ -56,7 +56,7 @@ class CommitPurchaseRequestBody extends BasePurchaseRequestBody
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\DeliveryDetails
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\DeliveryDetails
      */
     public $delivery_details;
     /**
@@ -64,7 +64,7 @@ class CommitPurchaseRequestBody extends BasePurchaseRequestBody
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\BuyerDetails
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\BuyerDetails
      */
     public $buyer_details;
     /**
@@ -72,7 +72,7 @@ class CommitPurchaseRequestBody extends BasePurchaseRequestBody
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\AntiFraudDetails
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\AntiFraudDetails
      */
     public $anti_fraud_details;
     /**
@@ -80,7 +80,7 @@ class CommitPurchaseRequestBody extends BasePurchaseRequestBody
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\OtherDetails
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\OtherDetails
      */
     public $other_details;
     /**
@@ -94,17 +94,17 @@ class CommitPurchaseRequestBody extends BasePurchaseRequestBody
      * @uses CommitPurchaseRequestBody::setBuyer_details()
      * @uses CommitPurchaseRequestBody::setAnti_fraud_details()
      * @uses CommitPurchaseRequestBody::setOther_details()
-     * @param \StructType\MasterPassRequestCustomField $custom_fields
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassRequestCustomField $custom_fields
      * @param string $token
      * @param string $msisdn
-     * @param \StructType\OrderDetails $order_details
-     * @param \StructType\BillDetails $bill_details
-     * @param \StructType\DeliveryDetails $delivery_details
-     * @param \StructType\BuyerDetails $buyer_details
-     * @param \StructType\AntiFraudDetails $anti_fraud_details
-     * @param \StructType\OtherDetails $other_details
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\OrderDetails $order_details
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\BillDetails $bill_details
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\DeliveryDetails $delivery_details
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\BuyerDetails $buyer_details
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\AntiFraudDetails $anti_fraud_details
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\OtherDetails $other_details
      */
-    public function __construct(\StructType\MasterPassRequestCustomField $custom_fields = null, $token = null, $msisdn = null, \StructType\OrderDetails $order_details = null, \StructType\BillDetails $bill_details = null, \StructType\DeliveryDetails $delivery_details = null, \StructType\BuyerDetails $buyer_details = null, \StructType\AntiFraudDetails $anti_fraud_details = null, \StructType\OtherDetails $other_details = null)
+    public function __construct(\Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassRequestCustomField $custom_fields = null, $token = null, $msisdn = null, \Enesdayanc\MasterpassCommitPurchase\StructType\OrderDetails $order_details = null, \Enesdayanc\MasterpassCommitPurchase\StructType\BillDetails $bill_details = null, \Enesdayanc\MasterpassCommitPurchase\StructType\DeliveryDetails $delivery_details = null, \Enesdayanc\MasterpassCommitPurchase\StructType\BuyerDetails $buyer_details = null, \Enesdayanc\MasterpassCommitPurchase\StructType\AntiFraudDetails $anti_fraud_details = null, \Enesdayanc\MasterpassCommitPurchase\StructType\OtherDetails $other_details = null)
     {
         $this
             ->setCustom_fields($custom_fields)
@@ -119,7 +119,7 @@ class CommitPurchaseRequestBody extends BasePurchaseRequestBody
     }
     /**
      * Get custom_fields value
-     * @return \StructType\MasterPassRequestCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassRequestCustomField
      */
     public function getCustom_fields()
     {
@@ -127,10 +127,10 @@ class CommitPurchaseRequestBody extends BasePurchaseRequestBody
     }
     /**
      * Set custom_fields value
-     * @param \StructType\MasterPassRequestCustomField $custom_fields
-     * @return \StructType\CommitPurchaseRequestBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassRequestCustomField $custom_fields
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CommitPurchaseRequestBody
      */
-    public function setCustom_fields(\StructType\MasterPassRequestCustomField $custom_fields = null)
+    public function setCustom_fields(\Enesdayanc\MasterpassCommitPurchase\StructType\MasterPassRequestCustomField $custom_fields = null)
     {
         $this->custom_fields = $custom_fields;
         return $this;
@@ -146,7 +146,7 @@ class CommitPurchaseRequestBody extends BasePurchaseRequestBody
     /**
      * Set token value
      * @param string $token
-     * @return \StructType\CommitPurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CommitPurchaseRequestBody
      */
     public function setToken($token = null)
     {
@@ -168,7 +168,7 @@ class CommitPurchaseRequestBody extends BasePurchaseRequestBody
     /**
      * Set msisdn value
      * @param string $msisdn
-     * @return \StructType\CommitPurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CommitPurchaseRequestBody
      */
     public function setMsisdn($msisdn = null)
     {
@@ -181,7 +181,7 @@ class CommitPurchaseRequestBody extends BasePurchaseRequestBody
     }
     /**
      * Get order_details value
-     * @return \StructType\OrderDetails|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderDetails|null
      */
     public function getOrder_details()
     {
@@ -189,17 +189,17 @@ class CommitPurchaseRequestBody extends BasePurchaseRequestBody
     }
     /**
      * Set order_details value
-     * @param \StructType\OrderDetails $order_details
-     * @return \StructType\CommitPurchaseRequestBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\OrderDetails $order_details
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CommitPurchaseRequestBody
      */
-    public function setOrder_details(\StructType\OrderDetails $order_details = null)
+    public function setOrder_details(\Enesdayanc\MasterpassCommitPurchase\StructType\OrderDetails $order_details = null)
     {
         $this->order_details = $order_details;
         return $this;
     }
     /**
      * Get bill_details value
-     * @return \StructType\BillDetails|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BillDetails|null
      */
     public function getBill_details()
     {
@@ -207,17 +207,17 @@ class CommitPurchaseRequestBody extends BasePurchaseRequestBody
     }
     /**
      * Set bill_details value
-     * @param \StructType\BillDetails $bill_details
-     * @return \StructType\CommitPurchaseRequestBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\BillDetails $bill_details
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CommitPurchaseRequestBody
      */
-    public function setBill_details(\StructType\BillDetails $bill_details = null)
+    public function setBill_details(\Enesdayanc\MasterpassCommitPurchase\StructType\BillDetails $bill_details = null)
     {
         $this->bill_details = $bill_details;
         return $this;
     }
     /**
      * Get delivery_details value
-     * @return \StructType\DeliveryDetails|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\DeliveryDetails|null
      */
     public function getDelivery_details()
     {
@@ -225,17 +225,17 @@ class CommitPurchaseRequestBody extends BasePurchaseRequestBody
     }
     /**
      * Set delivery_details value
-     * @param \StructType\DeliveryDetails $delivery_details
-     * @return \StructType\CommitPurchaseRequestBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\DeliveryDetails $delivery_details
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CommitPurchaseRequestBody
      */
-    public function setDelivery_details(\StructType\DeliveryDetails $delivery_details = null)
+    public function setDelivery_details(\Enesdayanc\MasterpassCommitPurchase\StructType\DeliveryDetails $delivery_details = null)
     {
         $this->delivery_details = $delivery_details;
         return $this;
     }
     /**
      * Get buyer_details value
-     * @return \StructType\BuyerDetails|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BuyerDetails|null
      */
     public function getBuyer_details()
     {
@@ -243,17 +243,17 @@ class CommitPurchaseRequestBody extends BasePurchaseRequestBody
     }
     /**
      * Set buyer_details value
-     * @param \StructType\BuyerDetails $buyer_details
-     * @return \StructType\CommitPurchaseRequestBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\BuyerDetails $buyer_details
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CommitPurchaseRequestBody
      */
-    public function setBuyer_details(\StructType\BuyerDetails $buyer_details = null)
+    public function setBuyer_details(\Enesdayanc\MasterpassCommitPurchase\StructType\BuyerDetails $buyer_details = null)
     {
         $this->buyer_details = $buyer_details;
         return $this;
     }
     /**
      * Get anti_fraud_details value
-     * @return \StructType\AntiFraudDetails|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\AntiFraudDetails|null
      */
     public function getAnti_fraud_details()
     {
@@ -261,17 +261,17 @@ class CommitPurchaseRequestBody extends BasePurchaseRequestBody
     }
     /**
      * Set anti_fraud_details value
-     * @param \StructType\AntiFraudDetails $anti_fraud_details
-     * @return \StructType\CommitPurchaseRequestBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\AntiFraudDetails $anti_fraud_details
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CommitPurchaseRequestBody
      */
-    public function setAnti_fraud_details(\StructType\AntiFraudDetails $anti_fraud_details = null)
+    public function setAnti_fraud_details(\Enesdayanc\MasterpassCommitPurchase\StructType\AntiFraudDetails $anti_fraud_details = null)
     {
         $this->anti_fraud_details = $anti_fraud_details;
         return $this;
     }
     /**
      * Get other_details value
-     * @return \StructType\OtherDetails|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OtherDetails|null
      */
     public function getOther_details()
     {
@@ -279,10 +279,10 @@ class CommitPurchaseRequestBody extends BasePurchaseRequestBody
     }
     /**
      * Set other_details value
-     * @param \StructType\OtherDetails $other_details
-     * @return \StructType\CommitPurchaseRequestBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\OtherDetails $other_details
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CommitPurchaseRequestBody
      */
-    public function setOther_details(\StructType\OtherDetails $other_details = null)
+    public function setOther_details(\Enesdayanc\MasterpassCommitPurchase\StructType\OtherDetails $other_details = null)
     {
         $this->other_details = $other_details;
         return $this;
@@ -293,7 +293,7 @@ class CommitPurchaseRequestBody extends BasePurchaseRequestBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CommitPurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CommitPurchaseRequestBody
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -32,7 +32,7 @@ class BasePurchaseRequestBody extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfRewardList
+     * @var \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfRewardList
      */
     public $RewardLists;
     /**
@@ -40,7 +40,7 @@ class BasePurchaseRequestBody extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfChequeList
+     * @var \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfChequeList
      */
     public $ChequeLists;
     /**
@@ -48,7 +48,7 @@ class BasePurchaseRequestBody extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\MoneyCard
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\MoneyCard
      */
     public $MoneyCard;
     /**
@@ -96,15 +96,15 @@ class BasePurchaseRequestBody extends AbstractStructBase
      * @uses BasePurchaseRequestBody::setBank_ica()
      * @param string $macro_merchant_id
      * @param string $payment_type
-     * @param \ArrayType\ArrayOfRewardList $rewardLists
-     * @param \ArrayType\ArrayOfChequeList $chequeLists
-     * @param \StructType\MoneyCard $moneyCard
+     * @param \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfRewardList $rewardLists
+     * @param \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfChequeList $chequeLists
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\MoneyCard $moneyCard
      * @param int $amount
      * @param string $order_no
      * @param string $installment_count
      * @param string $bank_ica
      */
-    public function __construct($macro_merchant_id = null, $payment_type = null, \ArrayType\ArrayOfRewardList $rewardLists = null, \ArrayType\ArrayOfChequeList $chequeLists = null, \StructType\MoneyCard $moneyCard = null, $amount = null, $order_no = null, $installment_count = null, $bank_ica = null)
+    public function __construct($macro_merchant_id = null, $payment_type = null, \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfRewardList $rewardLists = null, \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfChequeList $chequeLists = null, \Enesdayanc\MasterpassCommitPurchase\StructType\MoneyCard $moneyCard = null, $amount = null, $order_no = null, $installment_count = null, $bank_ica = null)
     {
         $this
             ->setMacro_merchant_id($macro_merchant_id)
@@ -128,7 +128,7 @@ class BasePurchaseRequestBody extends AbstractStructBase
     /**
      * Set macro_merchant_id value
      * @param string $macro_merchant_id
-     * @return \StructType\BasePurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BasePurchaseRequestBody
      */
     public function setMacro_merchant_id($macro_merchant_id = null)
     {
@@ -149,24 +149,24 @@ class BasePurchaseRequestBody extends AbstractStructBase
     }
     /**
      * Set payment_type value
-     * @uses \EnumType\PaymentType::valueIsValid()
-     * @uses \EnumType\PaymentType::getValidValues()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\PaymentType::valueIsValid()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\PaymentType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $payment_type
-     * @return \StructType\BasePurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BasePurchaseRequestBody
      */
     public function setPayment_type($payment_type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\PaymentType::valueIsValid($payment_type)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $payment_type, implode(', ', \EnumType\PaymentType::getValidValues())), __LINE__);
+        if (!\Enesdayanc\MasterpassCommitPurchase\EnumType\PaymentType::valueIsValid($payment_type)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $payment_type, implode(', ', \Enesdayanc\MasterpassCommitPurchase\EnumType\PaymentType::getValidValues())), __LINE__);
         }
         $this->payment_type = $payment_type;
         return $this;
     }
     /**
      * Get RewardLists value
-     * @return \ArrayType\ArrayOfRewardList|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfRewardList|null
      */
     public function getRewardLists()
     {
@@ -174,17 +174,17 @@ class BasePurchaseRequestBody extends AbstractStructBase
     }
     /**
      * Set RewardLists value
-     * @param \ArrayType\ArrayOfRewardList $rewardLists
-     * @return \StructType\BasePurchaseRequestBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfRewardList $rewardLists
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BasePurchaseRequestBody
      */
-    public function setRewardLists(\ArrayType\ArrayOfRewardList $rewardLists = null)
+    public function setRewardLists(\Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfRewardList $rewardLists = null)
     {
         $this->RewardLists = $rewardLists;
         return $this;
     }
     /**
      * Get ChequeLists value
-     * @return \ArrayType\ArrayOfChequeList|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfChequeList|null
      */
     public function getChequeLists()
     {
@@ -192,17 +192,17 @@ class BasePurchaseRequestBody extends AbstractStructBase
     }
     /**
      * Set ChequeLists value
-     * @param \ArrayType\ArrayOfChequeList $chequeLists
-     * @return \StructType\BasePurchaseRequestBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfChequeList $chequeLists
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BasePurchaseRequestBody
      */
-    public function setChequeLists(\ArrayType\ArrayOfChequeList $chequeLists = null)
+    public function setChequeLists(\Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfChequeList $chequeLists = null)
     {
         $this->ChequeLists = $chequeLists;
         return $this;
     }
     /**
      * Get MoneyCard value
-     * @return \StructType\MoneyCard|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MoneyCard|null
      */
     public function getMoneyCard()
     {
@@ -210,10 +210,10 @@ class BasePurchaseRequestBody extends AbstractStructBase
     }
     /**
      * Set MoneyCard value
-     * @param \StructType\MoneyCard $moneyCard
-     * @return \StructType\BasePurchaseRequestBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\MoneyCard $moneyCard
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BasePurchaseRequestBody
      */
-    public function setMoneyCard(\StructType\MoneyCard $moneyCard = null)
+    public function setMoneyCard(\Enesdayanc\MasterpassCommitPurchase\StructType\MoneyCard $moneyCard = null)
     {
         $this->MoneyCard = $moneyCard;
         return $this;
@@ -229,7 +229,7 @@ class BasePurchaseRequestBody extends AbstractStructBase
     /**
      * Set amount value
      * @param int $amount
-     * @return \StructType\BasePurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BasePurchaseRequestBody
      */
     public function setAmount($amount = null)
     {
@@ -251,7 +251,7 @@ class BasePurchaseRequestBody extends AbstractStructBase
     /**
      * Set order_no value
      * @param string $order_no
-     * @return \StructType\BasePurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BasePurchaseRequestBody
      */
     public function setOrder_no($order_no = null)
     {
@@ -273,7 +273,7 @@ class BasePurchaseRequestBody extends AbstractStructBase
     /**
      * Set installment_count value
      * @param string $installment_count
-     * @return \StructType\BasePurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BasePurchaseRequestBody
      */
     public function setInstallment_count($installment_count = null)
     {
@@ -295,7 +295,7 @@ class BasePurchaseRequestBody extends AbstractStructBase
     /**
      * Set bank_ica value
      * @param string $bank_ica
-     * @return \StructType\BasePurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BasePurchaseRequestBody
      */
     public function setBank_ica($bank_ica = null)
     {
@@ -312,7 +312,7 @@ class BasePurchaseRequestBody extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BasePurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BasePurchaseRequestBody
      */
     public static function __set_state(array $array)
     {

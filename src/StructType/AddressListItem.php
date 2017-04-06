@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -165,17 +165,17 @@ class AddressListItem extends AbstractStructBase
     }
     /**
      * Set Address_type value
-     * @uses \EnumType\AddressType::valueIsValid()
-     * @uses \EnumType\AddressType::getValidValues()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\AddressType::valueIsValid()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\AddressType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $address_type
-     * @return \StructType\AddressListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\AddressListItem
      */
     public function setAddress_type($address_type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\AddressType::valueIsValid($address_type)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $address_type, implode(', ', \EnumType\AddressType::getValidValues())), __LINE__);
+        if (!\Enesdayanc\MasterpassCommitPurchase\EnumType\AddressType::valueIsValid($address_type)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $address_type, implode(', ', \Enesdayanc\MasterpassCommitPurchase\EnumType\AddressType::getValidValues())), __LINE__);
         }
         $this->Address_type = $address_type;
         return $this;
@@ -191,7 +191,7 @@ class AddressListItem extends AbstractStructBase
     /**
      * Set AddressName value
      * @param string $addressName
-     * @return \StructType\AddressListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\AddressListItem
      */
     public function setAddressName($addressName = null)
     {
@@ -213,7 +213,7 @@ class AddressListItem extends AbstractStructBase
     /**
      * Set Line2 value
      * @param string $line2
-     * @return \StructType\AddressListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\AddressListItem
      */
     public function setLine2($line2 = null)
     {
@@ -235,7 +235,7 @@ class AddressListItem extends AbstractStructBase
     /**
      * Set Line3 value
      * @param string $line3
-     * @return \StructType\AddressListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\AddressListItem
      */
     public function setLine3($line3 = null)
     {
@@ -257,7 +257,7 @@ class AddressListItem extends AbstractStructBase
     /**
      * Set RecipientName value
      * @param string $recipientName
-     * @return \StructType\AddressListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\AddressListItem
      */
     public function setRecipientName($recipientName = null)
     {
@@ -279,7 +279,7 @@ class AddressListItem extends AbstractStructBase
     /**
      * Set RecipientPhoneNumber value
      * @param string $recipientPhoneNumber
-     * @return \StructType\AddressListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\AddressListItem
      */
     public function setRecipientPhoneNumber($recipientPhoneNumber = null)
     {
@@ -301,7 +301,7 @@ class AddressListItem extends AbstractStructBase
     /**
      * Set City value
      * @param string $city
-     * @return \StructType\AddressListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\AddressListItem
      */
     public function setCity($city = null)
     {
@@ -323,7 +323,7 @@ class AddressListItem extends AbstractStructBase
     /**
      * Set Country value
      * @param string $country
-     * @return \StructType\AddressListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\AddressListItem
      */
     public function setCountry($country = null)
     {
@@ -349,17 +349,17 @@ class AddressListItem extends AbstractStructBase
      * Set DefaultAddress value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \EnumType\YesNoFlag::valueIsValid()
-     * @uses \EnumType\YesNoFlag::getValidValues()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::valueIsValid()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $defaultAddress
-     * @return \StructType\AddressListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\AddressListItem
      */
     public function setDefaultAddress($defaultAddress = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\YesNoFlag::valueIsValid($defaultAddress)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $defaultAddress, implode(', ', \EnumType\YesNoFlag::getValidValues())), __LINE__);
+        if (!\Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::valueIsValid($defaultAddress)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $defaultAddress, implode(', ', \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::getValidValues())), __LINE__);
         }
         if (is_null($defaultAddress) || (is_array($defaultAddress) && empty($defaultAddress))) {
             unset($this->DefaultAddress);
@@ -379,7 +379,7 @@ class AddressListItem extends AbstractStructBase
     /**
      * Set CountrySubdivision value
      * @param string $countrySubdivision
-     * @return \StructType\AddressListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\AddressListItem
      */
     public function setCountrySubdivision($countrySubdivision = null)
     {
@@ -401,7 +401,7 @@ class AddressListItem extends AbstractStructBase
     /**
      * Set Line1 value
      * @param string $line1
-     * @return \StructType\AddressListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\AddressListItem
      */
     public function setLine1($line1 = null)
     {
@@ -423,7 +423,7 @@ class AddressListItem extends AbstractStructBase
     /**
      * Set PostalCode value
      * @param string $postalCode
-     * @return \StructType\AddressListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\AddressListItem
      */
     public function setPostalCode($postalCode = null)
     {
@@ -440,7 +440,7 @@ class AddressListItem extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AddressListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\AddressListItem
      */
     public static function __set_state(array $array)
     {

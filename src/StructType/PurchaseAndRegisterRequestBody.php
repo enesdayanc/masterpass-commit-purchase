@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -25,7 +25,7 @@ class PurchaseAndRegisterRequestBody extends BasePurchaseRequestBody
      * - maxOccurs: 1
      * - minOccurs: 1
      * - nillable: true
-     * @var \StructType\AdditionalFields
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\AdditionalFields
      */
     public $additional_fields;
     /**
@@ -49,7 +49,7 @@ class PurchaseAndRegisterRequestBody extends BasePurchaseRequestBody
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\RegisterData
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\RegisterData
      */
     public $register_data;
     /**
@@ -60,12 +60,12 @@ class PurchaseAndRegisterRequestBody extends BasePurchaseRequestBody
      * @uses PurchaseAndRegisterRequestBody::setExpiry_date()
      * @uses PurchaseAndRegisterRequestBody::setRegister_data()
      * @param string $rta_cvc2
-     * @param \StructType\AdditionalFields $additional_fields
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\AdditionalFields $additional_fields
      * @param string $rta_pan
      * @param string $expiry_date
-     * @param \StructType\RegisterData $register_data
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\RegisterData $register_data
      */
-    public function __construct($rta_cvc2 = null, \StructType\AdditionalFields $additional_fields = null, $rta_pan = null, $expiry_date = null, \StructType\RegisterData $register_data = null)
+    public function __construct($rta_cvc2 = null, \Enesdayanc\MasterpassCommitPurchase\StructType\AdditionalFields $additional_fields = null, $rta_pan = null, $expiry_date = null, \Enesdayanc\MasterpassCommitPurchase\StructType\RegisterData $register_data = null)
     {
         $this
             ->setRta_cvc2($rta_cvc2)
@@ -85,7 +85,7 @@ class PurchaseAndRegisterRequestBody extends BasePurchaseRequestBody
     /**
      * Set rta_cvc2 value
      * @param string $rta_cvc2
-     * @return \StructType\PurchaseAndRegisterRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\PurchaseAndRegisterRequestBody
      */
     public function setRta_cvc2($rta_cvc2 = null)
     {
@@ -98,7 +98,7 @@ class PurchaseAndRegisterRequestBody extends BasePurchaseRequestBody
     }
     /**
      * Get additional_fields value
-     * @return \StructType\AdditionalFields
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\AdditionalFields
      */
     public function getAdditional_fields()
     {
@@ -106,10 +106,10 @@ class PurchaseAndRegisterRequestBody extends BasePurchaseRequestBody
     }
     /**
      * Set additional_fields value
-     * @param \StructType\AdditionalFields $additional_fields
-     * @return \StructType\PurchaseAndRegisterRequestBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\AdditionalFields $additional_fields
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\PurchaseAndRegisterRequestBody
      */
-    public function setAdditional_fields(\StructType\AdditionalFields $additional_fields = null)
+    public function setAdditional_fields(\Enesdayanc\MasterpassCommitPurchase\StructType\AdditionalFields $additional_fields = null)
     {
         $this->additional_fields = $additional_fields;
         return $this;
@@ -125,7 +125,7 @@ class PurchaseAndRegisterRequestBody extends BasePurchaseRequestBody
     /**
      * Set rta_pan value
      * @param string $rta_pan
-     * @return \StructType\PurchaseAndRegisterRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\PurchaseAndRegisterRequestBody
      */
     public function setRta_pan($rta_pan = null)
     {
@@ -147,7 +147,7 @@ class PurchaseAndRegisterRequestBody extends BasePurchaseRequestBody
     /**
      * Set expiry_date value
      * @param string $expiry_date
-     * @return \StructType\PurchaseAndRegisterRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\PurchaseAndRegisterRequestBody
      */
     public function setExpiry_date($expiry_date = null)
     {
@@ -160,7 +160,7 @@ class PurchaseAndRegisterRequestBody extends BasePurchaseRequestBody
     }
     /**
      * Get register_data value
-     * @return \StructType\RegisterData|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RegisterData|null
      */
     public function getRegister_data()
     {
@@ -168,10 +168,10 @@ class PurchaseAndRegisterRequestBody extends BasePurchaseRequestBody
     }
     /**
      * Set register_data value
-     * @param \StructType\RegisterData $register_data
-     * @return \StructType\PurchaseAndRegisterRequestBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\RegisterData $register_data
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\PurchaseAndRegisterRequestBody
      */
-    public function setRegister_data(\StructType\RegisterData $register_data = null)
+    public function setRegister_data(\Enesdayanc\MasterpassCommitPurchase\StructType\RegisterData $register_data = null)
     {
         $this->register_data = $register_data;
         return $this;
@@ -182,7 +182,7 @@ class PurchaseAndRegisterRequestBody extends BasePurchaseRequestBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\PurchaseAndRegisterRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\PurchaseAndRegisterRequestBody
      */
     public static function __set_state(array $array)
     {

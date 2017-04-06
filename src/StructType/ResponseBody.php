@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class ResponseBody extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: unbounded
      * - minOccurs: 0
-     * @var \StructType\SmsNotification[]
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\SmsNotification[]
      */
     public $sms_noti;
     /**
@@ -31,7 +31,7 @@ class ResponseBody extends AbstractStructBase
      * @uses ResponseBody::setRetrieval_reference_no()
      * @uses ResponseBody::setSms_noti()
      * @param string $retrieval_reference_no
-     * @param \StructType\SmsNotification[] $sms_noti
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\SmsNotification[] $sms_noti
      */
     public function __construct($retrieval_reference_no = null, array $sms_noti = array())
     {
@@ -50,7 +50,7 @@ class ResponseBody extends AbstractStructBase
     /**
      * Set retrieval_reference_no value
      * @param string $retrieval_reference_no
-     * @return \StructType\ResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ResponseBody
      */
     public function setRetrieval_reference_no($retrieval_reference_no = null)
     {
@@ -63,7 +63,7 @@ class ResponseBody extends AbstractStructBase
     }
     /**
      * Get sms_noti value
-     * @return \StructType\SmsNotification[]|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\SmsNotification[]|null
      */
     public function getSms_noti()
     {
@@ -72,15 +72,15 @@ class ResponseBody extends AbstractStructBase
     /**
      * Set sms_noti value
      * @throws \InvalidArgumentException
-     * @param \StructType\SmsNotification[] $sms_noti
-     * @return \StructType\ResponseBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\SmsNotification[] $sms_noti
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ResponseBody
      */
     public function setSms_noti(array $sms_noti = array())
     {
         foreach ($sms_noti as $responseBodySms_notiItem) {
             // validation for constraint: itemType
-            if (!$responseBodySms_notiItem instanceof \StructType\SmsNotification) {
-                throw new \InvalidArgumentException(sprintf('The sms_noti property can only contain items of \StructType\SmsNotification, "%s" given', is_object($responseBodySms_notiItem) ? get_class($responseBodySms_notiItem) : gettype($responseBodySms_notiItem)), __LINE__);
+            if (!$responseBodySms_notiItem instanceof \Enesdayanc\MasterpassCommitPurchase\StructType\SmsNotification) {
+                throw new \InvalidArgumentException(sprintf('The sms_noti property can only contain items of \Enesdayanc\MasterpassCommitPurchase\StructType\SmsNotification, "%s" given', is_object($responseBodySms_notiItem) ? get_class($responseBodySms_notiItem) : gettype($responseBodySms_notiItem)), __LINE__);
             }
         }
         $this->sms_noti = $sms_noti;
@@ -89,14 +89,14 @@ class ResponseBody extends AbstractStructBase
     /**
      * Add item to sms_noti value
      * @throws \InvalidArgumentException
-     * @param \StructType\SmsNotification $item
-     * @return \StructType\ResponseBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\SmsNotification $item
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ResponseBody
      */
-    public function addToSms_noti(\StructType\SmsNotification $item)
+    public function addToSms_noti(\Enesdayanc\MasterpassCommitPurchase\StructType\SmsNotification $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\SmsNotification) {
-            throw new \InvalidArgumentException(sprintf('The sms_noti property can only contain items of \StructType\SmsNotification, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Enesdayanc\MasterpassCommitPurchase\StructType\SmsNotification) {
+            throw new \InvalidArgumentException(sprintf('The sms_noti property can only contain items of \Enesdayanc\MasterpassCommitPurchase\StructType\SmsNotification, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->sms_noti[] = $item;
         return $this;
@@ -107,7 +107,7 @@ class ResponseBody extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ResponseBody
      */
     public static function __set_state(array $array)
     {

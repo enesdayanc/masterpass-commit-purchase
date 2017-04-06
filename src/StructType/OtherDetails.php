@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -52,7 +52,7 @@ class OtherDetails extends AbstractStructBase
     /**
      * Set client_ip value
      * @param string $client_ip
-     * @return \StructType\OtherDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OtherDetails
      */
     public function setClient_ip($client_ip = null)
     {
@@ -74,7 +74,7 @@ class OtherDetails extends AbstractStructBase
     /**
      * Set client_time value
      * @param string $client_time
-     * @return \StructType\OtherDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OtherDetails
      */
     public function setClient_time($client_time = null)
     {
@@ -91,7 +91,7 @@ class OtherDetails extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OtherDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OtherDetails
      */
     public static function __set_state(array $array)
     {

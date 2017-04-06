@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -22,7 +22,7 @@ class UpdateCardLockResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\UpdateCardLockResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\UpdateCardLockResponseBody
      */
     public static function __set_state(array $array)
     {

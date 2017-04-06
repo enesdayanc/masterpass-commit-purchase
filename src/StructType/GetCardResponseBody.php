@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class GetCardResponseBody extends ResponseBody
     /**
      * Set enc_pan_exp_date value
      * @param string $enc_pan_exp_date
-     * @return \StructType\GetCardResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\GetCardResponseBody
      */
     public function setEnc_pan_exp_date($enc_pan_exp_date = null)
     {
@@ -56,7 +56,7 @@ class GetCardResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GetCardResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\GetCardResponseBody
      */
     public static function __set_state(array $array)
     {

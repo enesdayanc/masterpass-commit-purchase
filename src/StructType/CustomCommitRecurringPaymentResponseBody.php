@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class CustomCommitRecurringPaymentResponseBody extends ConsumerFinancialResponse
     /**
      * Set order_no value
      * @param string $order_no
-     * @return \StructType\CustomCommitRecurringPaymentResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomCommitRecurringPaymentResponseBody
      */
     public function setOrder_no($order_no = null)
     {
@@ -56,7 +56,7 @@ class CustomCommitRecurringPaymentResponseBody extends ConsumerFinancialResponse
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CustomCommitRecurringPaymentResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomCommitRecurringPaymentResponseBody
      */
     public static function __set_state(array $array)
     {

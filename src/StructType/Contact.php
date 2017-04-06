@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -127,7 +127,7 @@ class Contact extends AbstractStructBase
     /**
      * Set firstName value
      * @param string $firstName
-     * @return \StructType\Contact
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\Contact
      */
     public function setFirstName($firstName = null)
     {
@@ -149,7 +149,7 @@ class Contact extends AbstractStructBase
     /**
      * Set middleName value
      * @param string $middleName
-     * @return \StructType\Contact
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\Contact
      */
     public function setMiddleName($middleName = null)
     {
@@ -171,7 +171,7 @@ class Contact extends AbstractStructBase
     /**
      * Set lastName value
      * @param string $lastName
-     * @return \StructType\Contact
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\Contact
      */
     public function setLastName($lastName = null)
     {
@@ -193,7 +193,7 @@ class Contact extends AbstractStructBase
     /**
      * Set gender value
      * @param string $gender
-     * @return \StructType\Contact
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\Contact
      */
     public function setGender($gender = null)
     {
@@ -215,7 +215,7 @@ class Contact extends AbstractStructBase
     /**
      * Set dateOfBirth value
      * @param string $dateOfBirth
-     * @return \StructType\Contact
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\Contact
      */
     public function setDateOfBirth($dateOfBirth = null)
     {
@@ -237,7 +237,7 @@ class Contact extends AbstractStructBase
     /**
      * Set nationalID value
      * @param string $nationalID
-     * @return \StructType\Contact
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\Contact
      */
     public function setNationalID($nationalID = null)
     {
@@ -259,7 +259,7 @@ class Contact extends AbstractStructBase
     /**
      * Set country value
      * @param string $country
-     * @return \StructType\Contact
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\Contact
      */
     public function setCountry($country = null)
     {
@@ -281,7 +281,7 @@ class Contact extends AbstractStructBase
     /**
      * Set emailAddress value
      * @param string $emailAddress
-     * @return \StructType\Contact
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\Contact
      */
     public function setEmailAddress($emailAddress = null)
     {
@@ -303,7 +303,7 @@ class Contact extends AbstractStructBase
     /**
      * Set phoneNumber value
      * @param string $phoneNumber
-     * @return \StructType\Contact
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\Contact
      */
     public function setPhoneNumber($phoneNumber = null)
     {
@@ -320,7 +320,7 @@ class Contact extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Contact
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\Contact
      */
     public static function __set_state(array $array)
     {

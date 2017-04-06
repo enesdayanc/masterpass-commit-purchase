@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -94,7 +94,7 @@ class ResponseHeader extends AbstractStructBase
     /**
      * Set response_datetime value
      * @param string $response_datetime
-     * @return \StructType\ResponseHeader
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ResponseHeader
      */
     public function setResponse_datetime($response_datetime = null)
     {
@@ -116,7 +116,7 @@ class ResponseHeader extends AbstractStructBase
     /**
      * Set request_datetime value
      * @param string $request_datetime
-     * @return \StructType\ResponseHeader
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ResponseHeader
      */
     public function setRequest_datetime($request_datetime = null)
     {
@@ -137,17 +137,17 @@ class ResponseHeader extends AbstractStructBase
     }
     /**
      * Set send_sms value
-     * @uses \EnumType\YesNoFlag::valueIsValid()
-     * @uses \EnumType\YesNoFlag::getValidValues()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::valueIsValid()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $send_sms
-     * @return \StructType\ResponseHeader
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ResponseHeader
      */
     public function setSend_sms($send_sms = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\YesNoFlag::valueIsValid($send_sms)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $send_sms, implode(', ', \EnumType\YesNoFlag::getValidValues())), __LINE__);
+        if (!\Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::valueIsValid($send_sms)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $send_sms, implode(', ', \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::getValidValues())), __LINE__);
         }
         $this->send_sms = $send_sms;
         return $this;
@@ -162,17 +162,17 @@ class ResponseHeader extends AbstractStructBase
     }
     /**
      * Set send_sms_language value
-     * @uses \EnumType\ISOLanguageAlpha3TCodeType::valueIsValid()
-     * @uses \EnumType\ISOLanguageAlpha3TCodeType::getValidValues()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\ISOLanguageAlpha3TCodeType::valueIsValid()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\ISOLanguageAlpha3TCodeType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $send_sms_language
-     * @return \StructType\ResponseHeader
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ResponseHeader
      */
     public function setSend_sms_language($send_sms_language = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\ISOLanguageAlpha3TCodeType::valueIsValid($send_sms_language)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $send_sms_language, implode(', ', \EnumType\ISOLanguageAlpha3TCodeType::getValidValues())), __LINE__);
+        if (!\Enesdayanc\MasterpassCommitPurchase\EnumType\ISOLanguageAlpha3TCodeType::valueIsValid($send_sms_language)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $send_sms_language, implode(', ', \Enesdayanc\MasterpassCommitPurchase\EnumType\ISOLanguageAlpha3TCodeType::getValidValues())), __LINE__);
         }
         $this->send_sms_language = $send_sms_language;
         return $this;
@@ -188,7 +188,7 @@ class ResponseHeader extends AbstractStructBase
     /**
      * Set client_id value
      * @param string $client_id
-     * @return \StructType\ResponseHeader
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ResponseHeader
      */
     public function setClient_id($client_id = null)
     {
@@ -210,7 +210,7 @@ class ResponseHeader extends AbstractStructBase
     /**
      * Set request_reference_no value
      * @param string $request_reference_no
-     * @return \StructType\ResponseHeader
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ResponseHeader
      */
     public function setRequest_reference_no($request_reference_no = null)
     {
@@ -227,7 +227,7 @@ class ResponseHeader extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ResponseHeader
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ResponseHeader
      */
     public static function __set_state(array $array)
     {

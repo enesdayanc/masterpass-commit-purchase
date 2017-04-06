@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class SetDefaultAccountResponseBody extends ResponseBody
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfString1
+     * @var \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfString1
      */
     public $source_account_list;
     /**
      * Constructor method for SetDefaultAccountResponseBody
      * @uses SetDefaultAccountResponseBody::setSource_account_list()
-     * @param \ArrayType\ArrayOfString1 $source_account_list
+     * @param \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfString1 $source_account_list
      */
-    public function __construct(\ArrayType\ArrayOfString1 $source_account_list = null)
+    public function __construct(\Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfString1 $source_account_list = null)
     {
         $this
             ->setSource_account_list($source_account_list);
     }
     /**
      * Get source_account_list value
-     * @return \ArrayType\ArrayOfString1|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfString1|null
      */
     public function getSource_account_list()
     {
@@ -38,10 +38,10 @@ class SetDefaultAccountResponseBody extends ResponseBody
     }
     /**
      * Set source_account_list value
-     * @param \ArrayType\ArrayOfString1 $source_account_list
-     * @return \StructType\SetDefaultAccountResponseBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfString1 $source_account_list
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\SetDefaultAccountResponseBody
      */
-    public function setSource_account_list(\ArrayType\ArrayOfString1 $source_account_list = null)
+    public function setSource_account_list(\Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfString1 $source_account_list = null)
     {
         $this->source_account_list = $source_account_list;
         return $this;
@@ -52,7 +52,7 @@ class SetDefaultAccountResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SetDefaultAccountResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\SetDefaultAccountResponseBody
      */
     public static function __set_state(array $array)
     {

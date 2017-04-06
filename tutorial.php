@@ -19,16 +19,16 @@ require_once __DIR__ . '/vendor/autoload.php';
  */
 $options = array(
     \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_URL => 'https://masterpassturkiye.com:8082/MMIUIMasterPass_V2/MerchantServices/MPGCommitPurchaseService.asmx?WSDL',
-    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => ClassMap::get(),
+    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => \Enesdayanc\MasterpassCommitPurchase\ClassMap::get(),
 );
 /**
  * Samples for Commit ServiceType
  */
-$commit = new \ServiceType\Commit($options);
+$commit = new \Enesdayanc\MasterpassCommitPurchase\ServiceType\Commit($options);
 /**
  * Sample call for CommitPurchase operation/method
  */
-if ($commit->CommitPurchase(new \StructType\CommitPurchase()) !== false) {
+if ($commit->CommitPurchase(new \Enesdayanc\MasterpassCommitPurchase\StructType\CommitPurchase()) !== false) {
     print_r($commit->getResult());
 } else {
     print_r($commit->getLastError());
@@ -36,11 +36,11 @@ if ($commit->CommitPurchase(new \StructType\CommitPurchase()) !== false) {
 /**
  * Samples for Custom ServiceType
  */
-$custom = new \ServiceType\Custom($options);
+$custom = new \Enesdayanc\MasterpassCommitPurchase\ServiceType\Custom($options);
 /**
  * Sample call for CustomCommitPurchase operation/method
  */
-if ($custom->CustomCommitPurchase(new \StructType\CustomCommitPurchase()) !== false) {
+if ($custom->CustomCommitPurchase(new \Enesdayanc\MasterpassCommitPurchase\StructType\CustomCommitPurchase()) !== false) {
     print_r($custom->getResult());
 } else {
     print_r($custom->getLastError());

@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Enesdayanc\MasterpassCommitPurchase\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class ArrayOfRewardList extends AbstractStructArrayBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\RewardList[]
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\RewardList[]
      */
     public $reward_list;
     /**
      * Constructor method for ArrayOfRewardList
      * @uses ArrayOfRewardList::setReward_list()
-     * @param \StructType\RewardList[] $reward_list
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\RewardList[] $reward_list
      */
     public function __construct(array $reward_list = array())
     {
@@ -34,7 +34,7 @@ class ArrayOfRewardList extends AbstractStructArrayBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\RewardList[]|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RewardList[]|null
      */
     public function getReward_list()
     {
@@ -45,15 +45,15 @@ class ArrayOfRewardList extends AbstractStructArrayBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\RewardList[] $reward_list
-     * @return \ArrayType\ArrayOfRewardList
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\RewardList[] $reward_list
+     * @return \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfRewardList
      */
     public function setReward_list(array $reward_list = array())
     {
         foreach ($reward_list as $arrayOfRewardListReward_listItem) {
             // validation for constraint: itemType
-            if (!$arrayOfRewardListReward_listItem instanceof \StructType\RewardList) {
-                throw new \InvalidArgumentException(sprintf('The reward_list property can only contain items of \StructType\RewardList, "%s" given', is_object($arrayOfRewardListReward_listItem) ? get_class($arrayOfRewardListReward_listItem) : gettype($arrayOfRewardListReward_listItem)), __LINE__);
+            if (!$arrayOfRewardListReward_listItem instanceof \Enesdayanc\MasterpassCommitPurchase\StructType\RewardList) {
+                throw new \InvalidArgumentException(sprintf('The reward_list property can only contain items of \Enesdayanc\MasterpassCommitPurchase\StructType\RewardList, "%s" given', is_object($arrayOfRewardListReward_listItem) ? get_class($arrayOfRewardListReward_listItem) : gettype($arrayOfRewardListReward_listItem)), __LINE__);
             }
         }
         if (is_null($reward_list) || (is_array($reward_list) && empty($reward_list))) {
@@ -66,14 +66,14 @@ class ArrayOfRewardList extends AbstractStructArrayBase
     /**
      * Add item to reward_list value
      * @throws \InvalidArgumentException
-     * @param \StructType\RewardList $item
-     * @return \ArrayType\ArrayOfRewardList
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\RewardList $item
+     * @return \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfRewardList
      */
-    public function addToReward_list(\StructType\RewardList $item)
+    public function addToReward_list(\Enesdayanc\MasterpassCommitPurchase\StructType\RewardList $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\RewardList) {
-            throw new \InvalidArgumentException(sprintf('The reward_list property can only contain items of \StructType\RewardList, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Enesdayanc\MasterpassCommitPurchase\StructType\RewardList) {
+            throw new \InvalidArgumentException(sprintf('The reward_list property can only contain items of \Enesdayanc\MasterpassCommitPurchase\StructType\RewardList, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->reward_list[] = $item;
         return $this;
@@ -81,7 +81,7 @@ class ArrayOfRewardList extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\RewardList|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RewardList|null
      */
     public function current()
     {
@@ -91,7 +91,7 @@ class ArrayOfRewardList extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\RewardList|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RewardList|null
      */
     public function item($index)
     {
@@ -100,7 +100,7 @@ class ArrayOfRewardList extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\RewardList|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RewardList|null
      */
     public function first()
     {
@@ -109,7 +109,7 @@ class ArrayOfRewardList extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\RewardList|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RewardList|null
      */
     public function last()
     {
@@ -119,7 +119,7 @@ class ArrayOfRewardList extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\RewardList|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RewardList|null
      */
     public function offsetGet($offset)
     {
@@ -140,7 +140,7 @@ class ArrayOfRewardList extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfRewardList
+     * @return \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfRewardList
      */
     public static function __set_state(array $array)
     {

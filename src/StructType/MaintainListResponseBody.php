@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -64,7 +64,7 @@ class MaintainListResponseBody extends ResponseBody
     /**
      * Set list_item_value_1 value
      * @param string $list_item_value_1
-     * @return \StructType\MaintainListResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MaintainListResponseBody
      */
     public function setList_item_value_1($list_item_value_1 = null)
     {
@@ -86,7 +86,7 @@ class MaintainListResponseBody extends ResponseBody
     /**
      * Set list_item_value_2 value
      * @param string $list_item_value_2
-     * @return \StructType\MaintainListResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MaintainListResponseBody
      */
     public function setList_item_value_2($list_item_value_2 = null)
     {
@@ -112,17 +112,17 @@ class MaintainListResponseBody extends ResponseBody
      * Set consumer_account_deleted value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \EnumType\YesNoFlag::valueIsValid()
-     * @uses \EnumType\YesNoFlag::getValidValues()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::valueIsValid()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $consumer_account_deleted
-     * @return \StructType\MaintainListResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MaintainListResponseBody
      */
     public function setConsumer_account_deleted($consumer_account_deleted = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\YesNoFlag::valueIsValid($consumer_account_deleted)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $consumer_account_deleted, implode(', ', \EnumType\YesNoFlag::getValidValues())), __LINE__);
+        if (!\Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::valueIsValid($consumer_account_deleted)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $consumer_account_deleted, implode(', ', \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::getValidValues())), __LINE__);
         }
         if (is_null($consumer_account_deleted) || (is_array($consumer_account_deleted) && empty($consumer_account_deleted))) {
             unset($this->consumer_account_deleted);
@@ -137,7 +137,7 @@ class MaintainListResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\MaintainListResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MaintainListResponseBody
      */
     public static function __set_state(array $array)
     {

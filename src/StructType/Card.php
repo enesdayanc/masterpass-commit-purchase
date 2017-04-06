@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class Card extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\AddressListItem
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\AddressListItem
      */
     public $billingAddress;
     /**
@@ -87,13 +87,13 @@ class Card extends AbstractStructBase
      * @param string $brandId
      * @param string $brandName
      * @param string $accountNumber
-     * @param \StructType\AddressListItem $billingAddress
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\AddressListItem $billingAddress
      * @param string $cardHolderName
      * @param string $expireDate
      * @param string $defaultcard
      * @param string $aliasName
      */
-    public function __construct($brandId = null, $brandName = null, $accountNumber = null, \StructType\AddressListItem $billingAddress = null, $cardHolderName = null, $expireDate = null, $defaultcard = null, $aliasName = null)
+    public function __construct($brandId = null, $brandName = null, $accountNumber = null, \Enesdayanc\MasterpassCommitPurchase\StructType\AddressListItem $billingAddress = null, $cardHolderName = null, $expireDate = null, $defaultcard = null, $aliasName = null)
     {
         $this
             ->setBrandId($brandId)
@@ -116,7 +116,7 @@ class Card extends AbstractStructBase
     /**
      * Set brandId value
      * @param string $brandId
-     * @return \StructType\Card
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\Card
      */
     public function setBrandId($brandId = null)
     {
@@ -138,7 +138,7 @@ class Card extends AbstractStructBase
     /**
      * Set brandName value
      * @param string $brandName
-     * @return \StructType\Card
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\Card
      */
     public function setBrandName($brandName = null)
     {
@@ -160,7 +160,7 @@ class Card extends AbstractStructBase
     /**
      * Set accountNumber value
      * @param string $accountNumber
-     * @return \StructType\Card
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\Card
      */
     public function setAccountNumber($accountNumber = null)
     {
@@ -173,7 +173,7 @@ class Card extends AbstractStructBase
     }
     /**
      * Get billingAddress value
-     * @return \StructType\AddressListItem|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\AddressListItem|null
      */
     public function getBillingAddress()
     {
@@ -181,10 +181,10 @@ class Card extends AbstractStructBase
     }
     /**
      * Set billingAddress value
-     * @param \StructType\AddressListItem $billingAddress
-     * @return \StructType\Card
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\AddressListItem $billingAddress
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\Card
      */
-    public function setBillingAddress(\StructType\AddressListItem $billingAddress = null)
+    public function setBillingAddress(\Enesdayanc\MasterpassCommitPurchase\StructType\AddressListItem $billingAddress = null)
     {
         $this->billingAddress = $billingAddress;
         return $this;
@@ -200,7 +200,7 @@ class Card extends AbstractStructBase
     /**
      * Set cardHolderName value
      * @param string $cardHolderName
-     * @return \StructType\Card
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\Card
      */
     public function setCardHolderName($cardHolderName = null)
     {
@@ -222,7 +222,7 @@ class Card extends AbstractStructBase
     /**
      * Set expireDate value
      * @param string $expireDate
-     * @return \StructType\Card
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\Card
      */
     public function setExpireDate($expireDate = null)
     {
@@ -244,7 +244,7 @@ class Card extends AbstractStructBase
     /**
      * Set defaultcard value
      * @param string $defaultcard
-     * @return \StructType\Card
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\Card
      */
     public function setDefaultcard($defaultcard = null)
     {
@@ -266,7 +266,7 @@ class Card extends AbstractStructBase
     /**
      * Set AliasName value
      * @param string $aliasName
-     * @return \StructType\Card
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\Card
      */
     public function setAliasName($aliasName = null)
     {
@@ -283,7 +283,7 @@ class Card extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\Card
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\Card
      */
     public static function __set_state(array $array)
     {

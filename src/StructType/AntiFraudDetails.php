@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -52,7 +52,7 @@ class AntiFraudDetails extends AbstractStructBase
     /**
      * Set number_time value
      * @param string $number_time
-     * @return \StructType\AntiFraudDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\AntiFraudDetails
      */
     public function setNumber_time($number_time = null)
     {
@@ -74,7 +74,7 @@ class AntiFraudDetails extends AbstractStructBase
     /**
      * Set owner_time value
      * @param string $owner_time
-     * @return \StructType\AntiFraudDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\AntiFraudDetails
      */
     public function setOwner_time($owner_time = null)
     {
@@ -91,7 +91,7 @@ class AntiFraudDetails extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\AntiFraudDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\AntiFraudDetails
      */
     public static function __set_state(array $array)
     {

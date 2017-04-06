@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class ViewMPListResponseBody extends ResponseBody
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfMPListItem
+     * @var \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfMPListItem
      */
     public $list_items;
     /**
      * Constructor method for ViewMPListResponseBody
      * @uses ViewMPListResponseBody::setList_items()
-     * @param \ArrayType\ArrayOfMPListItem $list_items
+     * @param \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfMPListItem $list_items
      */
-    public function __construct(\ArrayType\ArrayOfMPListItem $list_items = null)
+    public function __construct(\Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfMPListItem $list_items = null)
     {
         $this
             ->setList_items($list_items);
     }
     /**
      * Get list_items value
-     * @return \ArrayType\ArrayOfMPListItem|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfMPListItem|null
      */
     public function getList_items()
     {
@@ -38,10 +38,10 @@ class ViewMPListResponseBody extends ResponseBody
     }
     /**
      * Set list_items value
-     * @param \ArrayType\ArrayOfMPListItem $list_items
-     * @return \StructType\ViewMPListResponseBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfMPListItem $list_items
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ViewMPListResponseBody
      */
-    public function setList_items(\ArrayType\ArrayOfMPListItem $list_items = null)
+    public function setList_items(\Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfMPListItem $list_items = null)
     {
         $this->list_items = $list_items;
         return $this;
@@ -52,7 +52,7 @@ class ViewMPListResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ViewMPListResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ViewMPListResponseBody
      */
     public static function __set_state(array $array)
     {

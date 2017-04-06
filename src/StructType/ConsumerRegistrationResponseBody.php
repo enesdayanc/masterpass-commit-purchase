@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -34,7 +34,7 @@ class ConsumerRegistrationResponseBody extends ResponseBody
      * - maxOccurs: 1
      * - minOccurs: 1
      * - nillable: true
-     * @var \StructType\MPGAccountResponse
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountResponse
      */
     public $mpg_account;
     /**
@@ -43,7 +43,7 @@ class ConsumerRegistrationResponseBody extends ResponseBody
      * - maxOccurs: 1
      * - minOccurs: 1
      * - nillable: true
-     * @var \StructType\ExternalAccountResponse
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\ExternalAccountResponse
      */
     public $external_card_account;
     /**
@@ -54,10 +54,10 @@ class ConsumerRegistrationResponseBody extends ResponseBody
      * @uses ConsumerRegistrationResponseBody::setExternal_card_account()
      * @param string $response_description
      * @param string $mpg_account_number
-     * @param \StructType\MPGAccountResponse $mpg_account
-     * @param \StructType\ExternalAccountResponse $external_card_account
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountResponse $mpg_account
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\ExternalAccountResponse $external_card_account
      */
-    public function __construct($response_description = null, $mpg_account_number = null, \StructType\MPGAccountResponse $mpg_account = null, \StructType\ExternalAccountResponse $external_card_account = null)
+    public function __construct($response_description = null, $mpg_account_number = null, \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountResponse $mpg_account = null, \Enesdayanc\MasterpassCommitPurchase\StructType\ExternalAccountResponse $external_card_account = null)
     {
         $this
             ->setResponse_description($response_description)
@@ -76,7 +76,7 @@ class ConsumerRegistrationResponseBody extends ResponseBody
     /**
      * Set response_description value
      * @param string $response_description
-     * @return \StructType\ConsumerRegistrationResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerRegistrationResponseBody
      */
     public function setResponse_description($response_description = null)
     {
@@ -98,7 +98,7 @@ class ConsumerRegistrationResponseBody extends ResponseBody
     /**
      * Set mpg_account_number value
      * @param string $mpg_account_number
-     * @return \StructType\ConsumerRegistrationResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerRegistrationResponseBody
      */
     public function setMpg_account_number($mpg_account_number = null)
     {
@@ -111,7 +111,7 @@ class ConsumerRegistrationResponseBody extends ResponseBody
     }
     /**
      * Get mpg_account value
-     * @return \StructType\MPGAccountResponse
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountResponse
      */
     public function getMpg_account()
     {
@@ -119,17 +119,17 @@ class ConsumerRegistrationResponseBody extends ResponseBody
     }
     /**
      * Set mpg_account value
-     * @param \StructType\MPGAccountResponse $mpg_account
-     * @return \StructType\ConsumerRegistrationResponseBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountResponse $mpg_account
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerRegistrationResponseBody
      */
-    public function setMpg_account(\StructType\MPGAccountResponse $mpg_account = null)
+    public function setMpg_account(\Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountResponse $mpg_account = null)
     {
         $this->mpg_account = $mpg_account;
         return $this;
     }
     /**
      * Get external_card_account value
-     * @return \StructType\ExternalAccountResponse
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ExternalAccountResponse
      */
     public function getExternal_card_account()
     {
@@ -137,10 +137,10 @@ class ConsumerRegistrationResponseBody extends ResponseBody
     }
     /**
      * Set external_card_account value
-     * @param \StructType\ExternalAccountResponse $external_card_account
-     * @return \StructType\ConsumerRegistrationResponseBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\ExternalAccountResponse $external_card_account
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerRegistrationResponseBody
      */
-    public function setExternal_card_account(\StructType\ExternalAccountResponse $external_card_account = null)
+    public function setExternal_card_account(\Enesdayanc\MasterpassCommitPurchase\StructType\ExternalAccountResponse $external_card_account = null)
     {
         $this->external_card_account = $external_card_account;
         return $this;
@@ -151,7 +151,7 @@ class ConsumerRegistrationResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ConsumerRegistrationResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerRegistrationResponseBody
      */
     public static function __set_state(array $array)
     {

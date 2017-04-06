@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -50,7 +50,7 @@ class SmsNotification extends AbstractStructBase
     /**
      * Set toField value
      * @param string $toField
-     * @return \StructType\SmsNotification
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\SmsNotification
      */
     public function setToField($toField = null)
     {
@@ -72,7 +72,7 @@ class SmsNotification extends AbstractStructBase
     /**
      * Set valueField value
      * @param string $valueField
-     * @return \StructType\SmsNotification
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\SmsNotification
      */
     public function setValueField($valueField = null)
     {
@@ -89,7 +89,7 @@ class SmsNotification extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\SmsNotification
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\SmsNotification
      */
     public static function __set_state(array $array)
     {

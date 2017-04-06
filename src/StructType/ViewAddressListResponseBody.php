@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,22 +15,22 @@ class ViewAddressListResponseBody extends ResponseBody
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfAddressListItem
+     * @var \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfAddressListItem
      */
     public $list_items;
     /**
      * Constructor method for ViewAddressListResponseBody
      * @uses ViewAddressListResponseBody::setList_items()
-     * @param \ArrayType\ArrayOfAddressListItem $list_items
+     * @param \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfAddressListItem $list_items
      */
-    public function __construct(\ArrayType\ArrayOfAddressListItem $list_items = null)
+    public function __construct(\Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfAddressListItem $list_items = null)
     {
         $this
             ->setList_items($list_items);
     }
     /**
      * Get list_items value
-     * @return \ArrayType\ArrayOfAddressListItem|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfAddressListItem|null
      */
     public function getList_items()
     {
@@ -38,10 +38,10 @@ class ViewAddressListResponseBody extends ResponseBody
     }
     /**
      * Set list_items value
-     * @param \ArrayType\ArrayOfAddressListItem $list_items
-     * @return \StructType\ViewAddressListResponseBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfAddressListItem $list_items
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ViewAddressListResponseBody
      */
-    public function setList_items(\ArrayType\ArrayOfAddressListItem $list_items = null)
+    public function setList_items(\Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfAddressListItem $list_items = null)
     {
         $this->list_items = $list_items;
         return $this;
@@ -52,7 +52,7 @@ class ViewAddressListResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ViewAddressListResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ViewAddressListResponseBody
      */
     public static function __set_state(array $array)
     {

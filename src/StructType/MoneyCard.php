@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -88,7 +88,7 @@ class MoneyCard extends AbstractStructBase
     /**
      * Set InvoiceAmount value
      * @param string $invoiceAmount
-     * @return \StructType\MoneyCard
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MoneyCard
      */
     public function setInvoiceAmount($invoiceAmount = null)
     {
@@ -110,7 +110,7 @@ class MoneyCard extends AbstractStructBase
     /**
      * Set MigrosCCDiscountAmount value
      * @param string $migrosCCDiscountAmount
-     * @return \StructType\MoneyCard
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MoneyCard
      */
     public function setMigrosCCDiscountAmount($migrosCCDiscountAmount = null)
     {
@@ -132,7 +132,7 @@ class MoneyCard extends AbstractStructBase
     /**
      * Set PaymentAmount value
      * @param string $paymentAmount
-     * @return \StructType\MoneyCard
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MoneyCard
      */
     public function setPaymentAmount($paymentAmount = null)
     {
@@ -154,7 +154,7 @@ class MoneyCard extends AbstractStructBase
     /**
      * Set ExtraDiscountAmount value
      * @param string $extraDiscountAmount
-     * @return \StructType\MoneyCard
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MoneyCard
      */
     public function setExtraDiscountAmount($extraDiscountAmount = null)
     {
@@ -176,7 +176,7 @@ class MoneyCard extends AbstractStructBase
     /**
      * Set ProductBasedDiscountAmount value
      * @param string $productBasedDiscountAmount
-     * @return \StructType\MoneyCard
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MoneyCard
      */
     public function setProductBasedDiscountAmount($productBasedDiscountAmount = null)
     {
@@ -193,7 +193,7 @@ class MoneyCard extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\MoneyCard
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MoneyCard
      */
     public static function __set_state(array $array)
     {

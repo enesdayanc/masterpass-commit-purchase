@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -177,7 +177,7 @@ class TransactionRefundResponseBody extends ResponseBody
     /**
      * Set approval_code value
      * @param string $approval_code
-     * @return \StructType\TransactionRefundResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionRefundResponseBody
      */
     public function setApproval_code($approval_code = null)
     {
@@ -199,7 +199,7 @@ class TransactionRefundResponseBody extends ResponseBody
     /**
      * Set consumer_msisdn value
      * @param string $consumer_msisdn
-     * @return \StructType\TransactionRefundResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionRefundResponseBody
      */
     public function setConsumer_msisdn($consumer_msisdn = null)
     {
@@ -221,7 +221,7 @@ class TransactionRefundResponseBody extends ResponseBody
     /**
      * Set masked_account_no value
      * @param string $masked_account_no
-     * @return \StructType\TransactionRefundResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionRefundResponseBody
      */
     public function setMasked_account_no($masked_account_no = null)
     {
@@ -243,7 +243,7 @@ class TransactionRefundResponseBody extends ResponseBody
     /**
      * Set masked_mobile_account_no value
      * @param string $masked_mobile_account_no
-     * @return \StructType\TransactionRefundResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionRefundResponseBody
      */
     public function setMasked_mobile_account_no($masked_mobile_account_no = null)
     {
@@ -265,7 +265,7 @@ class TransactionRefundResponseBody extends ResponseBody
     /**
      * Set funding_approval_code value
      * @param string $funding_approval_code
-     * @return \StructType\TransactionRefundResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionRefundResponseBody
      */
     public function setFunding_approval_code($funding_approval_code = null)
     {
@@ -287,7 +287,7 @@ class TransactionRefundResponseBody extends ResponseBody
     /**
      * Set payment_approval_code value
      * @param string $payment_approval_code
-     * @return \StructType\TransactionRefundResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionRefundResponseBody
      */
     public function setPayment_approval_code($payment_approval_code = null)
     {
@@ -309,7 +309,7 @@ class TransactionRefundResponseBody extends ResponseBody
     /**
      * Set trans_date value
      * @param string $trans_date
-     * @return \StructType\TransactionRefundResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionRefundResponseBody
      */
     public function setTrans_date($trans_date = null)
     {
@@ -331,7 +331,7 @@ class TransactionRefundResponseBody extends ResponseBody
     /**
      * Set order_no value
      * @param string $order_no
-     * @return \StructType\TransactionRefundResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionRefundResponseBody
      */
     public function setOrder_no($order_no = null)
     {
@@ -353,7 +353,7 @@ class TransactionRefundResponseBody extends ResponseBody
     /**
      * Set currency_code value
      * @param string $currency_code
-     * @return \StructType\TransactionRefundResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionRefundResponseBody
      */
     public function setCurrency_code($currency_code = null)
     {
@@ -375,7 +375,7 @@ class TransactionRefundResponseBody extends ResponseBody
     /**
      * Set amount value
      * @param int $amount
-     * @return \StructType\TransactionRefundResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionRefundResponseBody
      */
     public function setAmount($amount = null)
     {
@@ -397,7 +397,7 @@ class TransactionRefundResponseBody extends ResponseBody
     /**
      * Set pointAmount value
      * @param int $pointAmount
-     * @return \StructType\TransactionRefundResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionRefundResponseBody
      */
     public function setPointAmount($pointAmount = null)
     {
@@ -419,7 +419,7 @@ class TransactionRefundResponseBody extends ResponseBody
     /**
      * Set macro_merchant_id value
      * @param string $macro_merchant_id
-     * @return \StructType\TransactionRefundResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionRefundResponseBody
      */
     public function setMacro_merchant_id($macro_merchant_id = null)
     {
@@ -441,7 +441,7 @@ class TransactionRefundResponseBody extends ResponseBody
     /**
      * Set merchant_name value
      * @param string $merchant_name
-     * @return \StructType\TransactionRefundResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionRefundResponseBody
      */
     public function setMerchant_name($merchant_name = null)
     {
@@ -458,7 +458,7 @@ class TransactionRefundResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TransactionRefundResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionRefundResponseBody
      */
     public static function __set_state(array $array)
     {

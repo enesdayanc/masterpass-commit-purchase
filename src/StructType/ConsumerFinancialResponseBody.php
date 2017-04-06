@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -122,7 +122,7 @@ class ConsumerFinancialResponseBody extends ResponseBody
     /**
      * Set approval_code value
      * @param string $approval_code
-     * @return \StructType\ConsumerFinancialResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerFinancialResponseBody
      */
     public function setApproval_code($approval_code = null)
     {
@@ -144,7 +144,7 @@ class ConsumerFinancialResponseBody extends ResponseBody
     /**
      * Set reserved_field_1 value
      * @param string $reserved_field_1
-     * @return \StructType\ConsumerFinancialResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerFinancialResponseBody
      */
     public function setReserved_field_1($reserved_field_1 = null)
     {
@@ -166,7 +166,7 @@ class ConsumerFinancialResponseBody extends ResponseBody
     /**
      * Set reserved_field_2 value
      * @param string $reserved_field_2
-     * @return \StructType\ConsumerFinancialResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerFinancialResponseBody
      */
     public function setReserved_field_2($reserved_field_2 = null)
     {
@@ -188,7 +188,7 @@ class ConsumerFinancialResponseBody extends ResponseBody
     /**
      * Set reserved_field_3 value
      * @param string $reserved_field_3
-     * @return \StructType\ConsumerFinancialResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerFinancialResponseBody
      */
     public function setReserved_field_3($reserved_field_3 = null)
     {
@@ -210,7 +210,7 @@ class ConsumerFinancialResponseBody extends ResponseBody
     /**
      * Set reserved_field_4 value
      * @param string $reserved_field_4
-     * @return \StructType\ConsumerFinancialResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerFinancialResponseBody
      */
     public function setReserved_field_4($reserved_field_4 = null)
     {
@@ -232,7 +232,7 @@ class ConsumerFinancialResponseBody extends ResponseBody
     /**
      * Set masked_account_no value
      * @param string $masked_account_no
-     * @return \StructType\ConsumerFinancialResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerFinancialResponseBody
      */
     public function setMasked_account_no($masked_account_no = null)
     {
@@ -254,7 +254,7 @@ class ConsumerFinancialResponseBody extends ResponseBody
     /**
      * Set currency_code value
      * @param string $currency_code
-     * @return \StructType\ConsumerFinancialResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerFinancialResponseBody
      */
     public function setCurrency_code($currency_code = null)
     {
@@ -281,7 +281,7 @@ class ConsumerFinancialResponseBody extends ResponseBody
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param float $avail_bal_amount
-     * @return \StructType\ConsumerFinancialResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerFinancialResponseBody
      */
     public function setAvail_bal_amount($avail_bal_amount = null)
     {
@@ -298,7 +298,7 @@ class ConsumerFinancialResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ConsumerFinancialResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerFinancialResponseBody
      */
     public static function __set_state(array $array)
     {

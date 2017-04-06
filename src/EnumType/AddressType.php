@@ -1,6 +1,6 @@
 <?php
 
-namespace EnumType;
+namespace Enesdayanc\MasterpassCommitPurchase\EnumType;
 
 /**
  * This class stands for AddressType EnumType

@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Enesdayanc\MasterpassCommitPurchase\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class ArrayOfMPListItem extends AbstractStructArrayBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\MPListItem[]
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\MPListItem[]
      */
     public $list_item;
     /**
      * Constructor method for ArrayOfMPListItem
      * @uses ArrayOfMPListItem::setList_item()
-     * @param \StructType\MPListItem[] $list_item
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\MPListItem[] $list_item
      */
     public function __construct(array $list_item = array())
     {
@@ -34,7 +34,7 @@ class ArrayOfMPListItem extends AbstractStructArrayBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\MPListItem[]|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPListItem[]|null
      */
     public function getList_item()
     {
@@ -45,15 +45,15 @@ class ArrayOfMPListItem extends AbstractStructArrayBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\MPListItem[] $list_item
-     * @return \ArrayType\ArrayOfMPListItem
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\MPListItem[] $list_item
+     * @return \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfMPListItem
      */
     public function setList_item(array $list_item = array())
     {
         foreach ($list_item as $arrayOfMPListItemList_itemItem) {
             // validation for constraint: itemType
-            if (!$arrayOfMPListItemList_itemItem instanceof \StructType\MPListItem) {
-                throw new \InvalidArgumentException(sprintf('The list_item property can only contain items of \StructType\MPListItem, "%s" given', is_object($arrayOfMPListItemList_itemItem) ? get_class($arrayOfMPListItemList_itemItem) : gettype($arrayOfMPListItemList_itemItem)), __LINE__);
+            if (!$arrayOfMPListItemList_itemItem instanceof \Enesdayanc\MasterpassCommitPurchase\StructType\MPListItem) {
+                throw new \InvalidArgumentException(sprintf('The list_item property can only contain items of \Enesdayanc\MasterpassCommitPurchase\StructType\MPListItem, "%s" given', is_object($arrayOfMPListItemList_itemItem) ? get_class($arrayOfMPListItemList_itemItem) : gettype($arrayOfMPListItemList_itemItem)), __LINE__);
             }
         }
         if (is_null($list_item) || (is_array($list_item) && empty($list_item))) {
@@ -66,14 +66,14 @@ class ArrayOfMPListItem extends AbstractStructArrayBase
     /**
      * Add item to list_item value
      * @throws \InvalidArgumentException
-     * @param \StructType\MPListItem $item
-     * @return \ArrayType\ArrayOfMPListItem
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\MPListItem $item
+     * @return \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfMPListItem
      */
-    public function addToList_item(\StructType\MPListItem $item)
+    public function addToList_item(\Enesdayanc\MasterpassCommitPurchase\StructType\MPListItem $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\MPListItem) {
-            throw new \InvalidArgumentException(sprintf('The list_item property can only contain items of \StructType\MPListItem, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Enesdayanc\MasterpassCommitPurchase\StructType\MPListItem) {
+            throw new \InvalidArgumentException(sprintf('The list_item property can only contain items of \Enesdayanc\MasterpassCommitPurchase\StructType\MPListItem, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->list_item[] = $item;
         return $this;
@@ -81,7 +81,7 @@ class ArrayOfMPListItem extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\MPListItem|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPListItem|null
      */
     public function current()
     {
@@ -91,7 +91,7 @@ class ArrayOfMPListItem extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\MPListItem|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPListItem|null
      */
     public function item($index)
     {
@@ -100,7 +100,7 @@ class ArrayOfMPListItem extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\MPListItem|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPListItem|null
      */
     public function first()
     {
@@ -109,7 +109,7 @@ class ArrayOfMPListItem extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\MPListItem|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPListItem|null
      */
     public function last()
     {
@@ -119,7 +119,7 @@ class ArrayOfMPListItem extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\MPListItem|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPListItem|null
      */
     public function offsetGet($offset)
     {
@@ -140,7 +140,7 @@ class ArrayOfMPListItem extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfMPListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfMPListItem
      */
     public static function __set_state(array $array)
     {

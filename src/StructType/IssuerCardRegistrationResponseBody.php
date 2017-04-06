@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -52,7 +52,7 @@ class IssuerCardRegistrationResponseBody extends ResponseBody
     /**
      * Set response_description value
      * @param string $response_description
-     * @return \StructType\IssuerCardRegistrationResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\IssuerCardRegistrationResponseBody
      */
     public function setResponse_description($response_description = null)
     {
@@ -74,7 +74,7 @@ class IssuerCardRegistrationResponseBody extends ResponseBody
     /**
      * Set mpg_account_number value
      * @param string $mpg_account_number
-     * @return \StructType\IssuerCardRegistrationResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\IssuerCardRegistrationResponseBody
      */
     public function setMpg_account_number($mpg_account_number = null)
     {
@@ -91,7 +91,7 @@ class IssuerCardRegistrationResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\IssuerCardRegistrationResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\IssuerCardRegistrationResponseBody
      */
     public static function __set_state(array $array)
     {

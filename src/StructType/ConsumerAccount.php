@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -94,7 +94,7 @@ class ConsumerAccount extends AbstractStructBase
     /**
      * Set subs_id value
      * @param string $subs_id
-     * @return \StructType\ConsumerAccount
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerAccount
      */
     public function setSubs_id($subs_id = null)
     {
@@ -116,7 +116,7 @@ class ConsumerAccount extends AbstractStructBase
     /**
      * Set msisdn value
      * @param string $msisdn
-     * @return \StructType\ConsumerAccount
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerAccount
      */
     public function setMsisdn($msisdn = null)
     {
@@ -138,7 +138,7 @@ class ConsumerAccount extends AbstractStructBase
     /**
      * Set first_name value
      * @param string $first_name
-     * @return \StructType\ConsumerAccount
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerAccount
      */
     public function setFirst_name($first_name = null)
     {
@@ -160,7 +160,7 @@ class ConsumerAccount extends AbstractStructBase
     /**
      * Set last_name value
      * @param string $last_name
-     * @return \StructType\ConsumerAccount
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerAccount
      */
     public function setLast_name($last_name = null)
     {
@@ -182,7 +182,7 @@ class ConsumerAccount extends AbstractStructBase
     /**
      * Set mno_id value
      * @param string $mno_id
-     * @return \StructType\ConsumerAccount
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerAccount
      */
     public function setMno_id($mno_id = null)
     {
@@ -204,7 +204,7 @@ class ConsumerAccount extends AbstractStructBase
     /**
      * Set mno_name value
      * @param string $mno_name
-     * @return \StructType\ConsumerAccount
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerAccount
      */
     public function setMno_name($mno_name = null)
     {
@@ -221,7 +221,7 @@ class ConsumerAccount extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ConsumerAccount
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerAccount
      */
     public static function __set_state(array $array)
     {

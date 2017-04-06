@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class VerifyMpinResponseBody extends ResponseBody
     /**
      * Set accountStatus value
      * @param string $accountStatus
-     * @return \StructType\VerifyMpinResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\VerifyMpinResponseBody
      */
     public function setAccountStatus($accountStatus = null)
     {
@@ -56,7 +56,7 @@ class VerifyMpinResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\VerifyMpinResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\VerifyMpinResponseBody
      */
     public static function __set_state(array $array)
     {

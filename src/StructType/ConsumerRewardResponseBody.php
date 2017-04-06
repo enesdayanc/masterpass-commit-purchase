@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -110,7 +110,7 @@ class ConsumerRewardResponseBody extends ResponseBody
     /**
      * Set approval_code value
      * @param string $approval_code
-     * @return \StructType\ConsumerRewardResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerRewardResponseBody
      */
     public function setApproval_code($approval_code = null)
     {
@@ -132,7 +132,7 @@ class ConsumerRewardResponseBody extends ResponseBody
     /**
      * Set reserved_field_1 value
      * @param string $reserved_field_1
-     * @return \StructType\ConsumerRewardResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerRewardResponseBody
      */
     public function setReserved_field_1($reserved_field_1 = null)
     {
@@ -154,7 +154,7 @@ class ConsumerRewardResponseBody extends ResponseBody
     /**
      * Set reserved_field_2 value
      * @param string $reserved_field_2
-     * @return \StructType\ConsumerRewardResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerRewardResponseBody
      */
     public function setReserved_field_2($reserved_field_2 = null)
     {
@@ -176,7 +176,7 @@ class ConsumerRewardResponseBody extends ResponseBody
     /**
      * Set reserved_field_3 value
      * @param string $reserved_field_3
-     * @return \StructType\ConsumerRewardResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerRewardResponseBody
      */
     public function setReserved_field_3($reserved_field_3 = null)
     {
@@ -198,7 +198,7 @@ class ConsumerRewardResponseBody extends ResponseBody
     /**
      * Set reserved_field_4 value
      * @param string $reserved_field_4
-     * @return \StructType\ConsumerRewardResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerRewardResponseBody
      */
     public function setReserved_field_4($reserved_field_4 = null)
     {
@@ -220,7 +220,7 @@ class ConsumerRewardResponseBody extends ResponseBody
     /**
      * Set masked_account_no value
      * @param string $masked_account_no
-     * @return \StructType\ConsumerRewardResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerRewardResponseBody
      */
     public function setMasked_account_no($masked_account_no = null)
     {
@@ -242,7 +242,7 @@ class ConsumerRewardResponseBody extends ResponseBody
     /**
      * Set currency_code value
      * @param string $currency_code
-     * @return \StructType\ConsumerRewardResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerRewardResponseBody
      */
     public function setCurrency_code($currency_code = null)
     {
@@ -259,7 +259,7 @@ class ConsumerRewardResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ConsumerRewardResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerRewardResponseBody
      */
     public static function __set_state(array $array)
     {

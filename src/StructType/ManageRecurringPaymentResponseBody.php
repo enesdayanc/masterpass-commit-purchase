@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -84,7 +84,7 @@ class ManageRecurringPaymentResponseBody extends ResponseBody
     /**
      * Set end_date value
      * @param string $end_date
-     * @return \StructType\ManageRecurringPaymentResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ManageRecurringPaymentResponseBody
      */
     public function setEnd_date($end_date = null)
     {
@@ -106,7 +106,7 @@ class ManageRecurringPaymentResponseBody extends ResponseBody
     /**
      * Set msisdn value
      * @param string $msisdn
-     * @return \StructType\ManageRecurringPaymentResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ManageRecurringPaymentResponseBody
      */
     public function setMsisdn($msisdn = null)
     {
@@ -128,7 +128,7 @@ class ManageRecurringPaymentResponseBody extends ResponseBody
     /**
      * Set list_account_name value
      * @param string $list_account_name
-     * @return \StructType\ManageRecurringPaymentResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ManageRecurringPaymentResponseBody
      */
     public function setList_account_name($list_account_name = null)
     {
@@ -150,7 +150,7 @@ class ManageRecurringPaymentResponseBody extends ResponseBody
     /**
      * Set amount value
      * @param int $amount
-     * @return \StructType\ManageRecurringPaymentResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ManageRecurringPaymentResponseBody
      */
     public function setAmount($amount = null)
     {
@@ -172,7 +172,7 @@ class ManageRecurringPaymentResponseBody extends ResponseBody
     /**
      * Set masked_account_no value
      * @param string $masked_account_no
-     * @return \StructType\ManageRecurringPaymentResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ManageRecurringPaymentResponseBody
      */
     public function setMasked_account_no($masked_account_no = null)
     {
@@ -189,7 +189,7 @@ class ManageRecurringPaymentResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ManageRecurringPaymentResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ManageRecurringPaymentResponseBody
      */
     public static function __set_state(array $array)
     {

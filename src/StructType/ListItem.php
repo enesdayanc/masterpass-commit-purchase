@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -155,7 +155,7 @@ class ListItem extends AbstractStructBase
     /**
      * Set list_item_value_2 value
      * @param string $list_item_value_2
-     * @return \StructType\ListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ListItem
      */
     public function setList_item_value_2($list_item_value_2 = null)
     {
@@ -177,7 +177,7 @@ class ListItem extends AbstractStructBase
     /**
      * Set card_status value
      * @param string $card_status
-     * @return \StructType\ListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ListItem
      */
     public function setCard_status($card_status = null)
     {
@@ -199,7 +199,7 @@ class ListItem extends AbstractStructBase
     /**
      * Set unique_id value
      * @param string $unique_id
-     * @return \StructType\ListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ListItem
      */
     public function setUnique_id($unique_id = null)
     {
@@ -221,7 +221,7 @@ class ListItem extends AbstractStructBase
     /**
      * Set eft_code value
      * @param string $eft_code
-     * @return \StructType\ListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ListItem
      */
     public function setEft_code($eft_code = null)
     {
@@ -243,7 +243,7 @@ class ListItem extends AbstractStructBase
     /**
      * Set list_item_name value
      * @param string $list_item_name
-     * @return \StructType\ListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ListItem
      */
     public function setList_item_name($list_item_name = null)
     {
@@ -269,17 +269,17 @@ class ListItem extends AbstractStructBase
      * Set prompt_cpin value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \EnumType\YesNoFlag::valueIsValid()
-     * @uses \EnumType\YesNoFlag::getValidValues()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::valueIsValid()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $prompt_cpin
-     * @return \StructType\ListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ListItem
      */
     public function setPrompt_cpin($prompt_cpin = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\YesNoFlag::valueIsValid($prompt_cpin)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $prompt_cpin, implode(', ', \EnumType\YesNoFlag::getValidValues())), __LINE__);
+        if (!\Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::valueIsValid($prompt_cpin)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $prompt_cpin, implode(', ', \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::getValidValues())), __LINE__);
         }
         if (is_null($prompt_cpin) || (is_array($prompt_cpin) && empty($prompt_cpin))) {
             unset($this->prompt_cpin);
@@ -299,7 +299,7 @@ class ListItem extends AbstractStructBase
     /**
      * Set list_item_value_1 value
      * @param string $list_item_value_1
-     * @return \StructType\ListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ListItem
      */
     public function setList_item_value_1($list_item_value_1 = null)
     {
@@ -321,7 +321,7 @@ class ListItem extends AbstractStructBase
     /**
      * Set loyalty_code value
      * @param string $loyalty_code
-     * @return \StructType\ListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ListItem
      */
     public function setLoyalty_code($loyalty_code = null)
     {
@@ -343,7 +343,7 @@ class ListItem extends AbstractStructBase
     /**
      * Set product_name value
      * @param string $product_name
-     * @return \StructType\ListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ListItem
      */
     public function setProduct_name($product_name = null)
     {
@@ -365,7 +365,7 @@ class ListItem extends AbstractStructBase
     /**
      * Set bank_ica value
      * @param string $bank_ica
-     * @return \StructType\ListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ListItem
      */
     public function setBank_ica($bank_ica = null)
     {
@@ -391,17 +391,17 @@ class ListItem extends AbstractStructBase
      * Set is_masterpass_member value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \EnumType\YesNoFlag::valueIsValid()
-     * @uses \EnumType\YesNoFlag::getValidValues()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::valueIsValid()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $is_masterpass_member
-     * @return \StructType\ListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ListItem
      */
     public function setIs_masterpass_member($is_masterpass_member = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\YesNoFlag::valueIsValid($is_masterpass_member)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $is_masterpass_member, implode(', ', \EnumType\YesNoFlag::getValidValues())), __LINE__);
+        if (!\Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::valueIsValid($is_masterpass_member)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $is_masterpass_member, implode(', ', \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::getValidValues())), __LINE__);
         }
         if (is_null($is_masterpass_member) || (is_array($is_masterpass_member) && empty($is_masterpass_member))) {
             unset($this->is_masterpass_member);
@@ -416,7 +416,7 @@ class ListItem extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ListItem
      */
     public static function __set_state(array $array)
     {

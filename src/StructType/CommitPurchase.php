@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,22 +16,22 @@ class CommitPurchase extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - ref: s1:CommitPurchaseRequest
-     * @var \StructType\CommitPurchaseRequest
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\CommitPurchaseRequest
      */
     public $CommitPurchaseRequest;
     /**
      * Constructor method for CommitPurchase
      * @uses CommitPurchase::setCommitPurchaseRequest()
-     * @param \StructType\CommitPurchaseRequest $commitPurchaseRequest
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CommitPurchaseRequest $commitPurchaseRequest
      */
-    public function __construct(\StructType\CommitPurchaseRequest $commitPurchaseRequest = null)
+    public function __construct(\Enesdayanc\MasterpassCommitPurchase\StructType\CommitPurchaseRequest $commitPurchaseRequest = null)
     {
         $this
             ->setCommitPurchaseRequest($commitPurchaseRequest);
     }
     /**
      * Get CommitPurchaseRequest value
-     * @return \StructType\CommitPurchaseRequest
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CommitPurchaseRequest
      */
     public function getCommitPurchaseRequest()
     {
@@ -39,10 +39,10 @@ class CommitPurchase extends AbstractStructBase
     }
     /**
      * Set CommitPurchaseRequest value
-     * @param \StructType\CommitPurchaseRequest $commitPurchaseRequest
-     * @return \StructType\CommitPurchase
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CommitPurchaseRequest $commitPurchaseRequest
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CommitPurchase
      */
-    public function setCommitPurchaseRequest(\StructType\CommitPurchaseRequest $commitPurchaseRequest = null)
+    public function setCommitPurchaseRequest(\Enesdayanc\MasterpassCommitPurchase\StructType\CommitPurchaseRequest $commitPurchaseRequest = null)
     {
         $this->CommitPurchaseRequest = $commitPurchaseRequest;
         return $this;
@@ -53,7 +53,7 @@ class CommitPurchase extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CommitPurchase
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CommitPurchase
      */
     public static function __set_state(array $array)
     {

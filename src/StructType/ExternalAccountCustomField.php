@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -256,7 +256,7 @@ class ExternalAccountCustomField extends AbstractStructBase
     /**
      * Set bank_ica value
      * @param string $bank_ica
-     * @return \StructType\ExternalAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ExternalAccountCustomField
      */
     public function setBank_ica($bank_ica = null)
     {
@@ -278,7 +278,7 @@ class ExternalAccountCustomField extends AbstractStructBase
     /**
      * Set loyalty_code value
      * @param string $loyalty_code
-     * @return \StructType\ExternalAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ExternalAccountCustomField
      */
     public function setLoyalty_code($loyalty_code = null)
     {
@@ -300,7 +300,7 @@ class ExternalAccountCustomField extends AbstractStructBase
     /**
      * Set product_name value
      * @param string $product_name
-     * @return \StructType\ExternalAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ExternalAccountCustomField
      */
     public function setProduct_name($product_name = null)
     {
@@ -322,7 +322,7 @@ class ExternalAccountCustomField extends AbstractStructBase
     /**
      * Set delink_reason value
      * @param string $delink_reason
-     * @return \StructType\ExternalAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ExternalAccountCustomField
      */
     public function setDelink_reason($delink_reason = null)
     {
@@ -344,7 +344,7 @@ class ExternalAccountCustomField extends AbstractStructBase
     /**
      * Set account_alias_name value
      * @param string $account_alias_name
-     * @return \StructType\ExternalAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ExternalAccountCustomField
      */
     public function setAccount_alias_name($account_alias_name = null)
     {
@@ -366,7 +366,7 @@ class ExternalAccountCustomField extends AbstractStructBase
     /**
      * Set card_holder_name value
      * @param string $card_holder_name
-     * @return \StructType\ExternalAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ExternalAccountCustomField
      */
     public function setCard_holder_name($card_holder_name = null)
     {
@@ -388,7 +388,7 @@ class ExternalAccountCustomField extends AbstractStructBase
     /**
      * Set cobrand_card value
      * @param string $cobrand_card
-     * @return \StructType\ExternalAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ExternalAccountCustomField
      */
     public function setCobrand_card($cobrand_card = null)
     {
@@ -410,7 +410,7 @@ class ExternalAccountCustomField extends AbstractStructBase
     /**
      * Set pseudo_pan value
      * @param string $pseudo_pan
-     * @return \StructType\ExternalAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ExternalAccountCustomField
      */
     public function setPseudo_pan($pseudo_pan = null)
     {
@@ -432,7 +432,7 @@ class ExternalAccountCustomField extends AbstractStructBase
     /**
      * Set card_program_code value
      * @param string $card_program_code
-     * @return \StructType\ExternalAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ExternalAccountCustomField
      */
     public function setCard_program_code($card_program_code = null)
     {
@@ -454,7 +454,7 @@ class ExternalAccountCustomField extends AbstractStructBase
     /**
      * Set registration_channel_id value
      * @param string $registration_channel_id
-     * @return \StructType\ExternalAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ExternalAccountCustomField
      */
     public function setRegistration_channel_id($registration_channel_id = null)
     {
@@ -476,7 +476,7 @@ class ExternalAccountCustomField extends AbstractStructBase
     /**
      * Set custom_field_7 value
      * @param string $custom_field_7
-     * @return \StructType\ExternalAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ExternalAccountCustomField
      */
     public function setCustom_field_7($custom_field_7 = null)
     {
@@ -498,7 +498,7 @@ class ExternalAccountCustomField extends AbstractStructBase
     /**
      * Set custom_field_8 value
      * @param string $custom_field_8
-     * @return \StructType\ExternalAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ExternalAccountCustomField
      */
     public function setCustom_field_8($custom_field_8 = null)
     {
@@ -520,7 +520,7 @@ class ExternalAccountCustomField extends AbstractStructBase
     /**
      * Set custom_field_9 value
      * @param string $custom_field_9
-     * @return \StructType\ExternalAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ExternalAccountCustomField
      */
     public function setCustom_field_9($custom_field_9 = null)
     {
@@ -542,7 +542,7 @@ class ExternalAccountCustomField extends AbstractStructBase
     /**
      * Set custom_field_10 value
      * @param string $custom_field_10
-     * @return \StructType\ExternalAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ExternalAccountCustomField
      */
     public function setCustom_field_10($custom_field_10 = null)
     {
@@ -564,7 +564,7 @@ class ExternalAccountCustomField extends AbstractStructBase
     /**
      * Set custom_field_11 value
      * @param string $custom_field_11
-     * @return \StructType\ExternalAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ExternalAccountCustomField
      */
     public function setCustom_field_11($custom_field_11 = null)
     {
@@ -586,7 +586,7 @@ class ExternalAccountCustomField extends AbstractStructBase
     /**
      * Set custom_field_12 value
      * @param string $custom_field_12
-     * @return \StructType\ExternalAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ExternalAccountCustomField
      */
     public function setCustom_field_12($custom_field_12 = null)
     {
@@ -608,7 +608,7 @@ class ExternalAccountCustomField extends AbstractStructBase
     /**
      * Set custom_field_13 value
      * @param string $custom_field_13
-     * @return \StructType\ExternalAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ExternalAccountCustomField
      */
     public function setCustom_field_13($custom_field_13 = null)
     {
@@ -630,7 +630,7 @@ class ExternalAccountCustomField extends AbstractStructBase
     /**
      * Set custom_field_14 value
      * @param string $custom_field_14
-     * @return \StructType\ExternalAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ExternalAccountCustomField
      */
     public function setCustom_field_14($custom_field_14 = null)
     {
@@ -652,7 +652,7 @@ class ExternalAccountCustomField extends AbstractStructBase
     /**
      * Set custom_field_15 value
      * @param string $custom_field_15
-     * @return \StructType\ExternalAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ExternalAccountCustomField
      */
     public function setCustom_field_15($custom_field_15 = null)
     {
@@ -669,7 +669,7 @@ class ExternalAccountCustomField extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ExternalAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ExternalAccountCustomField
      */
     public static function __set_state(array $array)
     {

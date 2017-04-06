@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -213,7 +213,7 @@ class OrderItem extends AbstractStructBase
     /**
      * Set order_product_name value
      * @param string $order_product_name
-     * @return \StructType\OrderItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem
      */
     public function setOrder_product_name($order_product_name = null)
     {
@@ -235,7 +235,7 @@ class OrderItem extends AbstractStructBase
     /**
      * Set order_product_code value
      * @param string $order_product_code
-     * @return \StructType\OrderItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem
      */
     public function setOrder_product_code($order_product_code = null)
     {
@@ -257,7 +257,7 @@ class OrderItem extends AbstractStructBase
     /**
      * Set order_price value
      * @param int $order_price
-     * @return \StructType\OrderItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem
      */
     public function setOrder_price($order_price = null)
     {
@@ -279,7 +279,7 @@ class OrderItem extends AbstractStructBase
     /**
      * Set order_vat value
      * @param string $order_vat
-     * @return \StructType\OrderItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem
      */
     public function setOrder_vat($order_vat = null)
     {
@@ -300,17 +300,17 @@ class OrderItem extends AbstractStructBase
     }
     /**
      * Set order_price_type value
-     * @uses \EnumType\OrderPriceType::valueIsValid()
-     * @uses \EnumType\OrderPriceType::getValidValues()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\OrderPriceType::valueIsValid()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\OrderPriceType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $order_price_type
-     * @return \StructType\OrderItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem
      */
     public function setOrder_price_type($order_price_type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\OrderPriceType::valueIsValid($order_price_type)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $order_price_type, implode(', ', \EnumType\OrderPriceType::getValidValues())), __LINE__);
+        if (!\Enesdayanc\MasterpassCommitPurchase\EnumType\OrderPriceType::valueIsValid($order_price_type)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $order_price_type, implode(', ', \Enesdayanc\MasterpassCommitPurchase\EnumType\OrderPriceType::getValidValues())), __LINE__);
         }
         $this->order_price_type = $order_price_type;
         return $this;
@@ -326,7 +326,7 @@ class OrderItem extends AbstractStructBase
     /**
      * Set order_qty value
      * @param string $order_qty
-     * @return \StructType\OrderItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem
      */
     public function setOrder_qty($order_qty = null)
     {
@@ -348,7 +348,7 @@ class OrderItem extends AbstractStructBase
     /**
      * Set order_product_info value
      * @param string $order_product_info
-     * @return \StructType\OrderItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem
      */
     public function setOrder_product_info($order_product_info = null)
     {
@@ -370,7 +370,7 @@ class OrderItem extends AbstractStructBase
     /**
      * Set order_ver value
      * @param string $order_ver
-     * @return \StructType\OrderItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem
      */
     public function setOrder_ver($order_ver = null)
     {
@@ -392,7 +392,7 @@ class OrderItem extends AbstractStructBase
     /**
      * Set order_mplace_merchant value
      * @param string $order_mplace_merchant
-     * @return \StructType\OrderItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem
      */
     public function setOrder_mplace_merchant($order_mplace_merchant = null)
     {
@@ -414,7 +414,7 @@ class OrderItem extends AbstractStructBase
     /**
      * Set charge_type value
      * @param string $charge_type
-     * @return \StructType\OrderItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem
      */
     public function setCharge_type($charge_type = null)
     {
@@ -436,7 +436,7 @@ class OrderItem extends AbstractStructBase
     /**
      * Set preAuth_amount value
      * @param string $preAuth_amount
-     * @return \StructType\OrderItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem
      */
     public function setPreAuth_amount($preAuth_amount = null)
     {
@@ -458,7 +458,7 @@ class OrderItem extends AbstractStructBase
     /**
      * Set preAuth_date value
      * @param string $preAuth_date
-     * @return \StructType\OrderItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem
      */
     public function setPreAuth_date($preAuth_date = null)
     {
@@ -480,7 +480,7 @@ class OrderItem extends AbstractStructBase
     /**
      * Set auth_amount value
      * @param string $auth_amount
-     * @return \StructType\OrderItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem
      */
     public function setAuth_amount($auth_amount = null)
     {
@@ -502,7 +502,7 @@ class OrderItem extends AbstractStructBase
     /**
      * Set auth_date value
      * @param string $auth_date
-     * @return \StructType\OrderItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem
      */
     public function setAuth_date($auth_date = null)
     {
@@ -524,7 +524,7 @@ class OrderItem extends AbstractStructBase
     /**
      * Set status value
      * @param string $status
-     * @return \StructType\OrderItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem
      */
     public function setStatus($status = null)
     {
@@ -546,7 +546,7 @@ class OrderItem extends AbstractStructBase
     /**
      * Set order_id value
      * @param string $order_id
-     * @return \StructType\OrderItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem
      */
     public function setOrder_id($order_id = null)
     {
@@ -563,7 +563,7 @@ class OrderItem extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OrderItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -50,7 +50,7 @@ class CommitRecurringPaymentResponseBody extends ConsumerFinancialResponseBody
     /**
      * Set macro_merchant_id value
      * @param string $macro_merchant_id
-     * @return \StructType\CommitRecurringPaymentResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CommitRecurringPaymentResponseBody
      */
     public function setMacro_merchant_id($macro_merchant_id = null)
     {
@@ -72,7 +72,7 @@ class CommitRecurringPaymentResponseBody extends ConsumerFinancialResponseBody
     /**
      * Set order_no value
      * @param string $order_no
-     * @return \StructType\CommitRecurringPaymentResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CommitRecurringPaymentResponseBody
      */
     public function setOrder_no($order_no = null)
     {
@@ -89,7 +89,7 @@ class CommitRecurringPaymentResponseBody extends ConsumerFinancialResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CommitRecurringPaymentResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CommitRecurringPaymentResponseBody
      */
     public static function __set_state(array $array)
     {

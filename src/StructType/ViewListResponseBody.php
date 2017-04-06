@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class ViewListResponseBody extends ResponseBody
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfListItem
+     * @var \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfListItem
      */
     public $list_items;
     /**
@@ -31,9 +31,9 @@ class ViewListResponseBody extends ResponseBody
      * @uses ViewListResponseBody::setAccount_status()
      * @uses ViewListResponseBody::setList_items()
      * @param string $account_status
-     * @param \ArrayType\ArrayOfListItem $list_items
+     * @param \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfListItem $list_items
      */
-    public function __construct($account_status = null, \ArrayType\ArrayOfListItem $list_items = null)
+    public function __construct($account_status = null, \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfListItem $list_items = null)
     {
         $this
             ->setAccount_status($account_status)
@@ -50,7 +50,7 @@ class ViewListResponseBody extends ResponseBody
     /**
      * Set account_status value
      * @param string $account_status
-     * @return \StructType\ViewListResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ViewListResponseBody
      */
     public function setAccount_status($account_status = null)
     {
@@ -63,7 +63,7 @@ class ViewListResponseBody extends ResponseBody
     }
     /**
      * Get list_items value
-     * @return \ArrayType\ArrayOfListItem|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfListItem|null
      */
     public function getList_items()
     {
@@ -71,10 +71,10 @@ class ViewListResponseBody extends ResponseBody
     }
     /**
      * Set list_items value
-     * @param \ArrayType\ArrayOfListItem $list_items
-     * @return \StructType\ViewListResponseBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfListItem $list_items
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ViewListResponseBody
      */
-    public function setList_items(\ArrayType\ArrayOfListItem $list_items = null)
+    public function setList_items(\Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfListItem $list_items = null)
     {
         $this->list_items = $list_items;
         return $this;
@@ -85,7 +85,7 @@ class ViewListResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ViewListResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ViewListResponseBody
      */
     public static function __set_state(array $array)
     {

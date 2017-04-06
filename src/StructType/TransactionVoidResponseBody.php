@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -225,7 +225,7 @@ class TransactionVoidResponseBody extends ResponseBody
     /**
      * Set approval_code value
      * @param string $approval_code
-     * @return \StructType\TransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionVoidResponseBody
      */
     public function setApproval_code($approval_code = null)
     {
@@ -247,7 +247,7 @@ class TransactionVoidResponseBody extends ResponseBody
     /**
      * Set trans_ref_no value
      * @param string $trans_ref_no
-     * @return \StructType\TransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionVoidResponseBody
      */
     public function setTrans_ref_no($trans_ref_no = null)
     {
@@ -269,7 +269,7 @@ class TransactionVoidResponseBody extends ResponseBody
     /**
      * Set consumer_msisdn value
      * @param string $consumer_msisdn
-     * @return \StructType\TransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionVoidResponseBody
      */
     public function setConsumer_msisdn($consumer_msisdn = null)
     {
@@ -291,7 +291,7 @@ class TransactionVoidResponseBody extends ResponseBody
     /**
      * Set masked_account_no value
      * @param string $masked_account_no
-     * @return \StructType\TransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionVoidResponseBody
      */
     public function setMasked_account_no($masked_account_no = null)
     {
@@ -313,7 +313,7 @@ class TransactionVoidResponseBody extends ResponseBody
     /**
      * Set masked_mobile_account_no value
      * @param string $masked_mobile_account_no
-     * @return \StructType\TransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionVoidResponseBody
      */
     public function setMasked_mobile_account_no($masked_mobile_account_no = null)
     {
@@ -335,7 +335,7 @@ class TransactionVoidResponseBody extends ResponseBody
     /**
      * Set funding_approval_code value
      * @param string $funding_approval_code
-     * @return \StructType\TransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionVoidResponseBody
      */
     public function setFunding_approval_code($funding_approval_code = null)
     {
@@ -357,7 +357,7 @@ class TransactionVoidResponseBody extends ResponseBody
     /**
      * Set payment_approval_code value
      * @param string $payment_approval_code
-     * @return \StructType\TransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionVoidResponseBody
      */
     public function setPayment_approval_code($payment_approval_code = null)
     {
@@ -379,7 +379,7 @@ class TransactionVoidResponseBody extends ResponseBody
     /**
      * Set trans_date value
      * @param string $trans_date
-     * @return \StructType\TransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionVoidResponseBody
      */
     public function setTrans_date($trans_date = null)
     {
@@ -401,7 +401,7 @@ class TransactionVoidResponseBody extends ResponseBody
     /**
      * Set transaction_fee_1 value
      * @param float $transaction_fee_1
-     * @return \StructType\TransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionVoidResponseBody
      */
     public function setTransaction_fee_1($transaction_fee_1 = 0)
     {
@@ -419,7 +419,7 @@ class TransactionVoidResponseBody extends ResponseBody
     /**
      * Set transaction_fee_2 value
      * @param float $transaction_fee_2
-     * @return \StructType\TransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionVoidResponseBody
      */
     public function setTransaction_fee_2($transaction_fee_2 = 0)
     {
@@ -437,7 +437,7 @@ class TransactionVoidResponseBody extends ResponseBody
     /**
      * Set transaction_fee_3 value
      * @param float $transaction_fee_3
-     * @return \StructType\TransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionVoidResponseBody
      */
     public function setTransaction_fee_3($transaction_fee_3 = 0)
     {
@@ -455,7 +455,7 @@ class TransactionVoidResponseBody extends ResponseBody
     /**
      * Set sku value
      * @param string $sku
-     * @return \StructType\TransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionVoidResponseBody
      */
     public function setSku($sku = null)
     {
@@ -477,7 +477,7 @@ class TransactionVoidResponseBody extends ResponseBody
     /**
      * Set currency_code value
      * @param string $currency_code
-     * @return \StructType\TransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionVoidResponseBody
      */
     public function setCurrency_code($currency_code = null)
     {
@@ -499,7 +499,7 @@ class TransactionVoidResponseBody extends ResponseBody
     /**
      * Set amount value
      * @param int $amount
-     * @return \StructType\TransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionVoidResponseBody
      */
     public function setAmount($amount = null)
     {
@@ -521,7 +521,7 @@ class TransactionVoidResponseBody extends ResponseBody
     /**
      * Set macro_merchant_id value
      * @param string $macro_merchant_id
-     * @return \StructType\TransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionVoidResponseBody
      */
     public function setMacro_merchant_id($macro_merchant_id = null)
     {
@@ -543,7 +543,7 @@ class TransactionVoidResponseBody extends ResponseBody
     /**
      * Set merchant_name value
      * @param string $merchant_name
-     * @return \StructType\TransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionVoidResponseBody
      */
     public function setMerchant_name($merchant_name = null)
     {
@@ -565,7 +565,7 @@ class TransactionVoidResponseBody extends ResponseBody
     /**
      * Set reconciliation_date value
      * @param string $reconciliation_date
-     * @return \StructType\TransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionVoidResponseBody
      */
     public function setReconciliation_date($reconciliation_date = null)
     {
@@ -582,7 +582,7 @@ class TransactionVoidResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\TransactionVoidResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\TransactionVoidResponseBody
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -192,17 +192,17 @@ class CustomFields extends AbstractStructBase
     }
     /**
      * Set vpos_merchant value
-     * @uses \EnumType\YesNoFlag::valueIsValid()
-     * @uses \EnumType\YesNoFlag::getValidValues()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::valueIsValid()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $vpos_merchant
-     * @return \StructType\CustomFields
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomFields
      */
     public function setVpos_merchant($vpos_merchant = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\YesNoFlag::valueIsValid($vpos_merchant)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $vpos_merchant, implode(', ', \EnumType\YesNoFlag::getValidValues())), __LINE__);
+        if (!\Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::valueIsValid($vpos_merchant)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $vpos_merchant, implode(', ', \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::getValidValues())), __LINE__);
         }
         $this->vpos_merchant = $vpos_merchant;
         return $this;
@@ -218,7 +218,7 @@ class CustomFields extends AbstractStructBase
     /**
      * Set tax_id value
      * @param string $tax_id
-     * @return \StructType\CustomFields
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomFields
      */
     public function setTax_id($tax_id = null)
     {
@@ -240,7 +240,7 @@ class CustomFields extends AbstractStructBase
     /**
      * Set vpos_provision_password value
      * @param string $vpos_provision_password
-     * @return \StructType\CustomFields
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomFields
      */
     public function setVpos_provision_password($vpos_provision_password = null)
     {
@@ -262,7 +262,7 @@ class CustomFields extends AbstractStructBase
     /**
      * Set vpos_terminal_user_id value
      * @param string $vpos_terminal_user_id
-     * @return \StructType\CustomFields
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomFields
      */
     public function setVpos_terminal_user_id($vpos_terminal_user_id = null)
     {
@@ -284,7 +284,7 @@ class CustomFields extends AbstractStructBase
     /**
      * Set vpos_merchant_email value
      * @param string $vpos_merchant_email
-     * @return \StructType\CustomFields
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomFields
      */
     public function setVpos_merchant_email($vpos_merchant_email = null)
     {
@@ -306,7 +306,7 @@ class CustomFields extends AbstractStructBase
     /**
      * Set vpos_terminal_prov_user_id value
      * @param string $vpos_terminal_prov_user_id
-     * @return \StructType\CustomFields
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomFields
      */
     public function setVpos_terminal_prov_user_id($vpos_terminal_prov_user_id = null)
     {
@@ -328,7 +328,7 @@ class CustomFields extends AbstractStructBase
     /**
      * Set vpos_store_key value
      * @param string $vpos_store_key
-     * @return \StructType\CustomFields
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomFields
      */
     public function setVpos_store_key($vpos_store_key = null)
     {
@@ -350,7 +350,7 @@ class CustomFields extends AbstractStructBase
     /**
      * Set custom_field_8 value
      * @param string $custom_field_8
-     * @return \StructType\CustomFields
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomFields
      */
     public function setCustom_field_8($custom_field_8 = null)
     {
@@ -372,7 +372,7 @@ class CustomFields extends AbstractStructBase
     /**
      * Set custom_field_9 value
      * @param string $custom_field_9
-     * @return \StructType\CustomFields
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomFields
      */
     public function setCustom_field_9($custom_field_9 = null)
     {
@@ -394,7 +394,7 @@ class CustomFields extends AbstractStructBase
     /**
      * Set custom_field_10 value
      * @param string $custom_field_10
-     * @return \StructType\CustomFields
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomFields
      */
     public function setCustom_field_10($custom_field_10 = null)
     {
@@ -416,7 +416,7 @@ class CustomFields extends AbstractStructBase
     /**
      * Set custom_field_11 value
      * @param string $custom_field_11
-     * @return \StructType\CustomFields
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomFields
      */
     public function setCustom_field_11($custom_field_11 = null)
     {
@@ -438,7 +438,7 @@ class CustomFields extends AbstractStructBase
     /**
      * Set custom_field_12 value
      * @param string $custom_field_12
-     * @return \StructType\CustomFields
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomFields
      */
     public function setCustom_field_12($custom_field_12 = null)
     {
@@ -460,7 +460,7 @@ class CustomFields extends AbstractStructBase
     /**
      * Set custom_field_13 value
      * @param string $custom_field_13
-     * @return \StructType\CustomFields
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomFields
      */
     public function setCustom_field_13($custom_field_13 = null)
     {
@@ -482,7 +482,7 @@ class CustomFields extends AbstractStructBase
     /**
      * Set custom_field_14 value
      * @param string $custom_field_14
-     * @return \StructType\CustomFields
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomFields
      */
     public function setCustom_field_14($custom_field_14 = null)
     {
@@ -504,7 +504,7 @@ class CustomFields extends AbstractStructBase
     /**
      * Set custom_field_15 value
      * @param string $custom_field_15
-     * @return \StructType\CustomFields
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomFields
      */
     public function setCustom_field_15($custom_field_15 = null)
     {
@@ -521,7 +521,7 @@ class CustomFields extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CustomFields
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomFields
      */
     public static function __set_state(array $array)
     {

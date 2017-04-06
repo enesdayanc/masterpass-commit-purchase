@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -83,7 +83,7 @@ class OtherMerchantResponseBody extends ConsumerFinancialResponseBody
     /**
      * Set merchant_name value
      * @param string $merchant_name
-     * @return \StructType\OtherMerchantResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OtherMerchantResponseBody
      */
     public function setMerchant_name($merchant_name = null)
     {
@@ -105,7 +105,7 @@ class OtherMerchantResponseBody extends ConsumerFinancialResponseBody
     /**
      * Set reconciliation_date value
      * @param string $reconciliation_date
-     * @return \StructType\OtherMerchantResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OtherMerchantResponseBody
      */
     public function setReconciliation_date($reconciliation_date = null)
     {
@@ -127,7 +127,7 @@ class OtherMerchantResponseBody extends ConsumerFinancialResponseBody
     /**
      * Set masked_sender_rta value
      * @param string $masked_sender_rta
-     * @return \StructType\OtherMerchantResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OtherMerchantResponseBody
      */
     public function setMasked_sender_rta($masked_sender_rta = null)
     {
@@ -149,7 +149,7 @@ class OtherMerchantResponseBody extends ConsumerFinancialResponseBody
     /**
      * Set requestOrderId value
      * @param string $requestOrderId
-     * @return \StructType\OtherMerchantResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OtherMerchantResponseBody
      */
     public function setRequestOrderId($requestOrderId = null)
     {
@@ -171,7 +171,7 @@ class OtherMerchantResponseBody extends ConsumerFinancialResponseBody
     /**
      * Set token value
      * @param string $token
-     * @return \StructType\OtherMerchantResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OtherMerchantResponseBody
      */
     public function setToken($token = null)
     {
@@ -188,7 +188,7 @@ class OtherMerchantResponseBody extends ConsumerFinancialResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OtherMerchantResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OtherMerchantResponseBody
      */
     public static function __set_state(array $array)
     {

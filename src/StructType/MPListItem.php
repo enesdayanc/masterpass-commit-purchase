@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class MPListItem extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Card
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\Card
      */
     public $Card;
     /**
@@ -23,17 +23,17 @@ class MPListItem extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\Contact
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\Contact
      */
     public $Contact;
     /**
      * Constructor method for MPListItem
      * @uses MPListItem::setCard()
      * @uses MPListItem::setContact()
-     * @param \StructType\Card $card
-     * @param \StructType\Contact $contact
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\Card $card
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\Contact $contact
      */
-    public function __construct(\StructType\Card $card = null, \StructType\Contact $contact = null)
+    public function __construct(\Enesdayanc\MasterpassCommitPurchase\StructType\Card $card = null, \Enesdayanc\MasterpassCommitPurchase\StructType\Contact $contact = null)
     {
         $this
             ->setCard($card)
@@ -41,7 +41,7 @@ class MPListItem extends AbstractStructBase
     }
     /**
      * Get Card value
-     * @return \StructType\Card|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\Card|null
      */
     public function getCard()
     {
@@ -49,17 +49,17 @@ class MPListItem extends AbstractStructBase
     }
     /**
      * Set Card value
-     * @param \StructType\Card $card
-     * @return \StructType\MPListItem
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\Card $card
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPListItem
      */
-    public function setCard(\StructType\Card $card = null)
+    public function setCard(\Enesdayanc\MasterpassCommitPurchase\StructType\Card $card = null)
     {
         $this->Card = $card;
         return $this;
     }
     /**
      * Get Contact value
-     * @return \StructType\Contact|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\Contact|null
      */
     public function getContact()
     {
@@ -67,10 +67,10 @@ class MPListItem extends AbstractStructBase
     }
     /**
      * Set Contact value
-     * @param \StructType\Contact $contact
-     * @return \StructType\MPListItem
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\Contact $contact
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPListItem
      */
-    public function setContact(\StructType\Contact $contact = null)
+    public function setContact(\Enesdayanc\MasterpassCommitPurchase\StructType\Contact $contact = null)
     {
         $this->Contact = $contact;
         return $this;
@@ -81,7 +81,7 @@ class MPListItem extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\MPListItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPListItem
      */
     public static function __set_state(array $array)
     {

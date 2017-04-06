@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -61,7 +61,7 @@ class ReversePurchaseResponseBody extends ResponseBody
     /**
      * Set transaction_fee_1 value
      * @param float $transaction_fee_1
-     * @return \StructType\ReversePurchaseResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ReversePurchaseResponseBody
      */
     public function setTransaction_fee_1($transaction_fee_1 = null)
     {
@@ -79,7 +79,7 @@ class ReversePurchaseResponseBody extends ResponseBody
     /**
      * Set transaction_fee_2 value
      * @param float $transaction_fee_2
-     * @return \StructType\ReversePurchaseResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ReversePurchaseResponseBody
      */
     public function setTransaction_fee_2($transaction_fee_2 = null)
     {
@@ -97,7 +97,7 @@ class ReversePurchaseResponseBody extends ResponseBody
     /**
      * Set transaction_fee_3 value
      * @param float $transaction_fee_3
-     * @return \StructType\ReversePurchaseResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ReversePurchaseResponseBody
      */
     public function setTransaction_fee_3($transaction_fee_3 = null)
     {
@@ -110,7 +110,7 @@ class ReversePurchaseResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ReversePurchaseResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ReversePurchaseResponseBody
      */
     public static function __set_state(array $array)
     {

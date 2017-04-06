@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -23,7 +23,7 @@ class VerifyUserResponseBody extends ResponseBody
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfListItem
+     * @var \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfListItem
      */
     public $list_items;
     /**
@@ -40,10 +40,10 @@ class VerifyUserResponseBody extends ResponseBody
      * @uses VerifyUserResponseBody::setList_items()
      * @uses VerifyUserResponseBody::setToken()
      * @param string $status
-     * @param \ArrayType\ArrayOfListItem $list_items
+     * @param \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfListItem $list_items
      * @param string $token
      */
-    public function __construct($status = null, \ArrayType\ArrayOfListItem $list_items = null, $token = null)
+    public function __construct($status = null, \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfListItem $list_items = null, $token = null)
     {
         $this
             ->setStatus($status)
@@ -61,7 +61,7 @@ class VerifyUserResponseBody extends ResponseBody
     /**
      * Set status value
      * @param string $status
-     * @return \StructType\VerifyUserResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\VerifyUserResponseBody
      */
     public function setStatus($status = null)
     {
@@ -74,7 +74,7 @@ class VerifyUserResponseBody extends ResponseBody
     }
     /**
      * Get list_items value
-     * @return \ArrayType\ArrayOfListItem|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfListItem|null
      */
     public function getList_items()
     {
@@ -82,10 +82,10 @@ class VerifyUserResponseBody extends ResponseBody
     }
     /**
      * Set list_items value
-     * @param \ArrayType\ArrayOfListItem $list_items
-     * @return \StructType\VerifyUserResponseBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfListItem $list_items
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\VerifyUserResponseBody
      */
-    public function setList_items(\ArrayType\ArrayOfListItem $list_items = null)
+    public function setList_items(\Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfListItem $list_items = null)
     {
         $this->list_items = $list_items;
         return $this;
@@ -101,7 +101,7 @@ class VerifyUserResponseBody extends ResponseBody
     /**
      * Set token value
      * @param string $token
-     * @return \StructType\VerifyUserResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\VerifyUserResponseBody
      */
     public function setToken($token = null)
     {
@@ -118,7 +118,7 @@ class VerifyUserResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\VerifyUserResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\VerifyUserResponseBody
      */
     public static function __set_state(array $array)
     {

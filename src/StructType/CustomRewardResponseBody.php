@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -15,7 +15,7 @@ class CustomRewardResponseBody extends ConsumerRewardResponseBody
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfRewardList
+     * @var \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfRewardList
      */
     public $RewardLists;
     /**
@@ -23,7 +23,7 @@ class CustomRewardResponseBody extends ConsumerRewardResponseBody
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfChequeList
+     * @var \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfChequeList
      */
     public $ChequeLists;
     /**
@@ -57,13 +57,13 @@ class CustomRewardResponseBody extends ConsumerRewardResponseBody
      * @uses CustomRewardResponseBody::setMerchant_name()
      * @uses CustomRewardResponseBody::setReconciliation_date()
      * @uses CustomRewardResponseBody::setMasked_sender_rta()
-     * @param \ArrayType\ArrayOfRewardList $rewardLists
-     * @param \ArrayType\ArrayOfChequeList $chequeLists
+     * @param \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfRewardList $rewardLists
+     * @param \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfChequeList $chequeLists
      * @param string $merchant_name
      * @param string $reconciliation_date
      * @param string $masked_sender_rta
      */
-    public function __construct(\ArrayType\ArrayOfRewardList $rewardLists = null, \ArrayType\ArrayOfChequeList $chequeLists = null, $merchant_name = null, $reconciliation_date = null, $masked_sender_rta = null)
+    public function __construct(\Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfRewardList $rewardLists = null, \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfChequeList $chequeLists = null, $merchant_name = null, $reconciliation_date = null, $masked_sender_rta = null)
     {
         $this
             ->setRewardLists($rewardLists)
@@ -74,7 +74,7 @@ class CustomRewardResponseBody extends ConsumerRewardResponseBody
     }
     /**
      * Get RewardLists value
-     * @return \ArrayType\ArrayOfRewardList|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfRewardList|null
      */
     public function getRewardLists()
     {
@@ -82,17 +82,17 @@ class CustomRewardResponseBody extends ConsumerRewardResponseBody
     }
     /**
      * Set RewardLists value
-     * @param \ArrayType\ArrayOfRewardList $rewardLists
-     * @return \StructType\CustomRewardResponseBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfRewardList $rewardLists
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomRewardResponseBody
      */
-    public function setRewardLists(\ArrayType\ArrayOfRewardList $rewardLists = null)
+    public function setRewardLists(\Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfRewardList $rewardLists = null)
     {
         $this->RewardLists = $rewardLists;
         return $this;
     }
     /**
      * Get ChequeLists value
-     * @return \ArrayType\ArrayOfChequeList|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfChequeList|null
      */
     public function getChequeLists()
     {
@@ -100,10 +100,10 @@ class CustomRewardResponseBody extends ConsumerRewardResponseBody
     }
     /**
      * Set ChequeLists value
-     * @param \ArrayType\ArrayOfChequeList $chequeLists
-     * @return \StructType\CustomRewardResponseBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfChequeList $chequeLists
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomRewardResponseBody
      */
-    public function setChequeLists(\ArrayType\ArrayOfChequeList $chequeLists = null)
+    public function setChequeLists(\Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfChequeList $chequeLists = null)
     {
         $this->ChequeLists = $chequeLists;
         return $this;
@@ -119,7 +119,7 @@ class CustomRewardResponseBody extends ConsumerRewardResponseBody
     /**
      * Set merchant_name value
      * @param string $merchant_name
-     * @return \StructType\CustomRewardResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomRewardResponseBody
      */
     public function setMerchant_name($merchant_name = null)
     {
@@ -141,7 +141,7 @@ class CustomRewardResponseBody extends ConsumerRewardResponseBody
     /**
      * Set reconciliation_date value
      * @param string $reconciliation_date
-     * @return \StructType\CustomRewardResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomRewardResponseBody
      */
     public function setReconciliation_date($reconciliation_date = null)
     {
@@ -163,7 +163,7 @@ class CustomRewardResponseBody extends ConsumerRewardResponseBody
     /**
      * Set masked_sender_rta value
      * @param string $masked_sender_rta
-     * @return \StructType\CustomRewardResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomRewardResponseBody
      */
     public function setMasked_sender_rta($masked_sender_rta = null)
     {
@@ -180,7 +180,7 @@ class CustomRewardResponseBody extends ConsumerRewardResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\CustomRewardResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CustomRewardResponseBody
      */
     public static function __set_state(array $array)
     {

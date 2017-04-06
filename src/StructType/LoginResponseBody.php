@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class LoginResponseBody extends ResponseBody
     /**
      * Set token value
      * @param string $token
-     * @return \StructType\LoginResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\LoginResponseBody
      */
     public function setToken($token = null)
     {
@@ -56,7 +56,7 @@ class LoginResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\LoginResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\LoginResponseBody
      */
     public static function __set_state(array $array)
     {

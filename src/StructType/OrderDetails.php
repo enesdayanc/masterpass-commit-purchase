@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -70,7 +70,7 @@ class OrderDetails extends AbstractStructBase
      * - maxOccurs: 1
      * - minOccurs: 1
      * - nillable: true
-     * @var \StructType\ArrayOfOrderItem
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\ArrayOfOrderItem
      */
     public $orders;
     /**
@@ -88,9 +88,9 @@ class OrderDetails extends AbstractStructBase
      * @param string $order_shipping
      * @param string $order_discount
      * @param string $basket_id
-     * @param \StructType\ArrayOfOrderItem $orders
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\ArrayOfOrderItem $orders
      */
-    public function __construct($order_timeout = null, $card_program_name = null, $campaign_type = null, $order_shipping = null, $order_discount = null, $basket_id = null, \StructType\ArrayOfOrderItem $orders = null)
+    public function __construct($order_timeout = null, $card_program_name = null, $campaign_type = null, $order_shipping = null, $order_discount = null, $basket_id = null, \Enesdayanc\MasterpassCommitPurchase\StructType\ArrayOfOrderItem $orders = null)
     {
         $this
             ->setOrder_timeout($order_timeout)
@@ -112,7 +112,7 @@ class OrderDetails extends AbstractStructBase
     /**
      * Set order_timeout value
      * @param string $order_timeout
-     * @return \StructType\OrderDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderDetails
      */
     public function setOrder_timeout($order_timeout = null)
     {
@@ -134,7 +134,7 @@ class OrderDetails extends AbstractStructBase
     /**
      * Set card_program_name value
      * @param string $card_program_name
-     * @return \StructType\OrderDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderDetails
      */
     public function setCard_program_name($card_program_name = null)
     {
@@ -155,17 +155,17 @@ class OrderDetails extends AbstractStructBase
     }
     /**
      * Set campaign_type value
-     * @uses \EnumType\CampaignType::valueIsValid()
-     * @uses \EnumType\CampaignType::getValidValues()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\CampaignType::valueIsValid()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\CampaignType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $campaign_type
-     * @return \StructType\OrderDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderDetails
      */
     public function setCampaign_type($campaign_type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\CampaignType::valueIsValid($campaign_type)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $campaign_type, implode(', ', \EnumType\CampaignType::getValidValues())), __LINE__);
+        if (!\Enesdayanc\MasterpassCommitPurchase\EnumType\CampaignType::valueIsValid($campaign_type)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $campaign_type, implode(', ', \Enesdayanc\MasterpassCommitPurchase\EnumType\CampaignType::getValidValues())), __LINE__);
         }
         $this->campaign_type = $campaign_type;
         return $this;
@@ -181,7 +181,7 @@ class OrderDetails extends AbstractStructBase
     /**
      * Set order_shipping value
      * @param string $order_shipping
-     * @return \StructType\OrderDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderDetails
      */
     public function setOrder_shipping($order_shipping = null)
     {
@@ -203,7 +203,7 @@ class OrderDetails extends AbstractStructBase
     /**
      * Set order_discount value
      * @param string $order_discount
-     * @return \StructType\OrderDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderDetails
      */
     public function setOrder_discount($order_discount = null)
     {
@@ -225,7 +225,7 @@ class OrderDetails extends AbstractStructBase
     /**
      * Set basket_id value
      * @param string $basket_id
-     * @return \StructType\OrderDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderDetails
      */
     public function setBasket_id($basket_id = null)
     {
@@ -238,7 +238,7 @@ class OrderDetails extends AbstractStructBase
     }
     /**
      * Get orders value
-     * @return \StructType\ArrayOfOrderItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ArrayOfOrderItem
      */
     public function getOrders()
     {
@@ -246,10 +246,10 @@ class OrderDetails extends AbstractStructBase
     }
     /**
      * Set orders value
-     * @param \StructType\ArrayOfOrderItem $orders
-     * @return \StructType\OrderDetails
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\ArrayOfOrderItem $orders
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderDetails
      */
-    public function setOrders(\StructType\ArrayOfOrderItem $orders = null)
+    public function setOrders(\Enesdayanc\MasterpassCommitPurchase\StructType\ArrayOfOrderItem $orders = null)
     {
         $this->orders = $orders;
         return $this;
@@ -260,7 +260,7 @@ class OrderDetails extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OrderDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderDetails
      */
     public static function __set_state(array $array)
     {

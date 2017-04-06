@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -72,7 +72,7 @@ class ProcessPaymentResponseBody extends ConsumerFinancialResponseBody
     /**
      * Set merchant_name value
      * @param string $merchant_name
-     * @return \StructType\ProcessPaymentResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ProcessPaymentResponseBody
      */
     public function setMerchant_name($merchant_name = null)
     {
@@ -94,7 +94,7 @@ class ProcessPaymentResponseBody extends ConsumerFinancialResponseBody
     /**
      * Set reconciliation_date value
      * @param string $reconciliation_date
-     * @return \StructType\ProcessPaymentResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ProcessPaymentResponseBody
      */
     public function setReconciliation_date($reconciliation_date = null)
     {
@@ -116,7 +116,7 @@ class ProcessPaymentResponseBody extends ConsumerFinancialResponseBody
     /**
      * Set masked_sender_rta value
      * @param string $masked_sender_rta
-     * @return \StructType\ProcessPaymentResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ProcessPaymentResponseBody
      */
     public function setMasked_sender_rta($masked_sender_rta = null)
     {
@@ -138,7 +138,7 @@ class ProcessPaymentResponseBody extends ConsumerFinancialResponseBody
     /**
      * Set requestOrderId value
      * @param string $requestOrderId
-     * @return \StructType\ProcessPaymentResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ProcessPaymentResponseBody
      */
     public function setRequestOrderId($requestOrderId = null)
     {
@@ -155,7 +155,7 @@ class ProcessPaymentResponseBody extends ConsumerFinancialResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ProcessPaymentResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ProcessPaymentResponseBody
      */
     public static function __set_state(array $array)
     {

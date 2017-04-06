@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -40,7 +40,7 @@ class ConsumerRegistrationResponseBodyForPurchase extends ResponseBody
     /**
      * Set response_description value
      * @param string $response_description
-     * @return \StructType\ConsumerRegistrationResponseBodyForPurchase
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerRegistrationResponseBodyForPurchase
      */
     public function setResponse_description($response_description = null)
     {
@@ -57,7 +57,7 @@ class ConsumerRegistrationResponseBodyForPurchase extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ConsumerRegistrationResponseBodyForPurchase
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ConsumerRegistrationResponseBodyForPurchase
      */
     public static function __set_state(array $array)
     {

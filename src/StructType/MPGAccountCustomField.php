@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -220,7 +220,7 @@ class MPGAccountCustomField extends AbstractStructBase
     /**
      * Set delink_reason value
      * @param string $delink_reason
-     * @return \StructType\MPGAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountCustomField
      */
     public function setDelink_reason($delink_reason = null)
     {
@@ -242,7 +242,7 @@ class MPGAccountCustomField extends AbstractStructBase
     /**
      * Set custom_field_2 value
      * @param string $custom_field_2
-     * @return \StructType\MPGAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountCustomField
      */
     public function setCustom_field_2($custom_field_2 = null)
     {
@@ -264,7 +264,7 @@ class MPGAccountCustomField extends AbstractStructBase
     /**
      * Set custom_field_3 value
      * @param string $custom_field_3
-     * @return \StructType\MPGAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountCustomField
      */
     public function setCustom_field_3($custom_field_3 = null)
     {
@@ -286,7 +286,7 @@ class MPGAccountCustomField extends AbstractStructBase
     /**
      * Set custom_field_4 value
      * @param string $custom_field_4
-     * @return \StructType\MPGAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountCustomField
      */
     public function setCustom_field_4($custom_field_4 = null)
     {
@@ -308,7 +308,7 @@ class MPGAccountCustomField extends AbstractStructBase
     /**
      * Set custom_field_5 value
      * @param string $custom_field_5
-     * @return \StructType\MPGAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountCustomField
      */
     public function setCustom_field_5($custom_field_5 = null)
     {
@@ -330,7 +330,7 @@ class MPGAccountCustomField extends AbstractStructBase
     /**
      * Set custom_field_6 value
      * @param string $custom_field_6
-     * @return \StructType\MPGAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountCustomField
      */
     public function setCustom_field_6($custom_field_6 = null)
     {
@@ -352,7 +352,7 @@ class MPGAccountCustomField extends AbstractStructBase
     /**
      * Set custom_field_7 value
      * @param string $custom_field_7
-     * @return \StructType\MPGAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountCustomField
      */
     public function setCustom_field_7($custom_field_7 = null)
     {
@@ -374,7 +374,7 @@ class MPGAccountCustomField extends AbstractStructBase
     /**
      * Set custom_field_8 value
      * @param string $custom_field_8
-     * @return \StructType\MPGAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountCustomField
      */
     public function setCustom_field_8($custom_field_8 = null)
     {
@@ -396,7 +396,7 @@ class MPGAccountCustomField extends AbstractStructBase
     /**
      * Set custom_field_9 value
      * @param string $custom_field_9
-     * @return \StructType\MPGAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountCustomField
      */
     public function setCustom_field_9($custom_field_9 = null)
     {
@@ -418,7 +418,7 @@ class MPGAccountCustomField extends AbstractStructBase
     /**
      * Set custom_field_10 value
      * @param string $custom_field_10
-     * @return \StructType\MPGAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountCustomField
      */
     public function setCustom_field_10($custom_field_10 = null)
     {
@@ -440,7 +440,7 @@ class MPGAccountCustomField extends AbstractStructBase
     /**
      * Set custom_field_11 value
      * @param string $custom_field_11
-     * @return \StructType\MPGAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountCustomField
      */
     public function setCustom_field_11($custom_field_11 = null)
     {
@@ -462,7 +462,7 @@ class MPGAccountCustomField extends AbstractStructBase
     /**
      * Set custom_field_12 value
      * @param string $custom_field_12
-     * @return \StructType\MPGAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountCustomField
      */
     public function setCustom_field_12($custom_field_12 = null)
     {
@@ -484,7 +484,7 @@ class MPGAccountCustomField extends AbstractStructBase
     /**
      * Set custom_field_13 value
      * @param string $custom_field_13
-     * @return \StructType\MPGAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountCustomField
      */
     public function setCustom_field_13($custom_field_13 = null)
     {
@@ -506,7 +506,7 @@ class MPGAccountCustomField extends AbstractStructBase
     /**
      * Set custom_field_14 value
      * @param string $custom_field_14
-     * @return \StructType\MPGAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountCustomField
      */
     public function setCustom_field_14($custom_field_14 = null)
     {
@@ -528,7 +528,7 @@ class MPGAccountCustomField extends AbstractStructBase
     /**
      * Set custom_field_15 value
      * @param string $custom_field_15
-     * @return \StructType\MPGAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountCustomField
      */
     public function setCustom_field_15($custom_field_15 = null)
     {
@@ -554,17 +554,17 @@ class MPGAccountCustomField extends AbstractStructBase
      * Set consumer_account_deleted value
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
-     * @uses \EnumType\YesNoFlag::valueIsValid()
-     * @uses \EnumType\YesNoFlag::getValidValues()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::valueIsValid()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $consumer_account_deleted
-     * @return \StructType\MPGAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountCustomField
      */
     public function setConsumer_account_deleted($consumer_account_deleted = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\YesNoFlag::valueIsValid($consumer_account_deleted)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $consumer_account_deleted, implode(', ', \EnumType\YesNoFlag::getValidValues())), __LINE__);
+        if (!\Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::valueIsValid($consumer_account_deleted)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $consumer_account_deleted, implode(', ', \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::getValidValues())), __LINE__);
         }
         if (is_null($consumer_account_deleted) || (is_array($consumer_account_deleted) && empty($consumer_account_deleted))) {
             unset($this->consumer_account_deleted);
@@ -579,7 +579,7 @@ class MPGAccountCustomField extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\MPGAccountCustomField
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MPGAccountCustomField
      */
     public static function __set_state(array $array)
     {

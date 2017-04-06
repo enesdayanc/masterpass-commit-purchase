@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -39,7 +39,7 @@ class OtherMerchantRequestBody3DAuth extends BasePurchaseRequestBody
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\AdditionalFields
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\AdditionalFields
      */
     public $additional_fields;
     /**
@@ -51,9 +51,9 @@ class OtherMerchantRequestBody3DAuth extends BasePurchaseRequestBody
      * @param string $send_sms_merchant
      * @param string $msisdn
      * @param string $list_account_name
-     * @param \StructType\AdditionalFields $additional_fields
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\AdditionalFields $additional_fields
      */
-    public function __construct($send_sms_merchant = null, $msisdn = null, $list_account_name = null, \StructType\AdditionalFields $additional_fields = null)
+    public function __construct($send_sms_merchant = null, $msisdn = null, $list_account_name = null, \Enesdayanc\MasterpassCommitPurchase\StructType\AdditionalFields $additional_fields = null)
     {
         $this
             ->setSend_sms_merchant($send_sms_merchant)
@@ -71,17 +71,17 @@ class OtherMerchantRequestBody3DAuth extends BasePurchaseRequestBody
     }
     /**
      * Set send_sms_merchant value
-     * @uses \EnumType\YesNoFlag::valueIsValid()
-     * @uses \EnumType\YesNoFlag::getValidValues()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::valueIsValid()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $send_sms_merchant
-     * @return \StructType\OtherMerchantRequestBody3DAuth
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OtherMerchantRequestBody3DAuth
      */
     public function setSend_sms_merchant($send_sms_merchant = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\YesNoFlag::valueIsValid($send_sms_merchant)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $send_sms_merchant, implode(', ', \EnumType\YesNoFlag::getValidValues())), __LINE__);
+        if (!\Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::valueIsValid($send_sms_merchant)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $send_sms_merchant, implode(', ', \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::getValidValues())), __LINE__);
         }
         $this->send_sms_merchant = $send_sms_merchant;
         return $this;
@@ -97,7 +97,7 @@ class OtherMerchantRequestBody3DAuth extends BasePurchaseRequestBody
     /**
      * Set msisdn value
      * @param string $msisdn
-     * @return \StructType\OtherMerchantRequestBody3DAuth
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OtherMerchantRequestBody3DAuth
      */
     public function setMsisdn($msisdn = null)
     {
@@ -119,7 +119,7 @@ class OtherMerchantRequestBody3DAuth extends BasePurchaseRequestBody
     /**
      * Set list_account_name value
      * @param string $list_account_name
-     * @return \StructType\OtherMerchantRequestBody3DAuth
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OtherMerchantRequestBody3DAuth
      */
     public function setList_account_name($list_account_name = null)
     {
@@ -132,7 +132,7 @@ class OtherMerchantRequestBody3DAuth extends BasePurchaseRequestBody
     }
     /**
      * Get additional_fields value
-     * @return \StructType\AdditionalFields|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\AdditionalFields|null
      */
     public function getAdditional_fields()
     {
@@ -140,10 +140,10 @@ class OtherMerchantRequestBody3DAuth extends BasePurchaseRequestBody
     }
     /**
      * Set additional_fields value
-     * @param \StructType\AdditionalFields $additional_fields
-     * @return \StructType\OtherMerchantRequestBody3DAuth
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\AdditionalFields $additional_fields
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OtherMerchantRequestBody3DAuth
      */
-    public function setAdditional_fields(\StructType\AdditionalFields $additional_fields = null)
+    public function setAdditional_fields(\Enesdayanc\MasterpassCommitPurchase\StructType\AdditionalFields $additional_fields = null)
     {
         $this->additional_fields = $additional_fields;
         return $this;
@@ -154,7 +154,7 @@ class OtherMerchantRequestBody3DAuth extends BasePurchaseRequestBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\OtherMerchantRequestBody3DAuth
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OtherMerchantRequestBody3DAuth
      */
     public static function __set_state(array $array)
     {

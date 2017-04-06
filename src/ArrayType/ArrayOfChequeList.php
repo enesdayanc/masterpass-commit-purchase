@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Enesdayanc\MasterpassCommitPurchase\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -16,13 +16,13 @@ class ArrayOfChequeList extends AbstractStructArrayBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\ChequeList[]
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\ChequeList[]
      */
     public $cheque_list;
     /**
      * Constructor method for ArrayOfChequeList
      * @uses ArrayOfChequeList::setCheque_list()
-     * @param \StructType\ChequeList[] $cheque_list
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\ChequeList[] $cheque_list
      */
     public function __construct(array $cheque_list = array())
     {
@@ -34,7 +34,7 @@ class ArrayOfChequeList extends AbstractStructArrayBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\ChequeList[]|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ChequeList[]|null
      */
     public function getCheque_list()
     {
@@ -45,15 +45,15 @@ class ArrayOfChequeList extends AbstractStructArrayBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\ChequeList[] $cheque_list
-     * @return \ArrayType\ArrayOfChequeList
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\ChequeList[] $cheque_list
+     * @return \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfChequeList
      */
     public function setCheque_list(array $cheque_list = array())
     {
         foreach ($cheque_list as $arrayOfChequeListCheque_listItem) {
             // validation for constraint: itemType
-            if (!$arrayOfChequeListCheque_listItem instanceof \StructType\ChequeList) {
-                throw new \InvalidArgumentException(sprintf('The cheque_list property can only contain items of \StructType\ChequeList, "%s" given', is_object($arrayOfChequeListCheque_listItem) ? get_class($arrayOfChequeListCheque_listItem) : gettype($arrayOfChequeListCheque_listItem)), __LINE__);
+            if (!$arrayOfChequeListCheque_listItem instanceof \Enesdayanc\MasterpassCommitPurchase\StructType\ChequeList) {
+                throw new \InvalidArgumentException(sprintf('The cheque_list property can only contain items of \Enesdayanc\MasterpassCommitPurchase\StructType\ChequeList, "%s" given', is_object($arrayOfChequeListCheque_listItem) ? get_class($arrayOfChequeListCheque_listItem) : gettype($arrayOfChequeListCheque_listItem)), __LINE__);
             }
         }
         if (is_null($cheque_list) || (is_array($cheque_list) && empty($cheque_list))) {
@@ -66,14 +66,14 @@ class ArrayOfChequeList extends AbstractStructArrayBase
     /**
      * Add item to cheque_list value
      * @throws \InvalidArgumentException
-     * @param \StructType\ChequeList $item
-     * @return \ArrayType\ArrayOfChequeList
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\ChequeList $item
+     * @return \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfChequeList
      */
-    public function addToCheque_list(\StructType\ChequeList $item)
+    public function addToCheque_list(\Enesdayanc\MasterpassCommitPurchase\StructType\ChequeList $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\ChequeList) {
-            throw new \InvalidArgumentException(sprintf('The cheque_list property can only contain items of \StructType\ChequeList, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Enesdayanc\MasterpassCommitPurchase\StructType\ChequeList) {
+            throw new \InvalidArgumentException(sprintf('The cheque_list property can only contain items of \Enesdayanc\MasterpassCommitPurchase\StructType\ChequeList, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->cheque_list[] = $item;
         return $this;
@@ -81,7 +81,7 @@ class ArrayOfChequeList extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \StructType\ChequeList|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ChequeList|null
      */
     public function current()
     {
@@ -91,7 +91,7 @@ class ArrayOfChequeList extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \StructType\ChequeList|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ChequeList|null
      */
     public function item($index)
     {
@@ -100,7 +100,7 @@ class ArrayOfChequeList extends AbstractStructArrayBase
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \StructType\ChequeList|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ChequeList|null
      */
     public function first()
     {
@@ -109,7 +109,7 @@ class ArrayOfChequeList extends AbstractStructArrayBase
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \StructType\ChequeList|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ChequeList|null
      */
     public function last()
     {
@@ -119,7 +119,7 @@ class ArrayOfChequeList extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \StructType\ChequeList|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ChequeList|null
      */
     public function offsetGet($offset)
     {
@@ -140,7 +140,7 @@ class ArrayOfChequeList extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfChequeList
+     * @return \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfChequeList
      */
     public static function __set_state(array $array)
     {

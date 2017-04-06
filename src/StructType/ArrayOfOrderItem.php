@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -16,7 +16,7 @@ class ArrayOfOrderItem extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\OrderItem[]
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem[]
      */
     public $list_item;
     /**
@@ -25,15 +25,15 @@ class ArrayOfOrderItem extends AbstractStructBase
      * - maxOccurs: unbounded
      * - minOccurs: 0
      * - nillable: true
-     * @var \StructType\OrderItem[]
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem[]
      */
     public $order;
     /**
      * Constructor method for ArrayOfOrderItem
      * @uses ArrayOfOrderItem::setList_item()
      * @uses ArrayOfOrderItem::setOrder()
-     * @param \StructType\OrderItem[] $list_item
-     * @param \StructType\OrderItem[] $order
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem[] $list_item
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem[] $order
      */
     public function __construct(array $list_item = array(), array $order = array())
     {
@@ -46,7 +46,7 @@ class ArrayOfOrderItem extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\OrderItem[]|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem[]|null
      */
     public function getList_item()
     {
@@ -57,15 +57,15 @@ class ArrayOfOrderItem extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\OrderItem[] $list_item
-     * @return \StructType\ArrayOfOrderItem
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem[] $list_item
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ArrayOfOrderItem
      */
     public function setList_item(array $list_item = array())
     {
         foreach ($list_item as $arrayOfOrderItemList_itemItem) {
             // validation for constraint: itemType
-            if (!$arrayOfOrderItemList_itemItem instanceof \StructType\OrderItem) {
-                throw new \InvalidArgumentException(sprintf('The list_item property can only contain items of \StructType\OrderItem, "%s" given', is_object($arrayOfOrderItemList_itemItem) ? get_class($arrayOfOrderItemList_itemItem) : gettype($arrayOfOrderItemList_itemItem)), __LINE__);
+            if (!$arrayOfOrderItemList_itemItem instanceof \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem) {
+                throw new \InvalidArgumentException(sprintf('The list_item property can only contain items of \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem, "%s" given', is_object($arrayOfOrderItemList_itemItem) ? get_class($arrayOfOrderItemList_itemItem) : gettype($arrayOfOrderItemList_itemItem)), __LINE__);
             }
         }
         if (is_null($list_item) || (is_array($list_item) && empty($list_item))) {
@@ -78,14 +78,14 @@ class ArrayOfOrderItem extends AbstractStructBase
     /**
      * Add item to list_item value
      * @throws \InvalidArgumentException
-     * @param \StructType\OrderItem $item
-     * @return \StructType\ArrayOfOrderItem
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem $item
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ArrayOfOrderItem
      */
-    public function addToList_item(\StructType\OrderItem $item)
+    public function addToList_item(\Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\OrderItem) {
-            throw new \InvalidArgumentException(sprintf('The list_item property can only contain items of \StructType\OrderItem, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem) {
+            throw new \InvalidArgumentException(sprintf('The list_item property can only contain items of \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->list_item[] = $item;
         return $this;
@@ -95,7 +95,7 @@ class ArrayOfOrderItem extends AbstractStructBase
      * An additional test has been added (isset) before returning the property value as
      * this property may have been unset before, due to the fact that this property is
      * removable from the request (nillable=true+minOccurs=0)
-     * @return \StructType\OrderItem[]|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem[]|null
      */
     public function getOrder()
     {
@@ -106,15 +106,15 @@ class ArrayOfOrderItem extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @throws \InvalidArgumentException
-     * @param \StructType\OrderItem[] $order
-     * @return \StructType\ArrayOfOrderItem
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem[] $order
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ArrayOfOrderItem
      */
     public function setOrder(array $order = array())
     {
         foreach ($order as $arrayOfOrderItemOrderItem) {
             // validation for constraint: itemType
-            if (!$arrayOfOrderItemOrderItem instanceof \StructType\OrderItem) {
-                throw new \InvalidArgumentException(sprintf('The order property can only contain items of \StructType\OrderItem, "%s" given', is_object($arrayOfOrderItemOrderItem) ? get_class($arrayOfOrderItemOrderItem) : gettype($arrayOfOrderItemOrderItem)), __LINE__);
+            if (!$arrayOfOrderItemOrderItem instanceof \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem) {
+                throw new \InvalidArgumentException(sprintf('The order property can only contain items of \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem, "%s" given', is_object($arrayOfOrderItemOrderItem) ? get_class($arrayOfOrderItemOrderItem) : gettype($arrayOfOrderItemOrderItem)), __LINE__);
             }
         }
         if (is_null($order) || (is_array($order) && empty($order))) {
@@ -127,14 +127,14 @@ class ArrayOfOrderItem extends AbstractStructBase
     /**
      * Add item to order value
      * @throws \InvalidArgumentException
-     * @param \StructType\OrderItem $item
-     * @return \StructType\ArrayOfOrderItem
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem $item
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ArrayOfOrderItem
      */
-    public function addToOrder(\StructType\OrderItem $item)
+    public function addToOrder(\Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem $item)
     {
         // validation for constraint: itemType
-        if (!$item instanceof \StructType\OrderItem) {
-            throw new \InvalidArgumentException(sprintf('The order property can only contain items of \StructType\OrderItem, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
+        if (!$item instanceof \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem) {
+            throw new \InvalidArgumentException(sprintf('The order property can only contain items of \Enesdayanc\MasterpassCommitPurchase\StructType\OrderItem, "%s" given', is_object($item) ? get_class($item) : gettype($item)), __LINE__);
         }
         $this->order[] = $item;
         return $this;
@@ -145,7 +145,7 @@ class ArrayOfOrderItem extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\ArrayOfOrderItem
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\ArrayOfOrderItem
      */
     public static function __set_state(array $array)
     {

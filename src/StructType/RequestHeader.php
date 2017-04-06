@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -143,7 +143,7 @@ class RequestHeader extends AbstractStructBase
     /**
      * Set request_datetime value
      * @param string $request_datetime
-     * @return \StructType\RequestHeader
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RequestHeader
      */
     public function setRequest_datetime($request_datetime = null)
     {
@@ -164,17 +164,17 @@ class RequestHeader extends AbstractStructBase
     }
     /**
      * Set send_sms value
-     * @uses \EnumType\YesNoFlag::valueIsValid()
-     * @uses \EnumType\YesNoFlag::getValidValues()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::valueIsValid()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $send_sms
-     * @return \StructType\RequestHeader
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RequestHeader
      */
     public function setSend_sms($send_sms = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\YesNoFlag::valueIsValid($send_sms)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $send_sms, implode(', ', \EnumType\YesNoFlag::getValidValues())), __LINE__);
+        if (!\Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::valueIsValid($send_sms)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $send_sms, implode(', ', \Enesdayanc\MasterpassCommitPurchase\EnumType\YesNoFlag::getValidValues())), __LINE__);
         }
         $this->send_sms = $send_sms;
         return $this;
@@ -189,17 +189,17 @@ class RequestHeader extends AbstractStructBase
     }
     /**
      * Set send_sms_language value
-     * @uses \EnumType\ISOLanguageAlpha3TCodeType::valueIsValid()
-     * @uses \EnumType\ISOLanguageAlpha3TCodeType::getValidValues()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\ISOLanguageAlpha3TCodeType::valueIsValid()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\ISOLanguageAlpha3TCodeType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $send_sms_language
-     * @return \StructType\RequestHeader
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RequestHeader
      */
     public function setSend_sms_language($send_sms_language = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\ISOLanguageAlpha3TCodeType::valueIsValid($send_sms_language)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $send_sms_language, implode(', ', \EnumType\ISOLanguageAlpha3TCodeType::getValidValues())), __LINE__);
+        if (!\Enesdayanc\MasterpassCommitPurchase\EnumType\ISOLanguageAlpha3TCodeType::valueIsValid($send_sms_language)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $send_sms_language, implode(', ', \Enesdayanc\MasterpassCommitPurchase\EnumType\ISOLanguageAlpha3TCodeType::getValidValues())), __LINE__);
         }
         $this->send_sms_language = $send_sms_language;
         return $this;
@@ -215,7 +215,7 @@ class RequestHeader extends AbstractStructBase
     /**
      * Set client_token value
      * @param string $client_token
-     * @return \StructType\RequestHeader
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RequestHeader
      */
     public function setClient_token($client_token = null)
     {
@@ -237,7 +237,7 @@ class RequestHeader extends AbstractStructBase
     /**
      * Set device_fingerprint value
      * @param string $device_fingerprint
-     * @return \StructType\RequestHeader
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RequestHeader
      */
     public function setDevice_fingerprint($device_fingerprint = null)
     {
@@ -259,7 +259,7 @@ class RequestHeader extends AbstractStructBase
     /**
      * Set version value
      * @param string $version
-     * @return \StructType\RequestHeader
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RequestHeader
      */
     public function setVersion($version = null)
     {
@@ -281,7 +281,7 @@ class RequestHeader extends AbstractStructBase
     /**
      * Set ip_address value
      * @param string $ip_address
-     * @return \StructType\RequestHeader
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RequestHeader
      */
     public function setIp_address($ip_address = null)
     {
@@ -303,7 +303,7 @@ class RequestHeader extends AbstractStructBase
     /**
      * Set client_type value
      * @param string $client_type
-     * @return \StructType\RequestHeader
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RequestHeader
      */
     public function setClient_type($client_type = null)
     {
@@ -325,7 +325,7 @@ class RequestHeader extends AbstractStructBase
     /**
      * Set client_id value
      * @param string $client_id
-     * @return \StructType\RequestHeader
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RequestHeader
      */
     public function setClient_id($client_id = null)
     {
@@ -347,7 +347,7 @@ class RequestHeader extends AbstractStructBase
     /**
      * Set request_reference_no value
      * @param string $request_reference_no
-     * @return \StructType\RequestHeader
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RequestHeader
      */
     public function setRequest_reference_no($request_reference_no = null)
     {
@@ -364,7 +364,7 @@ class RequestHeader extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\RequestHeader
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\RequestHeader
      */
     public static function __set_state(array $array)
     {

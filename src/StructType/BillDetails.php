@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -160,7 +160,7 @@ class BillDetails extends AbstractStructBase
     /**
      * Set bill_last_name value
      * @param string $bill_last_name
-     * @return \StructType\BillDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BillDetails
      */
     public function setBill_last_name($bill_last_name = null)
     {
@@ -182,7 +182,7 @@ class BillDetails extends AbstractStructBase
     /**
      * Set bill_first_name value
      * @param string $bill_first_name
-     * @return \StructType\BillDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BillDetails
      */
     public function setBill_first_name($bill_first_name = null)
     {
@@ -204,7 +204,7 @@ class BillDetails extends AbstractStructBase
     /**
      * Set bill_email value
      * @param string $bill_email
-     * @return \StructType\BillDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BillDetails
      */
     public function setBill_email($bill_email = null)
     {
@@ -226,7 +226,7 @@ class BillDetails extends AbstractStructBase
     /**
      * Set bill_phone value
      * @param string $bill_phone
-     * @return \StructType\BillDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BillDetails
      */
     public function setBill_phone($bill_phone = null)
     {
@@ -247,17 +247,17 @@ class BillDetails extends AbstractStructBase
     }
     /**
      * Set bill_country_code value
-     * @uses \EnumType\ISOCountryCodeType::valueIsValid()
-     * @uses \EnumType\ISOCountryCodeType::getValidValues()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\ISOCountryCodeType::valueIsValid()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\ISOCountryCodeType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $bill_country_code
-     * @return \StructType\BillDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BillDetails
      */
     public function setBill_country_code($bill_country_code = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\ISOCountryCodeType::valueIsValid($bill_country_code)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $bill_country_code, implode(', ', \EnumType\ISOCountryCodeType::getValidValues())), __LINE__);
+        if (!\Enesdayanc\MasterpassCommitPurchase\EnumType\ISOCountryCodeType::valueIsValid($bill_country_code)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $bill_country_code, implode(', ', \Enesdayanc\MasterpassCommitPurchase\EnumType\ISOCountryCodeType::getValidValues())), __LINE__);
         }
         $this->bill_country_code = $bill_country_code;
         return $this;
@@ -273,7 +273,7 @@ class BillDetails extends AbstractStructBase
     /**
      * Set bill_fax value
      * @param string $bill_fax
-     * @return \StructType\BillDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BillDetails
      */
     public function setBill_fax($bill_fax = null)
     {
@@ -295,7 +295,7 @@ class BillDetails extends AbstractStructBase
     /**
      * Set bill_address value
      * @param string $bill_address
-     * @return \StructType\BillDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BillDetails
      */
     public function setBill_address($bill_address = null)
     {
@@ -317,7 +317,7 @@ class BillDetails extends AbstractStructBase
     /**
      * Set bill_address2 value
      * @param string $bill_address2
-     * @return \StructType\BillDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BillDetails
      */
     public function setBill_address2($bill_address2 = null)
     {
@@ -339,7 +339,7 @@ class BillDetails extends AbstractStructBase
     /**
      * Set bill_zip_code value
      * @param string $bill_zip_code
-     * @return \StructType\BillDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BillDetails
      */
     public function setBill_zip_code($bill_zip_code = null)
     {
@@ -361,7 +361,7 @@ class BillDetails extends AbstractStructBase
     /**
      * Set bill_city value
      * @param string $bill_city
-     * @return \StructType\BillDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BillDetails
      */
     public function setBill_city($bill_city = null)
     {
@@ -383,7 +383,7 @@ class BillDetails extends AbstractStructBase
     /**
      * Set bill_state value
      * @param string $bill_state
-     * @return \StructType\BillDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BillDetails
      */
     public function setBill_state($bill_state = null)
     {
@@ -400,7 +400,7 @@ class BillDetails extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BillDetails
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BillDetails
      */
     public static function __set_state(array $array)
     {

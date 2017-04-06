@@ -1,6 +1,6 @@
 <?php
 
-namespace ServiceType;
+namespace Enesdayanc\MasterpassCommitPurchase\ServiceType;
 
 use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
@@ -16,10 +16,10 @@ class Commit extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\CommitPurchase $parameters
-     * @return \StructType\CommitPurchaseResponse|bool
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\CommitPurchase $parameters
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CommitPurchaseResponse|bool
      */
-    public function CommitPurchase(\StructType\CommitPurchase $parameters)
+    public function CommitPurchase(\Enesdayanc\MasterpassCommitPurchase\StructType\CommitPurchase $parameters)
     {
         try {
             $this->setResult(self::getSoapClient()->CommitPurchase($parameters));
@@ -32,7 +32,7 @@ class Commit extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\CommitPurchaseResponse
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\CommitPurchaseResponse
      */
     public function getResult()
     {

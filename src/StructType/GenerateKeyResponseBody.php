@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -50,7 +50,7 @@ class GenerateKeyResponseBody extends ResponseBody
     /**
      * Set encryption_key value
      * @param string $encryption_key
-     * @return \StructType\GenerateKeyResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\GenerateKeyResponseBody
      */
     public function setEncryption_key($encryption_key = null)
     {
@@ -72,7 +72,7 @@ class GenerateKeyResponseBody extends ResponseBody
     /**
      * Set mac_key value
      * @param string $mac_key
-     * @return \StructType\GenerateKeyResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\GenerateKeyResponseBody
      */
     public function setMac_key($mac_key = null)
     {
@@ -89,7 +89,7 @@ class GenerateKeyResponseBody extends ResponseBody
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\GenerateKeyResponseBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\GenerateKeyResponseBody
      */
     public static function __set_state(array $array)
     {

@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace Enesdayanc\MasterpassCommitPurchase\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -49,7 +49,7 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfRewardList
+     * @var \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfRewardList
      */
     public $RewardLists;
     /**
@@ -57,7 +57,7 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \ArrayType\ArrayOfChequeList
+     * @var \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfChequeList
      */
     public $ChequeLists;
     /**
@@ -65,7 +65,7 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \StructType\MoneyCard
+     * @var \Enesdayanc\MasterpassCommitPurchase\StructType\MoneyCard
      */
     public $MoneyCard;
     /**
@@ -171,9 +171,9 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
      * @param string $currency_code
      * @param string $vpos_store_key
      * @param string $vpos_posnet_id
-     * @param \ArrayType\ArrayOfRewardList $rewardLists
-     * @param \ArrayType\ArrayOfChequeList $chequeLists
-     * @param \StructType\MoneyCard $moneyCard
+     * @param \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfRewardList $rewardLists
+     * @param \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfChequeList $chequeLists
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\MoneyCard $moneyCard
      * @param int $amount
      * @param string $order_no
      * @param string $installment_count
@@ -185,7 +185,7 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
      * @param string $vpos_provision_user_id
      * @param string $vpos_provision_password
      */
-    public function __construct($payment_type = null, $currency_code = null, $vpos_store_key = null, $vpos_posnet_id = null, \ArrayType\ArrayOfRewardList $rewardLists = null, \ArrayType\ArrayOfChequeList $chequeLists = null, \StructType\MoneyCard $moneyCard = null, $amount = null, $order_no = null, $installment_count = null, $acquirer_ica = null, $vpos_merchant_id = null, $vpos_merchant_terminal_id = null, $vpos_merchant_email = null, $vpos_terminal_user_id = null, $vpos_provision_user_id = null, $vpos_provision_password = null)
+    public function __construct($payment_type = null, $currency_code = null, $vpos_store_key = null, $vpos_posnet_id = null, \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfRewardList $rewardLists = null, \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfChequeList $chequeLists = null, \Enesdayanc\MasterpassCommitPurchase\StructType\MoneyCard $moneyCard = null, $amount = null, $order_no = null, $installment_count = null, $acquirer_ica = null, $vpos_merchant_id = null, $vpos_merchant_terminal_id = null, $vpos_merchant_email = null, $vpos_terminal_user_id = null, $vpos_provision_user_id = null, $vpos_provision_password = null)
     {
         $this
             ->setPayment_type($payment_type)
@@ -216,17 +216,17 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
     }
     /**
      * Set payment_type value
-     * @uses \EnumType\PaymentType::valueIsValid()
-     * @uses \EnumType\PaymentType::getValidValues()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\PaymentType::valueIsValid()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\PaymentType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $payment_type
-     * @return \StructType\BaseCustomPurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BaseCustomPurchaseRequestBody
      */
     public function setPayment_type($payment_type = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\PaymentType::valueIsValid($payment_type)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $payment_type, implode(', ', \EnumType\PaymentType::getValidValues())), __LINE__);
+        if (!\Enesdayanc\MasterpassCommitPurchase\EnumType\PaymentType::valueIsValid($payment_type)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $payment_type, implode(', ', \Enesdayanc\MasterpassCommitPurchase\EnumType\PaymentType::getValidValues())), __LINE__);
         }
         $this->payment_type = $payment_type;
         return $this;
@@ -241,17 +241,17 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
     }
     /**
      * Set currency_code value
-     * @uses \EnumType\ISOCurrencyCodeType::valueIsValid()
-     * @uses \EnumType\ISOCurrencyCodeType::getValidValues()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\ISOCurrencyCodeType::valueIsValid()
+     * @uses \Enesdayanc\MasterpassCommitPurchase\EnumType\ISOCurrencyCodeType::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $currency_code
-     * @return \StructType\BaseCustomPurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BaseCustomPurchaseRequestBody
      */
     public function setCurrency_code($currency_code = null)
     {
         // validation for constraint: enumeration
-        if (!\EnumType\ISOCurrencyCodeType::valueIsValid($currency_code)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $currency_code, implode(', ', \EnumType\ISOCurrencyCodeType::getValidValues())), __LINE__);
+        if (!\Enesdayanc\MasterpassCommitPurchase\EnumType\ISOCurrencyCodeType::valueIsValid($currency_code)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $currency_code, implode(', ', \Enesdayanc\MasterpassCommitPurchase\EnumType\ISOCurrencyCodeType::getValidValues())), __LINE__);
         }
         $this->currency_code = $currency_code;
         return $this;
@@ -267,7 +267,7 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
     /**
      * Set vpos_store_key value
      * @param string $vpos_store_key
-     * @return \StructType\BaseCustomPurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BaseCustomPurchaseRequestBody
      */
     public function setVpos_store_key($vpos_store_key = null)
     {
@@ -289,7 +289,7 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
     /**
      * Set vpos_posnet_id value
      * @param string $vpos_posnet_id
-     * @return \StructType\BaseCustomPurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BaseCustomPurchaseRequestBody
      */
     public function setVpos_posnet_id($vpos_posnet_id = null)
     {
@@ -302,7 +302,7 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
     }
     /**
      * Get RewardLists value
-     * @return \ArrayType\ArrayOfRewardList|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfRewardList|null
      */
     public function getRewardLists()
     {
@@ -310,17 +310,17 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
     }
     /**
      * Set RewardLists value
-     * @param \ArrayType\ArrayOfRewardList $rewardLists
-     * @return \StructType\BaseCustomPurchaseRequestBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfRewardList $rewardLists
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BaseCustomPurchaseRequestBody
      */
-    public function setRewardLists(\ArrayType\ArrayOfRewardList $rewardLists = null)
+    public function setRewardLists(\Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfRewardList $rewardLists = null)
     {
         $this->RewardLists = $rewardLists;
         return $this;
     }
     /**
      * Get ChequeLists value
-     * @return \ArrayType\ArrayOfChequeList|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfChequeList|null
      */
     public function getChequeLists()
     {
@@ -328,17 +328,17 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
     }
     /**
      * Set ChequeLists value
-     * @param \ArrayType\ArrayOfChequeList $chequeLists
-     * @return \StructType\BaseCustomPurchaseRequestBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfChequeList $chequeLists
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BaseCustomPurchaseRequestBody
      */
-    public function setChequeLists(\ArrayType\ArrayOfChequeList $chequeLists = null)
+    public function setChequeLists(\Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfChequeList $chequeLists = null)
     {
         $this->ChequeLists = $chequeLists;
         return $this;
     }
     /**
      * Get MoneyCard value
-     * @return \StructType\MoneyCard|null
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\MoneyCard|null
      */
     public function getMoneyCard()
     {
@@ -346,10 +346,10 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
     }
     /**
      * Set MoneyCard value
-     * @param \StructType\MoneyCard $moneyCard
-     * @return \StructType\BaseCustomPurchaseRequestBody
+     * @param \Enesdayanc\MasterpassCommitPurchase\StructType\MoneyCard $moneyCard
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BaseCustomPurchaseRequestBody
      */
-    public function setMoneyCard(\StructType\MoneyCard $moneyCard = null)
+    public function setMoneyCard(\Enesdayanc\MasterpassCommitPurchase\StructType\MoneyCard $moneyCard = null)
     {
         $this->MoneyCard = $moneyCard;
         return $this;
@@ -365,7 +365,7 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
     /**
      * Set amount value
      * @param int $amount
-     * @return \StructType\BaseCustomPurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BaseCustomPurchaseRequestBody
      */
     public function setAmount($amount = null)
     {
@@ -387,7 +387,7 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
     /**
      * Set order_no value
      * @param string $order_no
-     * @return \StructType\BaseCustomPurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BaseCustomPurchaseRequestBody
      */
     public function setOrder_no($order_no = null)
     {
@@ -409,7 +409,7 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
     /**
      * Set installment_count value
      * @param string $installment_count
-     * @return \StructType\BaseCustomPurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BaseCustomPurchaseRequestBody
      */
     public function setInstallment_count($installment_count = null)
     {
@@ -431,7 +431,7 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
     /**
      * Set acquirer_ica value
      * @param string $acquirer_ica
-     * @return \StructType\BaseCustomPurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BaseCustomPurchaseRequestBody
      */
     public function setAcquirer_ica($acquirer_ica = null)
     {
@@ -453,7 +453,7 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
     /**
      * Set vpos_merchant_id value
      * @param string $vpos_merchant_id
-     * @return \StructType\BaseCustomPurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BaseCustomPurchaseRequestBody
      */
     public function setVpos_merchant_id($vpos_merchant_id = null)
     {
@@ -475,7 +475,7 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
     /**
      * Set vpos_merchant_terminal_id value
      * @param string $vpos_merchant_terminal_id
-     * @return \StructType\BaseCustomPurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BaseCustomPurchaseRequestBody
      */
     public function setVpos_merchant_terminal_id($vpos_merchant_terminal_id = null)
     {
@@ -497,7 +497,7 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
     /**
      * Set vpos_merchant_email value
      * @param string $vpos_merchant_email
-     * @return \StructType\BaseCustomPurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BaseCustomPurchaseRequestBody
      */
     public function setVpos_merchant_email($vpos_merchant_email = null)
     {
@@ -519,7 +519,7 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
     /**
      * Set vpos_terminal_user_id value
      * @param string $vpos_terminal_user_id
-     * @return \StructType\BaseCustomPurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BaseCustomPurchaseRequestBody
      */
     public function setVpos_terminal_user_id($vpos_terminal_user_id = null)
     {
@@ -541,7 +541,7 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
     /**
      * Set vpos_provision_user_id value
      * @param string $vpos_provision_user_id
-     * @return \StructType\BaseCustomPurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BaseCustomPurchaseRequestBody
      */
     public function setVpos_provision_user_id($vpos_provision_user_id = null)
     {
@@ -563,7 +563,7 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
     /**
      * Set vpos_provision_password value
      * @param string $vpos_provision_password
-     * @return \StructType\BaseCustomPurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BaseCustomPurchaseRequestBody
      */
     public function setVpos_provision_password($vpos_provision_password = null)
     {
@@ -580,7 +580,7 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\BaseCustomPurchaseRequestBody
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BaseCustomPurchaseRequestBody
      */
     public static function __set_state(array $array)
     {

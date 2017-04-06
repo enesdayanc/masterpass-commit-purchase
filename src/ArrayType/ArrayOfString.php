@@ -1,6 +1,6 @@
 <?php
 
-namespace ArrayType;
+namespace Enesdayanc\MasterpassCommitPurchase\ArrayType;
 
 use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
 
@@ -40,7 +40,7 @@ class ArrayOfString extends AbstractStructArrayBase
      * Set address_name value
      * @throws \InvalidArgumentException
      * @param string[] $address_name
-     * @return \ArrayType\ArrayOfString
+     * @return \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfString
      */
     public function setAddress_name(array $address_name = array())
     {
@@ -57,7 +57,7 @@ class ArrayOfString extends AbstractStructArrayBase
      * Add item to address_name value
      * @throws \InvalidArgumentException
      * @param string $item
-     * @return \ArrayType\ArrayOfString
+     * @return \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfString
      */
     public function addToAddress_name($item)
     {
@@ -130,7 +130,7 @@ class ArrayOfString extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::__set_state()
      * @uses AbstractStructArrayBase::__set_state()
      * @param array $array the exported values
-     * @return \ArrayType\ArrayOfString
+     * @return \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfString
      */
     public static function __set_state(array $array)
     {
