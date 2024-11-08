@@ -167,6 +167,7 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
      * @uses BaseCustomPurchaseRequestBody::setVpos_terminal_user_id()
      * @uses BaseCustomPurchaseRequestBody::setVpos_provision_user_id()
      * @uses BaseCustomPurchaseRequestBody::setVpos_provision_password()
+     * @uses BaseCustomPurchaseRequestBody::setIntegration_version()
      * @param string $payment_type
      * @param string $currency_code
      * @param string $vpos_store_key
@@ -184,8 +185,9 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
      * @param string $vpos_terminal_user_id
      * @param string $vpos_provision_user_id
      * @param string $vpos_provision_password
+     * @param string $integration_version
      */
-    public function __construct($payment_type = null, $currency_code = null, $vpos_store_key = null, $vpos_posnet_id = null, \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfRewardList $rewardLists = null, \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfChequeList $chequeLists = null, \Enesdayanc\MasterpassCommitPurchase\StructType\MoneyCard $moneyCard = null, $amount = null, $order_no = null, $installment_count = null, $acquirer_ica = null, $vpos_merchant_id = null, $vpos_merchant_terminal_id = null, $vpos_merchant_email = null, $vpos_terminal_user_id = null, $vpos_provision_user_id = null, $vpos_provision_password = null)
+    public function __construct($payment_type = null, $currency_code = null, $vpos_store_key = null, $vpos_posnet_id = null, \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfRewardList $rewardLists = null, \Enesdayanc\MasterpassCommitPurchase\ArrayType\ArrayOfChequeList $chequeLists = null, \Enesdayanc\MasterpassCommitPurchase\StructType\MoneyCard $moneyCard = null, $amount = null, $order_no = null, $installment_count = null, $acquirer_ica = null, $vpos_merchant_id = null, $vpos_merchant_terminal_id = null, $vpos_merchant_email = null, $vpos_terminal_user_id = null, $vpos_provision_user_id = null, $vpos_provision_password = null, $integration_version = null)
     {
         $this
             ->setPayment_type($payment_type)
@@ -204,7 +206,8 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
             ->setVpos_merchant_email($vpos_merchant_email)
             ->setVpos_terminal_user_id($vpos_terminal_user_id)
             ->setVpos_provision_user_id($vpos_provision_user_id)
-            ->setVpos_provision_password($vpos_provision_password);
+            ->setVpos_provision_password($vpos_provision_password)
+            ->setIntegration_version($integration_version);
     }
     /**
      * Get payment_type value
@@ -572,6 +575,20 @@ class BaseCustomPurchaseRequestBody extends AbstractStructBase
             throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($vpos_provision_password)), __LINE__);
         }
         $this->vpos_provision_password = $vpos_provision_password;
+        return $this;
+    }
+    /**
+     * Set integration_version value
+     * @param string $integration_version
+     * @return \Enesdayanc\MasterpassCommitPurchase\StructType\BaseCustomPurchaseRequestBody
+     */
+    public function setIntegration_version($integration_version = null)
+    {
+        // validation for constraint: string
+        if (!is_null($integration_version) && !is_string($integration_version)) {
+            throw new \InvalidArgumentException(sprintf('Invalid value, please provide a string, "%s" given', gettype($integration_version)), __LINE__);
+        }
+        $this->integration_version = $integration_version;
         return $this;
     }
     /**
